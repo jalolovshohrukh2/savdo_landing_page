@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:billz.io)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(powershell -Command \"Remove-Item -Path .next -Recurse -Force -ErrorAction SilentlyContinue; if \\(Test-Path .next\\) { Write-Output 'still exists' } else { Write-Output 'cleared' }\")",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Select-Object Id, ProcessName, StartTime\")",
+      "Bash(powershell -Command \"Get-Process -Id 3600,11100,22836 | Stop-Process -Force; Start-Sleep -Seconds 1; Remove-Item -Path '.next' -Recurse -Force -ErrorAction SilentlyContinue; if \\(Test-Path .next\\) { Write-Output 'still exists' } else { Write-Output 'cleared' }\")",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; Set-Location 'C:\\\\Users\\\\shohr\\\\OneDrive\\\\Desktop\\\\Savdo Landing Page'; Remove-Item -Path '.next' -Recurse -Force -ErrorAction SilentlyContinue; if \\(Test-Path .next\\) { Write-Output 'still exists' } else { Write-Output 'cleared' }\")",
+      "WebSearch",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; Write-Output 'killed'\")",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; Set-Location 'C:\\\\Users\\\\shohr\\\\OneDrive\\\\Desktop\\\\Savdo Landing Page'; Remove-Item -Path '.next' -Recurse -Force -ErrorAction SilentlyContinue; Write-Output 'reset'\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:savdo-nine.vercel.app)",
+      "Bash(mkdir -p \"C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/public/brand\" \"C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/public/customers\" \"C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/public/features\")",
+      "Bash(curl -fsSL https://savdo-nine.vercel.app/logo.svg -o public/brand/logo.svg)",
+      "Bash(curl -fsSL https://savdo-nine.vercel.app/mini-logo.svg -o public/brand/mini-logo.svg)",
+      "Bash(curl -fsSL https://savdo-nine.vercel.app/qr-code.svg -o public/brand/qr-code.svg)",
+      "Bash(curl -fsSL https://savdo-nine.vercel.app/__TRACKED_VAR__.svg -o public/customers/__TRACKED_VAR__.svg)",
+      "Bash(grep -iE \"\\\\.\\(png|jpg|jpeg|webp\\)$\")",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; Write-Output 'clean'\")",
+      "Bash(rm -f TrustStrip.tsx Testimonials.tsx Integrations.tsx Solutions.tsx Showcase.tsx)",
+      "Bash(ls *.tsx)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json','utf8'\\)\\); console.log\\('ok'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/ru.json','utf8'\\)\\); console.log\\('ok'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/uz.json','utf8'\\)\\); console.log\\('ok'\\)\")",
+      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok'\\\\''\\)')"
+    ]
+  }
+}

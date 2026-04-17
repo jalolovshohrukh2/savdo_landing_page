@@ -1,0 +1,662 @@
+{
+  "seo": {
+    "title": "Savdo — All-in-one retail management: inventory, POS, CRM, analytics",
+    "description": "Savdo is cloud retail management software for Central Asia. Inventory, POS, customers, finance and marketing in one system.",
+    "keywords": "retail POS, inventory management, shop software, CRM retail, Central Asia POS, Tajikistan, Uzbekistan, Savdo",
+    "trial": "14-day free trial, no card required"
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "features": "Features",
+    "pricing": "Pricing",
+    "testimonials": "Reviews",
+    "faq": "FAQ",
+    "investors": "Investors",
+    "partners": "Partners",
+    "tryFree": "Try for free"
+  },
+  "partners": {
+    "seo": {
+      "title": "Earn up to $10,000 with Savdo — Partner program",
+      "description": "Start your business in IT by selling one of the best retail automation platforms in Central Asia. Earn $1,000–$10,000/month. Payback from month 2."
+    },
+    "hero": {
+      "eyebrow": "Partner program",
+      "title": "Earn up to $10,000 with Savdo",
+      "subtitle": "Start your business in IT by selling one of the best retail automation platforms in Central Asia.",
+      "cards": {
+        "investment": "Investment",
+        "earnings": "Earnings per month",
+        "payback": "Payback",
+        "paybackValue": "From month 2",
+        "training": "Full process training",
+        "trainingValue": "Included"
+      },
+      "cta": "Request a consultation"
+    },
+    "market": {
+      "eyebrow": "Market potential",
+      "title": "Automation is a fast-growing segment in Central Asia",
+      "subtitle": "Over 70% of retailers still use paper notebooks, Excel, or legacy software — and are actively switching to modern automation.",
+      "annual": "Annual market",
+      "countries": {
+        "uz": "Uzbekistan",
+        "kz": "Kazakhstan",
+        "kg": "Kyrgyzstan",
+        "tj": "Tajikistan"
+      },
+      "cta": "Request a consultation"
+    },
+    "why": {
+      "eyebrow": "Why Savdo",
+      "title": "One of the fastest-growing retail-tech platforms in Central Asia",
+      "subtitle": "Built for modern retail: cloud-first, multi-currency, offline-ready, four languages out of the box.",
+      "stats": {
+        "w1": { "value": "4", "label": "Languages supported on day one (TJ · RU · UZ · EN)" },
+        "w2": { "value": "4", "label": "Active markets (UZ · KZ · KG · TJ)" },
+        "w3": { "value": "2.4M+", "label": "Addressable SMBs across launch markets" },
+        "w4": { "value": "$87B+", "label": "Total Central Asia retail turnover in 2024" },
+        "w5": { "value": "18.2%", "label": "Global cloud-POS growth through 2030" },
+        "w6": { "value": "100%", "label": "Cloud-native — works from any device" }
+      },
+      "cta": "Request a consultation"
+    },
+    "product": {
+      "eyebrow": "The product",
+      "title": "One of the easiest retail platforms to learn and sell",
+      "subtitle": "Everything a shop needs to run professionally, in a single system.",
+      "items": {
+        "f1": "Inventory & stock tracking",
+        "f2": "Customer database & CRM",
+        "f3": "POS and cash register",
+        "f4": "Staff and shift management",
+        "f5": "Finance and cash flow",
+        "f6": "Reports and analytics",
+        "f7": "Marketing tools (SMS & Telegram)"
+      },
+      "cta": "Request a consultation"
+    },
+    "demand": {
+      "title": "retailers request a demo every single day",
+      "body": "Store owners across Central Asia are actively looking for modern software. Partners tap into this inbound demand — you don't have to cold-call."
+    },
+    "benefits": {
+      "eyebrow": "Benefits",
+      "title": "Why partner with Savdo",
+      "items": {
+        "b1": "One of the best retail-automation products on the market",
+        "b2": "Full launch and process setup — we train you end-to-end",
+        "b3": "Help with customer acquisition and ongoing support",
+        "b4": "Hiring and team-scaling assistance as you grow",
+        "b5": "Launch with just $500 and 10 hours per month",
+        "b6": "Profitable from month 2 — fast payback"
+      },
+      "cta": "Apply now"
+    },
+    "types": {
+      "eyebrow": "Two partnership tracks",
+      "title": "Pick the track that fits your time and capital",
+      "subtitle": "Both tracks earn from onboarding, data entry and hardware. Only the Sales Partner gets a subscription revenue share.",
+      "popular": "Most popular",
+      "apply": "Apply for this track",
+      "revenue": "Revenue streams",
+      "labels": {
+        "investment": "Investment",
+        "time": "Time / month",
+        "clients": "Clients / month"
+      },
+      "time": {
+        "service": "20–30 hours",
+        "sales": "100 hours"
+      },
+      "tracks": {
+        "service": {
+          "tag": "Service Partner",
+          "name": "Service Partner",
+          "description": "You handle onboarding, training and client support. Low investment, flexible hours, steady side income."
+        },
+        "sales": {
+          "tag": "Sales Partner",
+          "name": "Sales Partner",
+          "description": "You sell, onboard and support clients. Higher investment and hours — but you earn 50% of subscription revenue in year one."
+        }
+      },
+      "revenueItems": {
+        "r1": "Turnkey onboarding & training",
+        "r2": "Building the product catalog",
+        "r3": "Hardware sales (POS / scanner / printer)",
+        "r4": "Portfolio income (100+ clients)",
+        "r5": "Subscription revenue share (year 1)"
+      }
+    },
+    "calculator": {
+      "eyebrow": "Earnings calculator",
+      "title": "Model your year-one earnings",
+      "subtitle": "As a Sales Partner, you earn 50% of subscription revenue in year one. Adjust the slider to model your goal.",
+      "country": "Choose your country",
+      "stores": "Stores you'll sign up in year one",
+      "monthlyEarnings": "Monthly commission (steady state)",
+      "yearOne": "Year-one total earnings",
+      "arpuNote": "Calculation: stores × {value} avg ARPU × 50% commission (Sales Partner, year 1).",
+      "disclaimer": "Estimates based on Savdo Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
+      "countries": {
+        "us": "🇺🇸 USD",
+        "tj": "🇹🇯 TJ",
+        "uz": "🇺🇿 UZ",
+        "kz": "🇰🇿 KZ",
+        "kg": "🇰🇬 KG"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Common questions",
+      "items": {
+        "q1": {
+          "q": "Do I need a registered company?",
+          "a": "For the Sales Partner track we require a legal entity (IP / OOO / TOO). For the Service Partner track a personal contract is fine."
+        },
+        "q2": {
+          "q": "When does commission start?",
+          "a": "Commission becomes payable once the client has actively used Savdo for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
+        },
+        "q3": {
+          "q": "How and when am I paid?",
+          "a": "Commissions are calculated on the 1st of each month and paid by the 10th. We pay via bank transfer, Payme, Click, Alif or Korti Milli."
+        },
+        "q4": {
+          "q": "What if a shop cancels after I sign them up?",
+          "a": "You earn commission only on months the shop actually pays. No clawback — if the shop cancels later, you keep everything already earned."
+        },
+        "q5": {
+          "q": "Do I have to install hardware?",
+          "a": "No — Savdo runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
+        },
+        "q6": {
+          "q": "Can I charge the shop for onboarding?",
+          "a": "Yes — partners typically charge $50–100 per turnkey setup, plus $20/day for data entry. You keep 100% of those fees."
+        }
+      }
+    },
+    "apply": {
+      "eyebrow": "Apply",
+      "title": "Apply for the partnership program",
+      "subtitle": "Fill in the form and our partnership team will run a free consultation within 48 hours.",
+      "form": {
+        "name": "Full name",
+        "namePh": "First and last name",
+        "phone": "Phone number",
+        "motivation": "Why do you want to become a partner?",
+        "motivationPh": "Tell us about your goals",
+        "hasBusiness": "Do you already run a business?",
+        "yes": "Yes",
+        "no": "No",
+        "experience": "What is your retail or sales experience?",
+        "experiencePh": "Describe what you've done before",
+        "investment": "How much can you invest (USD)?",
+        "hours": "Hours per week you can commit",
+        "city": "Which city are you in?",
+        "cityPh": "e.g. Dushanbe, Tashkent, Almaty",
+        "submit": "Send application",
+        "or": "or contact us on Telegram"
+      }
+    }
+  },
+  "investors": {
+    "seo": {
+      "title": "Investors — Savdo",
+      "description": "Savdo is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
+    },
+    "hero": {
+      "eyebrow": "Investor deck · 2026",
+      "title": "Arming 2.4 million small retailers to compete with the giants.",
+      "subtitle": "Savdo is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
+      "ctaPrimary": "Get in touch",
+      "ctaSecondary": "Download deck",
+      "stats": {
+        "retail": "Central Asia retail turnover (2024)",
+        "smbs": "SMBs in our four launch markets",
+        "cagr": "Global cloud-POS CAGR through 2030",
+        "markets": "live markets (UZ · KZ · KG · TJ)"
+      }
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Small businesses deserve enterprise-grade tools.",
+      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Savdo closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
+    },
+    "opportunity": {
+      "eyebrow": "Market",
+      "title": "A $87B retail market, under-served and digitizing fast.",
+      "subtitle": "Central Asia is the last large unautomated retail region — and the fastest-digitizing one.",
+      "tam": {
+        "tag": "TAM",
+        "value": "$87B+",
+        "title": "Total retail turnover",
+        "description": "Combined 2024 retail turnover across Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan."
+      },
+      "sam": {
+        "tag": "SAM",
+        "value": "2.4M+",
+        "title": "Small & medium retailers",
+        "description": "Registered SMBs in our launch markets — the core audience underserved by legacy 1C and enterprise POS."
+      },
+      "som": {
+        "tag": "SOM (5 yr)",
+        "value": "40K",
+        "title": "Target stores by 2030",
+        "description": "~1.7% market share at blended ARPU of $50/mo — our explicit 2030 target."
+      },
+      "table": {
+        "country": "Country",
+        "smbs": "SMBs / small enterprises",
+        "retail": "Retail turnover 2024",
+        "internet": "Internet penetration"
+      },
+      "countries": {
+        "uz": "🇺🇿 Uzbekistan",
+        "kz": "🇰🇿 Kazakhstan",
+        "kg": "🇰🇬 Kyrgyzstan",
+        "tj": "🇹🇯 Tajikistan"
+      },
+      "sources": "Sources: Stat Agency of Uzbekistan (2025), Bureau of National Statistics Kazakhstan (2024), NSC Kyrgyzstan (2025), Trend.az / EBRD Tajikistan (2024–25), DataReportal Digital 2024."
+    },
+    "problem": {
+      "eyebrow": "Problem",
+      "title": "Small retailers are losing to scale — and don't know why.",
+      "body": "A Dushanbe boutique has no way to know what's selling, what's dead stock, or which customer hasn't come back. Big chains do. That information gap is the single biggest driver of SMB closure in the region.",
+      "pains": {
+        "p1": {
+          "title": "Inventory blindness",
+          "body": "Most SMBs track stock in a paper ledger or a single Excel file — updated weekly at best, impossible to reconcile across locations."
+        },
+        "p2": {
+          "title": "No customer memory",
+          "body": "Repeat buyers are anonymous. No loyalty, no segmentation, no way to reactivate a lapsed customer."
+        },
+        "p3": {
+          "title": "Cash-flow by feel",
+          "body": "Owners know revenue but not margin. 40% of SMB closures cite cash-flow mismanagement."
+        },
+        "p4": {
+          "title": "Legacy software is wrong-sized",
+          "body": "1C requires an IT contractor and desktop licenses. Global SaaS (Shopify POS, Lightspeed) is English-only and cards-first — a bad fit for cash-heavy CA markets."
+        }
+      },
+      "quote": {
+        "label": "From the field",
+        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Savdo report.",
+        "author": "Shop owner interview, Dushanbe 2025"
+      }
+    },
+    "solution": {
+      "eyebrow": "Solution",
+      "title": "One platform, built for how Central Asia actually shops.",
+      "subtitle": "Four things we do that global SaaS won't.",
+      "items": {
+        "s1": {
+          "title": "Four languages, day one",
+          "body": "Tajik, Russian, Uzbek, English — per-employee. No other cloud POS covers this stack natively."
+        },
+        "s2": {
+          "title": "Offline-first POS",
+          "body": "Internet in TJ is still 42% — our register keeps selling when the connection drops and syncs on return."
+        },
+        "s3": {
+          "title": "Local payments & tax",
+          "body": "Integrated with Humo, Alif, Korti Milli, Payme, Click — and compliant with local fiscalization out of the box."
+        },
+        "s4": {
+          "title": "Built for cash-heavy retail",
+          "body": "Cash handling, supplier debts, informal wholesale — modeled natively instead of bolted on."
+        }
+      }
+    },
+    "whynow": {
+      "eyebrow": "Why now",
+      "title": "The window just opened.",
+      "items": {
+        "w1": {
+          "stat": "18.2%",
+          "label": "Global cloud-POS CAGR · 2025–2030",
+          "body": "Cloud POS is replacing desktop legacy globally. Asia Pacific is leading at 19.6% — and CA is under-penetrated vs. regional peers."
+        },
+        "w2": {
+          "stat": "96% / 83%",
+          "label": "Internet penetration · KZ / UZ (2024)",
+          "body": "Digital rails are in place — our core markets now have the connectivity for cloud SaaS to actually work."
+        },
+        "w3": {
+          "stat": "Billz → TBC",
+          "label": "Proof of exit · June 2025",
+          "body": "Our closest comp, Billz (4,000+ stores), was acquired by TBC Bank Group in mid-2025 — validating the thesis and pricing the category."
+        }
+      }
+    },
+    "traction": {
+      "eyebrow": "Traction & plan",
+      "title": "A clear path from 500 to 40,000 stores.",
+      "subtitle": "Our 5-year plan mirrors Billz's trajectory — with a wider regional footprint and a stronger local-language product.",
+      "kpis": {
+        "kpi1": { "label": "Active stores", "value": "120", "delta": "+28% MoM" },
+        "kpi2": { "label": "Net revenue retention", "value": "118%", "delta": "via upsell to Pro/Business" },
+        "kpi3": { "label": "Blended CAC payback", "value": "5 mo", "delta": "at $50 blended ARPU" }
+      },
+      "chart": {
+        "title": "Stores on Savdo",
+        "subtitle": "Plan · paying customers, year-end",
+        "tag": "Projection",
+        "calloutLabel": "By 2030:",
+        "callout": "40,000 stores ≈ 1.7% share of a 2.4M SMB market — conservative vs. Billz's 4,000-store exit in a narrower footprint."
+      }
+    },
+    "roadmap": {
+      "eyebrow": "Roadmap",
+      "title": "What the next 24 months look like.",
+      "items": {
+        "r1": {
+          "when": "Q2 2026",
+          "title": "Tajikistan GA · 500 stores",
+          "body": "Launch in Dushanbe and Khujand. Local payment rails (Alif, DC, Humo) and TJ fiscalization live."
+        },
+        "r2": {
+          "when": "Q4 2026",
+          "title": "Uzbekistan launch · multi-currency",
+          "body": "Open Tashkent office. UZS/TJS/USD multi-currency, Payme + Click + Uzum integrations. Target 2,500 stores by year-end 2027."
+        },
+        "r3": {
+          "when": "2027",
+          "title": "Kazakhstan & Kyrgyzstan",
+          "body": "Expand to Almaty and Bishkek. Warehousing module, B2B supplier marketplace. Target 8,000 stores."
+        },
+        "r4": {
+          "when": "2028+",
+          "title": "Embedded finance",
+          "body": "Working-capital loans to merchants using transaction data — monetize the Billz→TBC playbook on our own terms."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Team",
+      "title": "Builders who've shipped to this market before.",
+      "body": "Founding team with backgrounds in retail operations, payments infra, and multi-lingual product engineering across the CIS."
+    },
+    "ask": {
+      "eyebrow": "The ask",
+      "title": "We're raising our seed round.",
+      "body": "Looking for partners who understand frontier-market SaaS and are ready to back a category leader from day one.",
+      "raising": { "label": "Raising", "value": "$2.5M" },
+      "stage": { "label": "Stage", "value": "Seed" },
+      "use": { "label": "Use of funds", "value": "Engineering (45%) · Sales in UZ+KZ (35%) · Ops (20%)" },
+      "runway": { "label": "Runway", "value": "24 mo" },
+      "form": {
+        "title": "Talk to the founders",
+        "subtitle": "We respond within 48 hours on business days.",
+        "name": "Your name",
+        "fund": "Firm / fund",
+        "email": "Email",
+        "message": "What would you like to discuss?",
+        "submit": "Request intro",
+        "or": "or email us directly at"
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "The retail OS for Central Asia",
+    "title": "A superpower for your store",
+    "subtitle": "One cloud platform for POS, inventory, CRM and finance — built for retailers in Tajikistan, Uzbekistan, Kazakhstan and Kyrgyzstan.",
+    "ctaPrimary": "Start free",
+    "ctaSecondary": "See pricing",
+    "ctaNote": "14 days free · No credit card · Setup in 15 minutes",
+    "chips": {
+      "offline": "Works offline",
+      "currencies": "TJS · UZS · KZT · KGS"
+    }
+  },
+  "trust": {
+    "rating": "4.9 out of 5",
+    "stores": "5000+ stores run on Savdo"
+  },
+  "showcase": {
+    "eyebrow": "Savdo in action",
+    "title": "One platform — everywhere your store works",
+    "subtitle": "POS on tablet, inventory on phone, analytics on laptop — all data syncs automatically.",
+    "items": {
+      "pos": {
+        "tag": "POS",
+        "title": "Fast POS on a tablet",
+        "description": "Sell from a tablet, laptop or phone. Intuitive interface — train a cashier in 10 minutes.",
+        "points": {
+          "p1": "Works offline and syncs automatically",
+          "p2": "Barcode scanner, scales, fiscal printer",
+          "p3": "Accepts cash, cards and online payments"
+        }
+      },
+      "mobile": {
+        "tag": "Mobile app",
+        "title": "Run your store from your phone",
+        "description": "Track sales, stock and staff from anywhere. Real-time notifications for what matters.",
+        "points": {
+          "p1": "Apps for iOS and Android",
+          "p2": "Receive inventory with your phone camera",
+          "p3": "Chat with staff inside the app"
+        }
+      },
+      "analytics": {
+        "tag": "Analytics",
+        "title": "Every number at your fingertips",
+        "description": "40+ reports — sales, profit, ABC analysis, staff KPIs. One-click export to Excel.",
+        "points": {
+          "p1": "Real-time dashboards",
+          "p2": "Purchase and turnover forecasts",
+          "p3": "Reports per employee and shift"
+        }
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "One program — every store task",
+    "subtitle": "Savdo replaces a dozen disconnected tools and unifies them into a single management system.",
+    "more": "See all features",
+    "items": {
+      "inventory": {
+        "title": "Inventory",
+        "description": "Scan, receive and transfer goods between locations. Real-time stock you can trust.",
+        "stat": "−40% inventory time"
+      },
+      "customers": {
+        "title": "CRM & loyalty",
+        "description": "Customer base, bonuses, segmentation and campaigns. Bring buyers back and grow basket size.",
+        "stat": "+30% repeat sales"
+      },
+      "pos": {
+        "title": "POS & sales",
+        "description": "Fast POS on laptop, tablet or phone. Works offline and syncs automatically.",
+        "stat": "<3 sec per sale"
+      },
+      "analytics": {
+        "title": "Reports & analytics",
+        "description": "40+ reports: sales, profit, ABC analysis, staff KPIs. Decisions based on real data.",
+        "stat": "40+ ready reports"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "SMS and Telegram campaigns, coupons, gift certificates and promos. Built-in — no third parties.",
+        "stat": "Marketing ROI ×3"
+      },
+      "finance": {
+        "title": "Finance",
+        "description": "Cash, accounts, debts and expenses. Control cash flow and know your real profit.",
+        "stat": "Live P&L"
+      }
+    }
+  },
+  "solutions": {
+    "eyebrow": "Solutions",
+    "title": "Tuned for every store type",
+    "subtitle": "Savdo adapts to your business — from a boutique to a pharmacy chain.",
+    "learnMore": "Learn more",
+    "items": {
+      "clothing": { "title": "Clothing", "description": "Sizes, colors, seasons and discounts — all under control." },
+      "shoes": { "title": "Shoes", "description": "Pair storage, size grids, seasonal collections." },
+      "cosmetics": { "title": "Cosmetics", "description": "Expiry, batches, promos and testers." },
+      "electronics": { "title": "Electronics", "description": "IMEI, serial numbers, warranty and service." },
+      "grocery": { "title": "Grocery", "description": "Weighed items, expiry, promos and fast checkout." },
+      "pharmacy": { "title": "Pharmacy", "description": "Batches, expiry, prescriptions and records." },
+      "sports": { "title": "Sports goods", "description": "Sizes, bundles, seasons and rentals." },
+      "kids": { "title": "Kids goods", "description": "Age groups, sizes, loyalty for moms." }
+    }
+  },
+  "integrations": {
+    "eyebrow": "Trusted by",
+    "title": "The brands that run on Savdo",
+    "subtitle": "From family boutiques to growing retail chains across Central Asia."
+  },
+  "testimonials": {
+    "eyebrow": "Customers",
+    "title": "Trusted by thousands of stores",
+    "subtitle": "Stories from entrepreneurs who grew with Savdo.",
+    "items": {
+      "one": {
+        "quote": "Six months with Savdo and we opened a second location. Clear reports, stock under control, and POS works even with no internet.",
+        "name": "Aziza Rahimova",
+        "role": "Clothing chain, Dushanbe"
+      },
+      "two": {
+        "quote": "We moved from 1C to Savdo — simpler, faster, no license fees. Support is always there.",
+        "name": "Dilshod Karimov",
+        "role": "Electronics store, Tashkent"
+      },
+      "three": {
+        "quote": "SMS campaigns paid for themselves in a week. Customers come back and average ticket is up 22%.",
+        "name": "Munisa Safarova",
+        "role": "Cosmetics chain, Khujand"
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Honest pricing in your local currency",
+    "subtitle": "Up to 20% cheaper than Billz on equivalent tiers. All plans include updates, cloud storage and local-language support.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "popular": "Popular",
+    "perMonth": "mo",
+    "cta": "Get started",
+    "addLocation": "Additional location: {value}/mo · upgrade or downgrade anytime.",
+    "billedYearly": "Billed yearly: {value}",
+    "billzNote": "Pricing benchmarked against Billz Uzbekistan (March 2026): Start 299 000 UZS, Advanced 499 000 UZS, Pro 999 000 UZS.",
+    "countries": {
+      "us": "USD",
+      "tj": "Tajikistan",
+      "uz": "Uzbekistan",
+      "kz": "Kazakhstan",
+      "kg": "Kyrgyzstan"
+    },
+    "plans": {
+      "start": {
+        "name": "Start",
+        "tagline": "For a single location",
+        "features": {
+          "f1": "1 register, 1 user",
+          "f2": "Inventory & stock",
+          "f3": "Basic reports",
+          "f4": "Receipts & fiscalization",
+          "f5": "Chat support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "For growing businesses",
+        "features": {
+          "f1": "Up to 3 registers, 5 users",
+          "f2": "CRM and loyalty program",
+          "f3": "SMS & Telegram marketing",
+          "f4": "Advanced analytics",
+          "f5": "Priority support"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "tagline": "For retail chains",
+        "features": {
+          "f1": "Unlimited registers & users",
+          "f2": "Multi-warehouse & transfers",
+          "f3": "API and integrations",
+          "f4": "Enterprise reports & KPIs",
+          "f5": "Dedicated manager"
+        }
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": {
+      "q1": { "q": "Do I need to install anything?", "a": "No. Savdo runs in the browser and mobile apps. Just sign up." },
+      "q2": { "q": "Does POS work offline?", "a": "Yes. The register keeps working offline and syncs when you're back online." },
+      "q3": { "q": "How do I migrate from 1C or Excel?", "a": "Import items, stock and customers via spreadsheets or API. We assist for free during onboarding." },
+      "q4": { "q": "How much is onboarding?", "a": "Base setup and training are free on all plans. Custom configuration is available on request." },
+      "q5": { "q": "Is there a mobile app?", "a": "Yes — apps for owners and cashiers on iOS and Android." },
+      "q6": { "q": "Which languages are supported?", "a": "Russian, Tajik, Uzbek and English. Each employee can pick their own." }
+    }
+  },
+  "finalCta": {
+    "title": "Run your store the modern way",
+    "subtitle": "Set up Savdo in 15 minutes. 14 days free, no card, with support in your language.",
+    "ctaPrimary": "Create account",
+    "ctaSecondary": "Book a demo",
+    "note": "Onboarding and training included"
+  },
+  "footer": {
+    "tagline": "Cloud retail management platform. Inventory, POS, CRM, finance and marketing — in one system.",
+    "contact": "Contact us",
+    "rights": "All rights reserved.",
+    "cols": {
+      "solutions": "Solutions",
+      "why": "Why Savdo",
+      "resources": "Resources",
+      "partners": "Partners",
+      "company": "Company"
+    },
+    "links": {
+      "solutions": {
+        "clothing": "Clothing",
+        "shoes": "Shoes",
+        "cosmetics": "Cosmetics",
+        "electronics": "Electronics",
+        "grocery": "Grocery",
+        "pharmacy": "Pharmacy"
+      },
+      "why": {
+        "features": "Features",
+        "integrations": "Integrations",
+        "security": "Security",
+        "mobile": "Mobile app"
+      },
+      "resources": {
+        "blog": "Blog",
+        "academy": "Academy",
+        "updates": "Updates",
+        "support": "Support",
+        "api": "API"
+      },
+      "partners": {
+        "referral": "Referral program",
+        "agency": "For agencies",
+        "affiliates": "Affiliates"
+      },
+      "company": {
+        "about": "About",
+        "careers": "Careers",
+        "press": "Press",
+        "contact": "Contact"
+      }
+    },
+    "legal": {
+      "privacy": "Privacy policy",
+      "terms": "Terms of service",
+      "cookies": "Cookies"
+    }
+  }
+}

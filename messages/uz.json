@@ -1,0 +1,637 @@
+{
+  "seo": {
+    "title": "Savdo — doʻkon boshqaruv dasturi: ombor, kassa, CRM, tahlillar",
+    "description": "Savdo — Markaziy Osiyo doʻkonlari uchun bulutli avtomatlashtirish dasturi. Ombor, kassa, mijozlar, moliya va marketing bir tizimda.",
+    "keywords": "doʻkon dasturi, POS kassa, ombor hisobi, CRM, Oʻzbekiston, Tojikiston, Savdo",
+    "trial": "14 kun bepul, karta talab qilinmaydi"
+  },
+  "nav": {
+    "solutions": "Yechimlar",
+    "features": "Imkoniyatlar",
+    "pricing": "Tariflar",
+    "testimonials": "Sharhlar",
+    "faq": "Savollar",
+    "investors": "Investorlarga",
+    "partners": "Hamkorlarga",
+    "tryFree": "Bepul sinab koʻring"
+  },
+  "partners": {
+    "seo": {
+      "title": "Savdo bilan $10 000 gacha ishlang — Hamkorlik dasturi",
+      "description": "Markaziy Osiyodagi eng yaxshi chakana avtomatlashtirish platformalaridan birini sotib IT biznesingizni boshlang. Oyiga $1 000–$10 000 daromad. 2-oydan payback."
+    },
+    "hero": {
+      "eyebrow": "Hamkorlik dasturi",
+      "title": "Savdo bilan $10 000 gacha ishlang",
+      "subtitle": "Markaziy Osiyodagi eng yaxshi chakana avtomatlashtirish platformalaridan birini sotib IT sohasida biznesingizni boshlang.",
+      "cards": {
+        "investment": "Sarmoya",
+        "earnings": "Oylik daromad",
+        "payback": "Payback",
+        "paybackValue": "2-oydan",
+        "training": "Barcha jarayonlar uchun oʻqitish",
+        "trainingValue": "Ichida"
+      },
+      "cta": "Konsultatsiyaga ariza qoldirish"
+    },
+    "market": {
+      "eyebrow": "Bozor salohiyati",
+      "title": "Avtomatlashtirish — Markaziy Osiyoda tez oʻsayotgan segment",
+      "subtitle": "Chakana sotuvchilarning 70% dan ortigʻi hali ham qogʻoz daftar, Excel yoki eski dasturlardan foydalanadi — va faol ravishda zamonaviy avtomatlashtirishga oʻtmoqda.",
+      "annual": "Yillik bozor",
+      "countries": {
+        "uz": "Oʻzbekiston",
+        "kz": "Qozogʻiston",
+        "kg": "Qirgʻiziston",
+        "tj": "Tojikiston"
+      },
+      "cta": "Konsultatsiyaga ariza qoldirish"
+    },
+    "why": {
+      "eyebrow": "Nega Savdo",
+      "title": "Markaziy Osiyoning eng tez oʻsayotgan retail-tech platformalaridan biri",
+      "subtitle": "Zamonaviy chakana savdo uchun: bulutli, koʻp valyutali, oflayn tayyor, birinchi kundan toʻrt til.",
+      "stats": {
+        "w1": { "value": "4", "label": "Til birinchi kundan (TJ · RU · UZ · EN)" },
+        "w2": { "value": "4", "label": "Faol bozor (UZ · KZ · KG · TJ)" },
+        "w3": { "value": "2,4 mln+", "label": "KOB — ishga tushirilgan bozorlarda" },
+        "w4": { "value": "$87 mlrd+", "label": "2024-yildagi MO chakana aylanmasi" },
+        "w5": { "value": "18,2%", "label": "2030 gacha global bulutli POS oʻsishi" },
+        "w6": { "value": "100%", "label": "Bulutli — har qanday qurilmada ishlaydi" }
+      },
+      "cta": "Konsultatsiyaga ariza qoldirish"
+    },
+    "product": {
+      "eyebrow": "Mahsulot",
+      "title": "Oʻrganish va sotish uchun eng oson chakana platformalardan biri",
+      "subtitle": "Doʻkonning professional ishlashi uchun kerak boʻlgan barcha narsa bitta tizimda.",
+      "items": {
+        "f1": "Tovar va qoldiq hisobi",
+        "f2": "Mijozlar bazasi va CRM",
+        "f3": "Kassa va hisob-kitob",
+        "f4": "Xodim va smena boshqaruvi",
+        "f5": "Moliya va kassa oqimi",
+        "f6": "Hisobotlar va tahlillar",
+        "f7": "Marketing (SMS va Telegram)"
+      },
+      "cta": "Konsultatsiyaga ariza qoldirish"
+    },
+    "demand": {
+      "title": "chakana sotuvchi har kuni demo soʻraydi",
+      "body": "Butun Markaziy Osiyodagi doʻkon egalari zamonaviy dastur izlayapti. Hamkorlar bu kiruvchi oqimga ulanadi — sovuq qoʻngʻiroq qilish shart emas."
+    },
+    "benefits": {
+      "eyebrow": "Afzalliklar",
+      "title": "Nega Savdo bilan hamkor boʻlish kerak",
+      "items": {
+        "b1": "Chakana avtomatlashtirish sohasidagi eng yaxshi mahsulotlardan biri",
+        "b2": "Toʻliq ishga tushirish va sozlash — A dan Z gacha oʻqitamiz",
+        "b3": "Mijozlarni jalb qilish va doimiy yordam",
+        "b4": "Yollash va jamoani kengaytirishda yordam",
+        "b5": "$500 va oyiga 10 soat bilan ishga tushirish",
+        "b6": "2-oydan foyda — tez payback"
+      },
+      "cta": "Ariza qoldirish"
+    },
+    "types": {
+      "eyebrow": "Ikki hamkorlik turi",
+      "title": "Vaqtingiz va kapitalingizga mos trekni tanlang",
+      "subtitle": "Ikki trek ham ulash, nomenklatura va uskunadan daromad oladi. Faqat Sotuv hamkorlari obuna daromadidan ulush oladi.",
+      "popular": "Eng mashhur",
+      "apply": "Bu trekga ariza qoldirish",
+      "revenue": "Daromad manbalari",
+      "labels": {
+        "investment": "Sarmoya",
+        "time": "Oylik vaqt",
+        "clients": "Oylik mijoz"
+      },
+      "time": {
+        "service": "20–30 soat",
+        "sales": "100 soat"
+      },
+      "tracks": {
+        "service": {
+          "tag": "Servis hamkor",
+          "name": "Servis hamkor",
+          "description": "Mijozlarni ulash, oʻqitish va qoʻllab-quvvatlash bilan shugʻullanadi. Kam sarmoya, egiluvchan jadval, barqaror qoʻshimcha daromad."
+        },
+        "sales": {
+          "tag": "Sotuv hamkori",
+          "name": "Sotuv hamkori",
+          "description": "Mijozlarni sotadi, ulaydi va xizmat qiladi. Yuqori sarmoya va soatlar — lekin birinchi yilda obuna daromadining 50% ini olasiz."
+        }
+      },
+      "revenueItems": {
+        "r1": "Qoʻldan qoʻlga ulash va oʻqitish",
+        "r2": "Tovar roʻyxatini tuzish",
+        "r3": "Uskuna sotish (POS / skaner / printer)",
+        "r4": "Portfel daromadi (100+ mijoz)",
+        "r5": "Obuna daromadi ulushi (1-yil)"
+      }
+    },
+    "calculator": {
+      "eyebrow": "Daromad kalkulyatori",
+      "title": "Birinchi yilgi daromadni modellang",
+      "subtitle": "Sotuv hamkori sifatida birinchi yilda obuna daromadining 50% ini olasiz. Slayderni harakatlantiring.",
+      "country": "Mamlakatingizni tanlang",
+      "stores": "Birinchi yilda ulaydigan doʻkonlar",
+      "monthlyEarnings": "Oylik komissiya (barqaror)",
+      "yearOne": "Birinchi yil umumiy daromad",
+      "arpuNote": "Hisob: doʻkonlar × {value} ARPU × 50% komissiya (Sotuv hamkori, 1-yil).",
+      "disclaimer": "Hisoblar Savdo Pro tarifidagi ARPU ga asoslangan. Haqiqiy natijalar upsell, churn va uskuna/ulash qoʻshimchalaridan farq qiladi.",
+      "countries": { "tj": "🇹🇯 TJ", "uz": "🇺🇿 UZ", "kz": "🇰🇿 KZ", "kg": "🇰🇬 KG" }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Tez-tez beriladigan savollar",
+      "items": {
+        "q1": { "q": "Yuridik shaxs kerakmi?", "a": "Sotuv hamkori treki uchun ha (YT / OOO / TOO). Servis hamkori uchun shaxsiy shartnoma yetarli." },
+        "q2": { "q": "Komissiya qachon boshlanadi?", "a": "Komissiya mijoz Savdo dan faol 7 kundan keyin toʻlanadi. Keyin obuna daromadi birinchi 12 oy davomida siz bilan oylik bazada boʻlinadi." },
+        "q3": { "q": "Toʻlovni qanday va qachon olaman?", "a": "Oyning 1-sida hisoblanadi, 10-gacha toʻlanadi. Bank, Payme, Click, Alif yoki Korti Milli." },
+        "q4": { "q": "Doʻkon ulagandan keyin ketsa nima boʻladi?", "a": "Komissiya faqat doʻkon haqiqatan toʻlagan oylar uchun. Qaytarish yoʻq — topganingiz sizniki." },
+        "q5": { "q": "Uskuna oʻrnatish kerakmi?", "a": "Yoʻq — Savdo doʻkonning planshet, noutbuk yoki telefonida ishlaydi. Lekin uskuna (skaner, printer, chek qogʻozi) sotish sizning qoʻshimcha daromad manbalaringizdan biri." },
+        "q6": { "q": "Doʻkondan ulash uchun pul olsa boʻladimi?", "a": "Ha — hamkorlar odatda qoʻldan qoʻlga ulash uchun $50–100, nomenklatura uchun kuniga $20 oladi. 100% sizniki." }
+      }
+    },
+    "apply": {
+      "eyebrow": "Ariza",
+      "title": "Hamkorlik dasturiga ariza topshirish",
+      "subtitle": "Formani toʻldiring va hamkorlik jamoamiz 48 soat ichida bepul konsultatsiya oʻtkazadi.",
+      "form": {
+        "name": "Toʻliq ism",
+        "namePh": "Ism va familiya",
+        "phone": "Telefon raqami",
+        "motivation": "Nega hamkor boʻlmoqchisiz?",
+        "motivationPh": "Maqsadlaringiz haqida ayting",
+        "hasBusiness": "Hozir bizneslaringiz bormi?",
+        "yes": "Ha",
+        "no": "Yoʻq",
+        "experience": "Chakana yoki sotuvdagi tajribangiz qanday?",
+        "experiencePh": "Avval nima qilganingizni tasvirlang",
+        "investment": "Sarmoya qilishingiz mumkin (USD)",
+        "hours": "Haftada ajrata oladigan soatlar",
+        "city": "Qaysi shahardasiz?",
+        "cityPh": "masalan, Dushanbe, Toshkent, Olmaota",
+        "submit": "Arizani yuborish",
+        "or": "yoki Telegram orqali yozing"
+      }
+    }
+  },
+  "investors": {
+    "seo": {
+      "title": "Investorlarga — Savdo",
+      "description": "Savdo Markaziy Osiyodagi 2,4 mln+ kichik chakana sotuvchi uchun operatsion tizim quradi — $87 mlrd bozor, bulutli POS yillik 18% oʻsishi bilan."
+    },
+    "hero": {
+      "eyebrow": "Investor taqdimoti · 2026",
+      "title": "2,4 million kichik doʻkonni yirik tarmoqlar bilan raqobatlasha oladigan qilyapmiz.",
+      "subtitle": "Savdo — Markaziy Osiyo chakana savdosi uchun operatsion tizim: kassa, ombor, CRM, moliya va marketing bitta bulutli platformada. Xoʻjandlik kichik butik ham supermarket tarmogʻi bilan bir xil vositalarga ega boʻladi.",
+      "ctaPrimary": "Biz bilan bogʻlanish",
+      "ctaSecondary": "Dekani yuklab olish",
+      "stats": {
+        "retail": "Markaziy Osiyo chakana savdo aylanmasi (2024)",
+        "smbs": "Ishga tushirilgan bozorlardagi KOBlar",
+        "cagr": "Global bulutli POS yillik oʻsishi 2030 gacha",
+        "markets": "bozor (UZ · KZ · KG · TJ)"
+      }
+    },
+    "mission": {
+      "eyebrow": "Missiya",
+      "title": "Kichik biznes ham korporativ vositalarga loyiq.",
+      "body": "Katta tarmoqlar milliarddollarlik dasturlarda ishlaydi. Qoʻshni oilaviy doʻkon esa qoldiqlarni qogʻozda hisoblab, mijozlarni yoʻqotadi. Savdo shu farqni yopadi — bitta bulutli platforma 15 daqiqada yolgʻiz doʻkonni boshqariladigan biznesga aylantiradi."
+    },
+    "opportunity": {
+      "eyebrow": "Bozor",
+      "title": "$87 mlrdlik chakana bozor, avtomatlashtirilmagan va tez raqamlashmoqda.",
+      "subtitle": "Markaziy Osiyo — soʻnggi katta avtomatlashtirilmagan chakana hudud va eng tez raqamlashayotgani.",
+      "tam": {
+        "tag": "TAM",
+        "value": "$87 mlrd+",
+        "title": "Umumiy chakana aylanma",
+        "description": "Oʻzbekiston, Qozogʻiston, Qirgʻiziston va Tojikistonning 2024 yilgi chakana aylanmasi."
+      },
+      "sam": {
+        "tag": "SAM",
+        "value": "2,4 mln+",
+        "title": "Kichik va oʻrta chakana",
+        "description": "Ishga tushirilgan bozorlarda roʻyxatdan oʻtgan KOBlar — 1C va korporativ POSlar eʼtibor bermagan auditoriya."
+      },
+      "som": {
+        "tag": "SOM (5 yil)",
+        "value": "40 000",
+        "title": "2030 ga qadar doʻkonlar",
+        "description": "ARPU $50/oy da ~1,7% ulush — 2030 yilgi aniq maqsadimiz."
+      },
+      "table": {
+        "country": "Mamlakat",
+        "smbs": "KOB / kichik korxonalar",
+        "retail": "Chakana aylanma 2024",
+        "internet": "Internet qamrovi"
+      },
+      "countries": {
+        "uz": "🇺🇿 Oʻzbekiston",
+        "kz": "🇰🇿 Qozogʻiston",
+        "kg": "🇰🇬 Qirgʻiziston",
+        "tj": "🇹🇯 Tojikiston"
+      },
+      "sources": "Manbalar: Oʻzbekiston Statistika Agentligi (2025), Qozogʻiston Milliy Statistika Byurosi (2024), NSC Qirgʻiziston (2025), Trend.az / EBRD Tojikiston (2024–25), DataReportal Digital 2024."
+    },
+    "problem": {
+      "eyebrow": "Muammo",
+      "title": "Kichik doʻkonlar miqyosga yutqazmoqda — sababini bilmasdan.",
+      "body": "Dushanbedagi butik nima sotilayotganini, nima oʻlik qoldiq ekanini, qaysi mijoz qaytmaganini bilmaydi. Katta tarmoqlar biladi. Shu axborot farqi — KOBlarning yopilishining asosiy sababi.",
+      "pains": {
+        "p1": {
+          "title": "Ombor koʻrinmaydi",
+          "body": "Koʻpchilik KOBlar qoldiqlarni qogʻoz yoki bitta Excel’da yuritadi — eng yaxshisi haftada bir, nuqtalar oʻrtasida solishtirish imkonsiz."
+        },
+        "p2": {
+          "title": "Mijoz xotirasiz",
+          "body": "Doimiy xaridorlar anonim. Sadoqat, segmentatsiya, qayta faollashtirish yoʻq."
+        },
+        "p3": {
+          "title": "Moliya — sezgi bilan",
+          "body": "Egalar daromadni biladi, marjani — yoʻq. KOB yopilishlarining 40% — kassa oqimi muammolari."
+        },
+        "p4": {
+          "title": "Notoʻgʻri dastur",
+          "body": "1C — IT kontragenti va litsenziya talab qiladi. Global SaaS (Shopify, Lightspeed) — faqat inglizcha va karta-birinchi, naqd pulli MO bozoriga yaramaydi."
+        }
+      },
+      "quote": {
+        "label": "Dala suhbatidan",
+        "text": "Yiliga taxminan 15% tovarni shrinkage’ga yoʻqotar ekanman — Savdo’dagi birinchi hisobotni koʻrmaguncha bilmadim.",
+        "author": "Doʻkon egasi intervyusi, Dushanbe 2025"
+      }
+    },
+    "solution": {
+      "eyebrow": "Yechim",
+      "title": "Bitta platforma, Markaziy Osiyoning haqiqiy savdosiga moslashtirilgan.",
+      "subtitle": "Global SaaS qilmaydigan toʻrt narsa.",
+      "items": {
+        "s1": {
+          "title": "Birinchi kundan toʻrt til",
+          "body": "Tojikcha, ruscha, oʻzbekcha, inglizcha — har xodim uchun. Bu stekni boshqa hech kim tabiiy qoplamaydi."
+        },
+        "s2": {
+          "title": "Oflayn-first kassa",
+          "body": "Tojikistonda internet 42% ga yaqin — kassamiz aloqa yoʻqolganda sotishda davom etadi va qaytganda sinxronlashadi."
+        },
+        "s3": {
+          "title": "Mahalliy toʻlov va soliq",
+          "body": "Humo, Alif, Korti Milli, Payme, Click — qutidan. Mahalliy fiskalizatsiyaga moslik."
+        },
+        "s4": {
+          "title": "Naqd pulli chakana uchun",
+          "body": "Naqd boshqaruvi, taʼminotchi qarzlari, norasmiy ulgurji — tabiiy tarzda modellangan."
+        }
+      }
+    },
+    "whynow": {
+      "eyebrow": "Nega hozir",
+      "title": "Oyna hozirgina ochildi.",
+      "items": {
+        "w1": {
+          "stat": "18,2%",
+          "label": "Global bulutli POS CAGR · 2025–2030",
+          "body": "Bulutli POS desktop legacy’ni almashtirmoqda. Osiyo-Tinch okeani — 19,6% bilan yetakchi, MO esa qoʻshnilardan ortda qolgan."
+        },
+        "w2": {
+          "stat": "96% / 83%",
+          "label": "Internet qamrovi · KZ / UZ (2024)",
+          "body": "Raqamli relslar tayyor — asosiy bozorlarimiz endi bulutli SaaS ishlashi uchun yetarli ulanishga ega."
+        },
+        "w3": {
+          "stat": "Billz → TBC",
+          "label": "Eksit isboti · 2025 iyun",
+          "body": "Eng yaqin raqibimiz Billz (4000+ doʻkon) 2025 oʻrtasida TBC Bank Group tomonidan sotib olindi — tezis va kategoriya narxini tasdiqladi."
+        }
+      }
+    },
+    "traction": {
+      "eyebrow": "Traksiya va reja",
+      "title": "500 dan 40 000 ga aniq yoʻl.",
+      "subtitle": "5 yillik yoʻlimiz Billz traektoriyasini takrorlaydi — kengroq geografiya va kuchliroq mahalliy mahsulot bilan.",
+      "kpis": {
+        "kpi1": { "label": "Faol doʻkonlar", "value": "120", "delta": "+28% MoM" },
+        "kpi2": { "label": "Sof daromad saqlanishi", "value": "118%", "delta": "Pro/Businessga upsell" },
+        "kpi3": { "label": "CAC qaytishi", "value": "5 oy", "delta": "ARPU $50 da" }
+      },
+      "chart": {
+        "title": "Savdo’dagi doʻkonlar",
+        "subtitle": "Reja · toʻlovchi mijozlar, yil oxirida",
+        "tag": "Prognoz",
+        "calloutLabel": "2030 ga qadar:",
+        "callout": "40 000 doʻkon ≈ 2,4 mln KOB bozorining 1,7% — Billz’ning torroq geografiyadagi 4000 doʻkonli eksitiga nisbatan konservativ."
+      }
+    },
+    "roadmap": {
+      "eyebrow": "Yoʻl xaritasi",
+      "title": "Keyingi 24 oy qanday koʻrinadi.",
+      "items": {
+        "r1": {
+          "when": "2-chor. 2026",
+          "title": "Tojikiston GA · 500 doʻkon",
+          "body": "Dushanbe va Xoʻjandda ishga tushirish. Mahalliy toʻlovlar (Alif, DC, Humo) va TJ fiskalizatsiyasi jangda."
+        },
+        "r2": {
+          "when": "4-chor. 2026",
+          "title": "Oʻzbekiston · koʻp valyuta",
+          "body": "Toshkentda ofis. UZS/TJS/USD, Payme + Click + Uzum. 2027 oxirida 2500 doʻkon."
+        },
+        "r3": {
+          "when": "2027",
+          "title": "Qozogʻiston va Qirgʻiziston",
+          "body": "Olmaota va Bishkekka kengayish. Ombor moduli, B2B taʼminotchi marketpleysi. Maqsad — 8000 doʻkon."
+        },
+        "r4": {
+          "when": "2028+",
+          "title": "Embedded finance",
+          "body": "Tranzaksiya maʼlumotlari asosida savdogarlarga aylanma kredit — Billz→TBC pleybukini oʻz shartlarimizda monetizatsiya qilamiz."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Jamoa",
+      "title": "Bu bozorga mahsulot yetkazib bergan quruvchilar.",
+      "body": "Asoschilar jamoasi chakana operatsiyalar, toʻlov infratuzilmasi va MDH boʻylab koʻp tilli mahsulot muhandisligi sohalarida tajribaga ega."
+    },
+    "ask": {
+      "eyebrow": "Soʻrov",
+      "title": "Seed raundi ochyapmiz.",
+      "body": "Frontir bozor SaaS’ini tushunadigan va birinchi kundan kategoriya yetakchisini qoʻllab-quvvatlashga tayyor hamkorlarni izlaymiz.",
+      "raising": { "label": "Jalb qilyapmiz", "value": "$2.5M" },
+      "stage": { "label": "Bosqich", "value": "Seed" },
+      "use": { "label": "Sarflash", "value": "Muhandislik (45%) · Sotuv UZ+KZ (35%) · Operatsiyalar (20%)" },
+      "runway": { "label": "Runway", "value": "24 oy" },
+      "form": {
+        "title": "Asoschilar bilan gaplashing",
+        "subtitle": "Ish kunlari 48 soat ichida javob beramiz.",
+        "name": "Ismingiz",
+        "fund": "Kompaniya / fond",
+        "email": "Email",
+        "message": "Nimani muhokama qilmoqchisiz?",
+        "submit": "Tanishtirish soʻrash",
+        "or": "yoki toʻgʻridan-toʻgʻri yozing"
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "Markaziy Osiyo chakana savdosi uchun OS",
+    "title": "Doʻkoningiz uchun superkuch",
+    "subtitle": "Kassa, ombor, CRM va moliya uchun bitta bulutli platforma — Tojikiston, Oʻzbekiston, Qozogʻiston va Qirgʻizistondagi chakana sotuvchilar uchun.",
+    "ctaPrimary": "Bepul boshlash",
+    "ctaSecondary": "Tariflarni koʻrish",
+    "ctaNote": "14 kun bepul · Kartasiz · 15 daqiqada sozlash",
+    "chips": {
+      "offline": "Oflayn ishlaydi",
+      "currencies": "TJS · UZS · KZT · KGS"
+    }
+  },
+  "trust": {
+    "rating": "4.9 / 5",
+    "stores": "5000+ doʻkon Savdo bilan ishlaydi"
+  },
+  "showcase": {
+    "eyebrow": "Savdo amalda",
+    "title": "Bitta platforma — doʻkoningiz ishlaydigan hamma joyda",
+    "subtitle": "Planshetda kassa, telefonda ombor, noutbukda tahlil — maʼlumotlar avtomatik sinxronlashadi.",
+    "items": {
+      "pos": {
+        "tag": "Kassa",
+        "title": "Planshetda tez kassa",
+        "description": "Planshet, noutbuk yoki telefonda soting. Sodda interfeys — kassirni 10 daqiqada oʻrgating.",
+        "points": {
+          "p1": "Oflayn ishlaydi va avtomatik sinxronlashadi",
+          "p2": "Shtrix-kod skaneri, tarozi, fiskal printer",
+          "p3": "Naqd, karta va onlayn toʻlovlarni qabul qiladi"
+        }
+      },
+      "mobile": {
+        "tag": "Mobil ilova",
+        "title": "Doʻkonni telefondan boshqaring",
+        "description": "Savdo, qoldiq va xodimlarni istalgan joydan nazorat qiling. Real vaqtda xabarnomalar.",
+        "points": {
+          "p1": "iOS va Android uchun ilovalar",
+          "p2": "Telefon kamerasi orqali tovar qabul qilish",
+          "p3": "Ilova ichida xodimlar bilan chat"
+        }
+      },
+      "analytics": {
+        "tag": "Tahlil",
+        "title": "Biznesning barcha raqamlari qoʻl ostida",
+        "description": "40+ hisobot — savdo, foyda, ABC tahlili, xodim KPI’lari. Excelga bir marta bosish bilan eksport.",
+        "points": {
+          "p1": "Real vaqtda dashbordlar",
+          "p2": "Xarid va aylanma bashorati",
+          "p3": "Xodim va smenalar boʻyicha hisobotlar"
+        }
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Imkoniyatlar",
+    "title": "Bitta dastur — barcha doʻkon vazifalari",
+    "subtitle": "Savdo oʻnlab alohida vositalarni almashtiradi va ularni yagona boshqaruv tizimiga birlashtiradi.",
+    "more": "Barcha imkoniyatlar",
+    "items": {
+      "inventory": {
+        "title": "Tovar hisobi",
+        "description": "Tovarlarni skaner qiling, qabul qiling va nuqtalar oʻrtasida koʻchiring. Qoldiqlar real vaqtda.",
+        "stat": "−40% inventarizatsiya vaqti"
+      },
+      "customers": {
+        "title": "CRM va sadoqat",
+        "description": "Mijozlar bazasi, bonuslar, segmentatsiya va xabarlar. Xaridorlarni qaytaring va oʻrtacha chekni oshiring.",
+        "stat": "+30% takroriy savdo"
+      },
+      "pos": {
+        "title": "Kassa va savdo",
+        "description": "Noutbuk, planshet yoki telefonda tez kassa. Internetsiz ishlaydi va avtomatik sinxronlashadi.",
+        "stat": "<3 soniya savdo"
+      },
+      "analytics": {
+        "title": "Hisobotlar va tahlillar",
+        "description": "40+ hisobot: savdo, foyda, ABC tahlili, xodim KPI’lari. Faktlarga asoslangan qarorlar.",
+        "stat": "40+ tayyor hisobot"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "SMS va Telegram xabarlari, kuponlar, sovgʻa sertifikatlari va aksiyalar. Uchinchi xizmatlarsiz.",
+        "stat": "Marketing ROI ×3"
+      },
+      "finance": {
+        "title": "Moliya",
+        "description": "Kassalar, hisoblar, qarzlar va xarajatlar. Pul oqimini nazorat qiling va haqiqiy foydani biling.",
+        "stat": "Onlayn P&L"
+      }
+    }
+  },
+  "solutions": {
+    "eyebrow": "Yechimlar",
+    "title": "Har qanday doʻkon turi uchun",
+    "subtitle": "Savdo biznesingizga moslashadi — butikdan dorixona tarmogʻigacha.",
+    "learnMore": "Batafsil",
+    "items": {
+      "clothing": { "title": "Kiyim-kechak", "description": "Oʻlchamlar, ranglar, mavsumlar va chegirmalar nazoratda." },
+      "shoes": { "title": "Poyabzal", "description": "Juftlab saqlash, oʻlcham jadvallari, mavsumiy kolleksiyalar." },
+      "cosmetics": { "title": "Kosmetika", "description": "Yaroqlilik muddati, partiyalar, aksiya va testerlar." },
+      "electronics": { "title": "Elektronika", "description": "IMEI, seriya raqamlari, kafolat va servis." },
+      "grocery": { "title": "Oziq-ovqat", "description": "Tortiladigan tovarlar, muddatlar, aksiyalar, tez kassa." },
+      "pharmacy": { "title": "Dorixonalar", "description": "Partiyalar, muddatlar, retseptlar va hisob." },
+      "sports": { "title": "Sport tovarlari", "description": "Oʻlchamlar, toʻplamlar, mavsum va ijara." },
+      "kids": { "title": "Bolalar tovarlari", "description": "Yosh guruhlari, oʻlchamlar, onalar uchun bonuslar." }
+    }
+  },
+  "integrations": {
+    "eyebrow": "Bizga ishonadi",
+    "title": "Savdo bilan ishlayotgan brendlar",
+    "subtitle": "Oilaviy butiklardan oʻsayotgan tarmoqlargacha — butun Markaziy Osiyo boʻylab."
+  },
+  "testimonials": {
+    "eyebrow": "Mijozlar",
+    "title": "Minglab doʻkonlar ishonadi",
+    "subtitle": "Savdo bilan oʻsgan tadbirkorlarning hikoyalari.",
+    "items": {
+      "one": {
+        "quote": "Savdo bilan olti oyda ikkinchi nuqta ochdik. Hisobotlar aniq, ombor nazoratda, kassa hatto internetsiz ham ishlaydi.",
+        "name": "Aziza Rahimova",
+        "role": "Kiyim-kechak tarmogʻi, Dushanbe"
+      },
+      "two": {
+        "quote": "1C dan Savdo ga oʻtdik — sodda, tez va litsenziyalarsiz. Qoʻllab-quvvatlash jamoasi doim yonda.",
+        "name": "Dilshod Karimov",
+        "role": "Elektronika doʻkoni, Toshkent"
+      },
+      "three": {
+        "quote": "SMS xabarlar birinchi haftadayoq qoplandi. Mijozlar qaytadi, oʻrtacha chek 22% ga oshdi.",
+        "name": "Munisa Safarova",
+        "role": "Kosmetika tarmogʻi, Xoʻjand"
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Tariflar",
+    "title": "Halol narxlar mahalliy valyutangizda",
+    "subtitle": "Tegishli darajalarda Billz’dan 20% gacha arzon. Barcha tariflarda yangilanishlar, bulut va mahalliy tilda qoʻllab-quvvatlash bor.",
+    "monthly": "Oylik",
+    "yearly": "Yillik",
+    "popular": "Mashhur",
+    "perMonth": "oy",
+    "cta": "Boshlash",
+    "addLocation": "Qoʻshimcha nuqta: {value}/oy · istalgan vaqtda tarifni oʻzgartiring.",
+    "billedYearly": "Yiliga toʻlov: {value}",
+    "billzNote": "Narxlar Billz Oʻzbekiston bilan solishtirildi (mart 2026): Start 299 000 UZS, Advanced 499 000 UZS, Pro 999 000 UZS.",
+    "countries": {
+      "tj": "Tojikiston",
+      "uz": "Oʻzbekiston",
+      "kz": "Qozogʻiston",
+      "kg": "Qirgʻiziston"
+    },
+    "plans": {
+      "start": {
+        "name": "Start",
+        "tagline": "Bitta nuqta uchun",
+        "features": {
+          "f1": "1 kassa va 1 foydalanuvchi",
+          "f2": "Tovar va ombor hisobi",
+          "f3": "Asosiy hisobotlar",
+          "f4": "Cheklar va fiskalizatsiya",
+          "f5": "Chatda qoʻllab-quvvatlash"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "Oʻsayotgan biznes uchun",
+        "features": {
+          "f1": "3 tagacha kassa va 5 foydalanuvchi",
+          "f2": "CRM va sadoqat dasturi",
+          "f3": "SMS va Telegram marketing",
+          "f4": "Kengaytirilgan tahlillar",
+          "f5": "Prioritet qoʻllab-quvvatlash"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "tagline": "Doʻkon tarmoqlari uchun",
+        "features": {
+          "f1": "Cheklanmagan kassa va foydalanuvchilar",
+          "f2": "Bir nechta ombor va koʻchirishlar",
+          "f3": "API va integratsiyalar",
+          "f4": "Korporativ hisobotlar va KPI",
+          "f5": "Shaxsiy menejer"
+        }
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Tez-tez beriladigan savollar",
+    "items": {
+      "q1": { "q": "Dasturni oʻrnatish kerakmi?", "a": "Yoʻq. Savdo brauzer va mobil ilovada ishlaydi. Faqat hisob yarating." },
+      "q2": { "q": "Kassa internetsiz ishlaydimi?", "a": "Ha. Kassa oflayn ishlaydi va aloqa tiklanganda maʼlumotlarni sinxronlashadi." },
+      "q3": { "q": "1C yoki Excel’dan maʼlumotlar qanday koʻchiriladi?", "a": "Nomenklatura, qoldiq va mijozlar jadval yoki API orqali import qilinadi. Bepul yordam beramiz." },
+      "q4": { "q": "Joriy etish qancha turadi?", "a": "Barcha tariflarda asosiy sozlash va oʻqitish bepul. Shaxsiy sozlash — soʻrov boʻyicha." },
+      "q5": { "q": "Mobil ilova bormi?", "a": "Ha, egalar va sotuvchilar uchun iOS va Android ilovalari." },
+      "q6": { "q": "Qaysi tillar qoʻllab-quvvatlanadi?", "a": "Rus, tojik, oʻzbek va ingliz. Har bir xodim oʻz tilini tanlashi mumkin." }
+    }
+  },
+  "finalCta": {
+    "title": "Doʻkoningizni zamonaviy boshqaring",
+    "subtitle": "Savdo’ni 15 daqiqada sozlang. 14 kun bepul, kartasiz, tilingizda qoʻllab-quvvatlash bilan.",
+    "ctaPrimary": "Hisob yaratish",
+    "ctaSecondary": "Demo buyurtma qilish",
+    "note": "Oʻqitish va ulash tarifga kiradi"
+  },
+  "footer": {
+    "tagline": "Doʻkon boshqaruvi uchun bulutli platforma. Ombor, kassa, CRM, moliya va marketing — bir tizimda.",
+    "contact": "Biz bilan bogʻlaning",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "cols": {
+      "solutions": "Yechimlar",
+      "why": "Nega Savdo",
+      "resources": "Resurslar",
+      "partners": "Hamkorlarga",
+      "company": "Kompaniya"
+    },
+    "links": {
+      "solutions": {
+        "clothing": "Kiyim",
+        "shoes": "Poyabzal",
+        "cosmetics": "Kosmetika",
+        "electronics": "Elektronika",
+        "grocery": "Oziq-ovqat",
+        "pharmacy": "Dorixonalar"
+      },
+      "why": {
+        "features": "Imkoniyatlar",
+        "integrations": "Integratsiyalar",
+        "security": "Xavfsizlik",
+        "mobile": "Mobil ilova"
+      },
+      "resources": {
+        "blog": "Blog",
+        "academy": "Akademiya",
+        "updates": "Yangilanishlar",
+        "support": "Qoʻllab-quvvatlash",
+        "api": "API"
+      },
+      "partners": {
+        "referral": "Referal dastur",
+        "agency": "Agentliklar uchun",
+        "affiliates": "Affiliyatlar"
+      },
+      "company": {
+        "about": "Biz haqimizda",
+        "careers": "Ish oʻrinlari",
+        "press": "Matbuot",
+        "contact": "Aloqa"
+      }
+    },
+    "legal": {
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari",
+      "cookies": "Cookies"
+    }
+  }
+}

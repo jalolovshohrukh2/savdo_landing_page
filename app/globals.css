@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --savdo: 57, 173, 168;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #0b1220;
+  background: #ffffff;
+}
+
+@layer components {
+  .container-savdo {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-savdo px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-savdo-600 focus:outline-none focus:ring-2 focus:ring-savdo focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-savdo hover:text-savdo;
+  }
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-block rounded-full bg-savdo-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-savdo-800;
+  }
+
+  .h-display {
+    @apply font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl;
+  }
+
+  .h-section {
+    @apply font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl;
+  }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.22;
+  pointer-events: none;
+}
