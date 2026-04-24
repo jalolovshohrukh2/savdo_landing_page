@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Savdo — doʻkon boshqaruv dasturi: ombor, kassa, CRM, tahlillar",
-    "description": "Savdo — Markaziy Osiyo doʻkonlari uchun bulutli avtomatlashtirish dasturi. Ombor, kassa, mijozlar, moliya va marketing bir tizimda.",
-    "keywords": "doʻkon dasturi, POS kassa, ombor hisobi, CRM, Oʻzbekiston, Tojikiston, Savdo",
+    "title": "Refresh — doʻkon boshqaruv dasturi: ombor, kassa, CRM, tahlillar",
+    "description": "Refresh — Markaziy Osiyo doʻkonlari uchun bulutli avtomatlashtirish dasturi. Ombor, kassa, mijozlar, moliya va marketing bir tizimda.",
+    "keywords": "doʻkon dasturi, POS kassa, ombor hisobi, CRM, Oʻzbekiston, Tojikiston, Refresh",
     "trial": "14 kun bepul, karta talab qilinmaydi"
   },
   "nav": {
@@ -13,16 +13,17 @@
     "faq": "Savollar",
     "investors": "Investorlarga",
     "partners": "Hamkorlarga",
-    "tryFree": "Bepul sinab koʻring"
+    "tryFree": "Bepul sinab koʻring",
+    "signIn": "Kirish"
   },
   "partners": {
     "seo": {
-      "title": "Savdo bilan $10 000 gacha ishlang — Hamkorlik dasturi",
+      "title": "Refresh bilan $10 000 gacha ishlang — Hamkorlik dasturi",
       "description": "Markaziy Osiyodagi eng yaxshi chakana avtomatlashtirish platformalaridan birini sotib IT biznesingizni boshlang. Oyiga $1 000–$10 000 daromad. 2-oydan payback."
     },
     "hero": {
       "eyebrow": "Hamkorlik dasturi",
-      "title": "Savdo bilan $10 000 gacha ishlang",
+      "title": "Refresh bilan $10 000 gacha ishlang",
       "subtitle": "Markaziy Osiyodagi eng yaxshi chakana avtomatlashtirish platformalaridan birini sotib IT sohasida biznesingizni boshlang.",
       "cards": {
         "investment": "Sarmoya",
@@ -48,7 +49,7 @@
       "cta": "Konsultatsiyaga ariza qoldirish"
     },
     "why": {
-      "eyebrow": "Nega Savdo",
+      "eyebrow": "Nega Refresh",
       "title": "Markaziy Osiyoning eng tez oʻsayotgan retail-tech platformalaridan biri",
       "subtitle": "Zamonaviy chakana savdo uchun: bulutli, koʻp valyutali, oflayn tayyor, birinchi kundan toʻrt til.",
       "stats": {
@@ -82,7 +83,7 @@
     },
     "benefits": {
       "eyebrow": "Afzalliklar",
-      "title": "Nega Savdo bilan hamkor boʻlish kerak",
+      "title": "Nega Refresh bilan hamkor boʻlish kerak",
       "items": {
         "b1": "Chakana avtomatlashtirish sohasidagi eng yaxshi mahsulotlardan biri",
         "b2": "Toʻliq ishga tushirish va sozlash — A dan Z gacha oʻqitamiz",
@@ -138,7 +139,7 @@
       "monthlyEarnings": "Oylik komissiya (barqaror)",
       "yearOne": "Birinchi yil umumiy daromad",
       "arpuNote": "Hisob: doʻkonlar × {value} ARPU × 50% komissiya (Sotuv hamkori, 1-yil).",
-      "disclaimer": "Hisoblar Savdo Pro tarifidagi ARPU ga asoslangan. Haqiqiy natijalar upsell, churn va uskuna/ulash qoʻshimchalaridan farq qiladi.",
+      "disclaimer": "Hisoblar Refresh Pro tarifidagi ARPU ga asoslangan. Haqiqiy natijalar upsell, churn va uskuna/ulash qoʻshimchalaridan farq qiladi.",
       "countries": { "tj": "🇹🇯 TJ", "uz": "🇺🇿 UZ", "kz": "🇰🇿 KZ", "kg": "🇰🇬 KG" }
     },
     "faq": {
@@ -146,10 +147,10 @@
       "title": "Tez-tez beriladigan savollar",
       "items": {
         "q1": { "q": "Yuridik shaxs kerakmi?", "a": "Sotuv hamkori treki uchun ha (YT / OOO / TOO). Servis hamkori uchun shaxsiy shartnoma yetarli." },
-        "q2": { "q": "Komissiya qachon boshlanadi?", "a": "Komissiya mijoz Savdo dan faol 7 kundan keyin toʻlanadi. Keyin obuna daromadi birinchi 12 oy davomida siz bilan oylik bazada boʻlinadi." },
+        "q2": { "q": "Komissiya qachon boshlanadi?", "a": "Komissiya mijoz Refresh dan faol 7 kundan keyin toʻlanadi. Keyin obuna daromadi birinchi 12 oy davomida siz bilan oylik bazada boʻlinadi." },
         "q3": { "q": "Toʻlovni qanday va qachon olaman?", "a": "Oyning 1-sida hisoblanadi, 10-gacha toʻlanadi. Bank, Payme, Click, Alif yoki Korti Milli." },
         "q4": { "q": "Doʻkon ulagandan keyin ketsa nima boʻladi?", "a": "Komissiya faqat doʻkon haqiqatan toʻlagan oylar uchun. Qaytarish yoʻq — topganingiz sizniki." },
-        "q5": { "q": "Uskuna oʻrnatish kerakmi?", "a": "Yoʻq — Savdo doʻkonning planshet, noutbuk yoki telefonida ishlaydi. Lekin uskuna (skaner, printer, chek qogʻozi) sotish sizning qoʻshimcha daromad manbalaringizdan biri." },
+        "q5": { "q": "Uskuna oʻrnatish kerakmi?", "a": "Yoʻq — Refresh doʻkonning planshet, noutbuk yoki telefonida ishlaydi. Lekin uskuna (skaner, printer, chek qogʻozi) sotish sizning qoʻshimcha daromad manbalaringizdan biri." },
         "q6": { "q": "Doʻkondan ulash uchun pul olsa boʻladimi?", "a": "Ha — hamkorlar odatda qoʻldan qoʻlga ulash uchun $50–100, nomenklatura uchun kuniga $20 oladi. 100% sizniki." }
       }
     },
@@ -179,13 +180,13 @@
   },
   "investors": {
     "seo": {
-      "title": "Investorlarga — Savdo",
-      "description": "Savdo Markaziy Osiyodagi 2,4 mln+ kichik chakana sotuvchi uchun operatsion tizim quradi — $87 mlrd bozor, bulutli POS yillik 18% oʻsishi bilan."
+      "title": "Investorlarga — Refresh",
+      "description": "Refresh Markaziy Osiyodagi 2,4 mln+ kichik chakana sotuvchi uchun operatsion tizim quradi — $87 mlrd bozor, bulutli POS yillik 18% oʻsishi bilan."
     },
     "hero": {
       "eyebrow": "Investor taqdimoti · 2026",
       "title": "2,4 million kichik doʻkonni yirik tarmoqlar bilan raqobatlasha oladigan qilyapmiz.",
-      "subtitle": "Savdo — Markaziy Osiyo chakana savdosi uchun operatsion tizim: kassa, ombor, CRM, moliya va marketing bitta bulutli platformada. Xoʻjandlik kichik butik ham supermarket tarmogʻi bilan bir xil vositalarga ega boʻladi.",
+      "subtitle": "Refresh — Markaziy Osiyo chakana savdosi uchun operatsion tizim: kassa, ombor, CRM, moliya va marketing bitta bulutli platformada. Xoʻjandlik kichik butik ham supermarket tarmogʻi bilan bir xil vositalarga ega boʻladi.",
       "ctaPrimary": "Biz bilan bogʻlanish",
       "ctaSecondary": "Dekani yuklab olish",
       "stats": {
@@ -198,7 +199,7 @@
     "mission": {
       "eyebrow": "Missiya",
       "title": "Kichik biznes ham korporativ vositalarga loyiq.",
-      "body": "Katta tarmoqlar milliarddollarlik dasturlarda ishlaydi. Qoʻshni oilaviy doʻkon esa qoldiqlarni qogʻozda hisoblab, mijozlarni yoʻqotadi. Savdo shu farqni yopadi — bitta bulutli platforma 15 daqiqada yolgʻiz doʻkonni boshqariladigan biznesga aylantiradi."
+      "body": "Katta tarmoqlar milliarddollarlik dasturlarda ishlaydi. Qoʻshni oilaviy doʻkon esa qoldiqlarni qogʻozda hisoblab, mijozlarni yoʻqotadi. Refresh shu farqni yopadi — bitta bulutli platforma 15 daqiqada yolgʻiz doʻkonni boshqariladigan biznesga aylantiradi."
     },
     "opportunity": {
       "eyebrow": "Bozor",
@@ -260,7 +261,7 @@
       },
       "quote": {
         "label": "Dala suhbatidan",
-        "text": "Yiliga taxminan 15% tovarni shrinkage’ga yoʻqotar ekanman — Savdo’dagi birinchi hisobotni koʻrmaguncha bilmadim.",
+        "text": "Yiliga taxminan 15% tovarni shrinkage’ga yoʻqotar ekanman — Refresh’dagi birinchi hisobotni koʻrmaguncha bilmadim.",
         "author": "Doʻkon egasi intervyusi, Dushanbe 2025"
       }
     },
@@ -318,7 +319,7 @@
         "kpi3": { "label": "CAC qaytishi", "value": "5 oy", "delta": "ARPU $50 da" }
       },
       "chart": {
-        "title": "Savdo’dagi doʻkonlar",
+        "title": "Refresh’dagi doʻkonlar",
         "subtitle": "Reja · toʻlovchi mijozlar, yil oxirida",
         "tag": "Prognoz",
         "calloutLabel": "2030 ga qadar:",
@@ -390,10 +391,10 @@
   },
   "trust": {
     "rating": "4.9 / 5",
-    "stores": "5000+ doʻkon Savdo bilan ishlaydi"
+    "stores": "5000+ doʻkon Refresh bilan ishlaydi"
   },
   "showcase": {
-    "eyebrow": "Savdo amalda",
+    "eyebrow": "Refresh amalda",
     "title": "Bitta platforma — doʻkoningiz ishlaydigan hamma joyda",
     "subtitle": "Planshetda kassa, telefonda ombor, noutbukda tahlil — maʼlumotlar avtomatik sinxronlashadi.",
     "items": {
@@ -410,7 +411,7 @@
       "mobile": {
         "tag": "Mobil ilova",
         "title": "Doʻkonni telefondan boshqaring",
-        "description": "Savdo, qoldiq va xodimlarni istalgan joydan nazorat qiling. Real vaqtda xabarnomalar.",
+        "description": "Refresh, qoldiq va xodimlarni istalgan joydan nazorat qiling. Real vaqtda xabarnomalar.",
         "points": {
           "p1": "iOS va Android uchun ilovalar",
           "p2": "Telefon kamerasi orqali tovar qabul qilish",
@@ -432,7 +433,7 @@
   "features": {
     "eyebrow": "Imkoniyatlar",
     "title": "Bitta dastur — barcha doʻkon vazifalari",
-    "subtitle": "Savdo oʻnlab alohida vositalarni almashtiradi va ularni yagona boshqaruv tizimiga birlashtiradi.",
+    "subtitle": "Refresh oʻnlab alohida vositalarni almashtiradi va ularni yagona boshqaruv tizimiga birlashtiradi.",
     "more": "Barcha imkoniyatlar",
     "items": {
       "inventory": {
@@ -470,7 +471,7 @@
   "solutions": {
     "eyebrow": "Yechimlar",
     "title": "Har qanday doʻkon turi uchun",
-    "subtitle": "Savdo biznesingizga moslashadi — butikdan dorixona tarmogʻigacha.",
+    "subtitle": "Refresh biznesingizga moslashadi — butikdan dorixona tarmogʻigacha.",
     "learnMore": "Batafsil",
     "items": {
       "clothing": { "title": "Kiyim-kechak", "description": "Oʻlchamlar, ranglar, mavsumlar va chegirmalar nazoratda." },
@@ -485,21 +486,21 @@
   },
   "integrations": {
     "eyebrow": "Bizga ishonadi",
-    "title": "Savdo bilan ishlayotgan brendlar",
+    "title": "Refresh bilan ishlayotgan brendlar",
     "subtitle": "Oilaviy butiklardan oʻsayotgan tarmoqlargacha — butun Markaziy Osiyo boʻylab."
   },
   "testimonials": {
     "eyebrow": "Mijozlar",
     "title": "Minglab doʻkonlar ishonadi",
-    "subtitle": "Savdo bilan oʻsgan tadbirkorlarning hikoyalari.",
+    "subtitle": "Refresh bilan oʻsgan tadbirkorlarning hikoyalari.",
     "items": {
       "one": {
-        "quote": "Savdo bilan olti oyda ikkinchi nuqta ochdik. Hisobotlar aniq, ombor nazoratda, kassa hatto internetsiz ham ishlaydi.",
+        "quote": "Refresh bilan olti oyda ikkinchi nuqta ochdik. Hisobotlar aniq, ombor nazoratda, kassa hatto internetsiz ham ishlaydi.",
         "name": "Aziza Rahimova",
         "role": "Kiyim-kechak tarmogʻi, Dushanbe"
       },
       "two": {
-        "quote": "1C dan Savdo ga oʻtdik — sodda, tez va litsenziyalarsiz. Qoʻllab-quvvatlash jamoasi doim yonda.",
+        "quote": "1C dan Refresh ga oʻtdik — sodda, tez va litsenziyalarsiz. Qoʻllab-quvvatlash jamoasi doim yonda.",
         "name": "Dilshod Karimov",
         "role": "Elektronika doʻkoni, Toshkent"
       },
@@ -568,7 +569,7 @@
     "eyebrow": "FAQ",
     "title": "Tez-tez beriladigan savollar",
     "items": {
-      "q1": { "q": "Dasturni oʻrnatish kerakmi?", "a": "Yoʻq. Savdo brauzer va mobil ilovada ishlaydi. Faqat hisob yarating." },
+      "q1": { "q": "Dasturni oʻrnatish kerakmi?", "a": "Yoʻq. Refresh brauzer va mobil ilovada ishlaydi. Faqat hisob yarating." },
       "q2": { "q": "Kassa internetsiz ishlaydimi?", "a": "Ha. Kassa oflayn ishlaydi va aloqa tiklanganda maʼlumotlarni sinxronlashadi." },
       "q3": { "q": "1C yoki Excel’dan maʼlumotlar qanday koʻchiriladi?", "a": "Nomenklatura, qoldiq va mijozlar jadval yoki API orqali import qilinadi. Bepul yordam beramiz." },
       "q4": { "q": "Joriy etish qancha turadi?", "a": "Barcha tariflarda asosiy sozlash va oʻqitish bepul. Shaxsiy sozlash — soʻrov boʻyicha." },
@@ -578,7 +579,7 @@
   },
   "finalCta": {
     "title": "Doʻkoningizni zamonaviy boshqaring",
-    "subtitle": "Savdo’ni 15 daqiqada sozlang. 14 kun bepul, kartasiz, tilingizda qoʻllab-quvvatlash bilan.",
+    "subtitle": "Refresh’ni 15 daqiqada sozlang. 14 kun bepul, kartasiz, tilingizda qoʻllab-quvvatlash bilan.",
     "ctaPrimary": "Hisob yaratish",
     "ctaSecondary": "Demo buyurtma qilish",
     "note": "Oʻqitish va ulash tarifga kiradi"
@@ -589,7 +590,7 @@
     "rights": "Barcha huquqlar himoyalangan.",
     "cols": {
       "solutions": "Yechimlar",
-      "why": "Nega Savdo",
+      "why": "Nega Refresh",
       "resources": "Resurslar",
       "partners": "Hamkorlarga",
       "company": "Kompaniya"

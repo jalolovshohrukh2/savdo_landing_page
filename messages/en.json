@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Savdo — All-in-one retail management: inventory, POS, CRM, analytics",
-    "description": "Savdo is cloud retail management software for Central Asia. Inventory, POS, customers, finance and marketing in one system.",
-    "keywords": "retail POS, inventory management, shop software, CRM retail, Central Asia POS, Tajikistan, Uzbekistan, Savdo",
+    "title": "Refresh — All-in-one retail management: inventory, POS, CRM, analytics",
+    "description": "Refresh is cloud retail management software for Central Asia. Inventory, POS, customers, finance and marketing in one system.",
+    "keywords": "retail POS, inventory management, shop software, CRM retail, Central Asia POS, Tajikistan, Uzbekistan, Refresh",
     "trial": "14-day free trial, no card required"
   },
   "nav": {
@@ -13,16 +13,17 @@
     "faq": "FAQ",
     "investors": "Investors",
     "partners": "Partners",
-    "tryFree": "Try for free"
+    "tryFree": "Try for free",
+    "signIn": "Sign in"
   },
   "partners": {
     "seo": {
-      "title": "Earn up to $10,000 with Savdo — Partner program",
+      "title": "Earn up to $10,000 with Refresh — Partner program",
       "description": "Start your business in IT by selling one of the best retail automation platforms in Central Asia. Earn $1,000–$10,000/month. Payback from month 2."
     },
     "hero": {
       "eyebrow": "Partner program",
-      "title": "Earn up to $10,000 with Savdo",
+      "title": "Earn up to $10,000 with Refresh",
       "subtitle": "Start your business in IT by selling one of the best retail automation platforms in Central Asia.",
       "cards": {
         "investment": "Investment",
@@ -48,7 +49,7 @@
       "cta": "Request a consultation"
     },
     "why": {
-      "eyebrow": "Why Savdo",
+      "eyebrow": "Why Refresh",
       "title": "One of the fastest-growing retail-tech platforms in Central Asia",
       "subtitle": "Built for modern retail: cloud-first, multi-currency, offline-ready, four languages out of the box.",
       "stats": {
@@ -82,7 +83,7 @@
     },
     "benefits": {
       "eyebrow": "Benefits",
-      "title": "Why partner with Savdo",
+      "title": "Why partner with Refresh",
       "items": {
         "b1": "One of the best retail-automation products on the market",
         "b2": "Full launch and process setup — we train you end-to-end",
@@ -138,7 +139,7 @@
       "monthlyEarnings": "Monthly commission (steady state)",
       "yearOne": "Year-one total earnings",
       "arpuNote": "Calculation: stores × {value} avg ARPU × 50% commission (Sales Partner, year 1).",
-      "disclaimer": "Estimates based on Savdo Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
+      "disclaimer": "Estimates based on Refresh Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
       "countries": {
         "us": "🇺🇸 USD",
         "tj": "🇹🇯 TJ",
@@ -157,7 +158,7 @@
         },
         "q2": {
           "q": "When does commission start?",
-          "a": "Commission becomes payable once the client has actively used Savdo for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
+          "a": "Commission becomes payable once the client has actively used Refresh for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
         },
         "q3": {
           "q": "How and when am I paid?",
@@ -169,7 +170,7 @@
         },
         "q5": {
           "q": "Do I have to install hardware?",
-          "a": "No — Savdo runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
+          "a": "No — Refresh runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
         },
         "q6": {
           "q": "Can I charge the shop for onboarding?",
@@ -203,13 +204,13 @@
   },
   "investors": {
     "seo": {
-      "title": "Investors — Savdo",
-      "description": "Savdo is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
+      "title": "Investors — Refresh",
+      "description": "Refresh is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
     },
     "hero": {
       "eyebrow": "Investor deck · 2026",
       "title": "Arming 2.4 million small retailers to compete with the giants.",
-      "subtitle": "Savdo is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
+      "subtitle": "Refresh is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
       "ctaPrimary": "Get in touch",
       "ctaSecondary": "Download deck",
       "stats": {
@@ -222,7 +223,7 @@
     "mission": {
       "eyebrow": "Mission",
       "title": "Small businesses deserve enterprise-grade tools.",
-      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Savdo closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
+      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Refresh closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
     },
     "opportunity": {
       "eyebrow": "Market",
@@ -284,7 +285,7 @@
       },
       "quote": {
         "label": "From the field",
-        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Savdo report.",
+        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Refresh report.",
         "author": "Shop owner interview, Dushanbe 2025"
       }
     },
@@ -342,7 +343,7 @@
         "kpi3": { "label": "Blended CAC payback", "value": "5 mo", "delta": "at $50 blended ARPU" }
       },
       "chart": {
-        "title": "Stores on Savdo",
+        "title": "Stores on Refresh",
         "subtitle": "Plan · paying customers, year-end",
         "tag": "Projection",
         "calloutLabel": "By 2030:",
@@ -414,10 +415,10 @@
   },
   "trust": {
     "rating": "4.9 out of 5",
-    "stores": "5000+ stores run on Savdo"
+    "stores": "5000+ stores run on Refresh"
   },
   "showcase": {
-    "eyebrow": "Savdo in action",
+    "eyebrow": "Refresh in action",
     "title": "One platform — everywhere your store works",
     "subtitle": "POS on tablet, inventory on phone, analytics on laptop — all data syncs automatically.",
     "items": {
@@ -456,7 +457,7 @@
   "features": {
     "eyebrow": "Features",
     "title": "One program — every store task",
-    "subtitle": "Savdo replaces a dozen disconnected tools and unifies them into a single management system.",
+    "subtitle": "Refresh replaces a dozen disconnected tools and unifies them into a single management system.",
     "more": "See all features",
     "items": {
       "inventory": {
@@ -494,7 +495,7 @@
   "solutions": {
     "eyebrow": "Solutions",
     "title": "Tuned for every store type",
-    "subtitle": "Savdo adapts to your business — from a boutique to a pharmacy chain.",
+    "subtitle": "Refresh adapts to your business — from a boutique to a pharmacy chain.",
     "learnMore": "Learn more",
     "items": {
       "clothing": { "title": "Clothing", "description": "Sizes, colors, seasons and discounts — all under control." },
@@ -509,21 +510,21 @@
   },
   "integrations": {
     "eyebrow": "Trusted by",
-    "title": "The brands that run on Savdo",
+    "title": "The brands that run on Refresh",
     "subtitle": "From family boutiques to growing retail chains across Central Asia."
   },
   "testimonials": {
     "eyebrow": "Customers",
     "title": "Trusted by thousands of stores",
-    "subtitle": "Stories from entrepreneurs who grew with Savdo.",
+    "subtitle": "Stories from entrepreneurs who grew with Refresh.",
     "items": {
       "one": {
-        "quote": "Six months with Savdo and we opened a second location. Clear reports, stock under control, and POS works even with no internet.",
+        "quote": "Six months with Refresh and we opened a second location. Clear reports, stock under control, and POS works even with no internet.",
         "name": "Aziza Rahimova",
         "role": "Clothing chain, Dushanbe"
       },
       "two": {
-        "quote": "We moved from 1C to Savdo — simpler, faster, no license fees. Support is always there.",
+        "quote": "We moved from 1C to Refresh — simpler, faster, no license fees. Support is always there.",
         "name": "Dilshod Karimov",
         "role": "Electronics store, Tashkent"
       },
@@ -593,7 +594,7 @@
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": {
-      "q1": { "q": "Do I need to install anything?", "a": "No. Savdo runs in the browser and mobile apps. Just sign up." },
+      "q1": { "q": "Do I need to install anything?", "a": "No. Refresh runs in the browser and mobile apps. Just sign up." },
       "q2": { "q": "Does POS work offline?", "a": "Yes. The register keeps working offline and syncs when you're back online." },
       "q3": { "q": "How do I migrate from 1C or Excel?", "a": "Import items, stock and customers via spreadsheets or API. We assist for free during onboarding." },
       "q4": { "q": "How much is onboarding?", "a": "Base setup and training are free on all plans. Custom configuration is available on request." },
@@ -603,7 +604,7 @@
   },
   "finalCta": {
     "title": "Run your store the modern way",
-    "subtitle": "Set up Savdo in 15 minutes. 14 days free, no card, with support in your language.",
+    "subtitle": "Set up Refresh in 15 minutes. 14 days free, no card, with support in your language.",
     "ctaPrimary": "Create account",
     "ctaSecondary": "Book a demo",
     "note": "Onboarding and training included"
@@ -614,7 +615,7 @@
     "rights": "All rights reserved.",
     "cols": {
       "solutions": "Solutions",
-      "why": "Why Savdo",
+      "why": "Why Refresh",
       "resources": "Resources",
       "partners": "Partners",
       "company": "Company"

@@ -36,25 +36,25 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-slate-100 bg-slate-50">
+    <footer className="border-t border-forest-800 bg-forest-950">
       <div className="container-savdo py-16">
         <div className="grid gap-10 lg:grid-cols-6">
           <div className="lg:col-span-2">
             <LogoWithWordmark />
-            <p className="mt-4 max-w-xs text-sm text-slate-700">{t('tagline')}</p>
+            <p className="mt-4 max-w-xs text-sm text-cream-100/70">{t('tagline')}</p>
             <div className="mt-5">
-              <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              <div className="text-xs font-semibold uppercase tracking-wider text-cream-100/60">
                 {t('contact')}
               </div>
               <a
                 href={siteConfig.phoneHref}
-                className="mt-1 block font-display text-xl font-bold text-slate-900 hover:text-savdo"
+                className="mt-1 block font-serif text-xl font-bold text-cream-100 hover:text-lime-300"
               >
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="mt-1 block text-sm text-slate-700 hover:text-savdo"
+                className="mt-1 block text-sm text-cream-100/70 hover:text-lime-300"
               >
                 {siteConfig.email}
               </a>
@@ -70,7 +70,7 @@ export function Footer() {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-600 transition hover:border-savdo hover:text-savdo"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-forest-700 bg-forest-800 text-cream-100/70 transition hover:border-lime-300 hover:text-lime-300"
                 >
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
                     <path d={s.path} />
@@ -82,11 +82,11 @@ export function Footer() {
 
           {columns.map((col) => (
             <div key={col.group}>
-              <div className="font-display text-sm font-bold text-slate-900">{col.heading}</div>
+              <div className="font-serif text-base font-bold text-lime-300">{col.heading}</div>
               <ul className="mt-4 space-y-2.5">
                 {col.items.map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-sm text-slate-700 transition hover:text-savdo">
+                    <a href="#" className="text-sm text-cream-100/75 transition hover:text-lime-300">
                       {t(`links.${col.group}.${item}`)}
                     </a>
                   </li>
@@ -96,12 +96,12 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-slate-300 pt-8 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
-          <div>© {new Date().getFullYear()} Savdo. {t('rights')}</div>
+        <div className="mt-14 flex flex-col gap-4 border-t border-forest-800 pt-8 text-sm text-cream-100/60 sm:flex-row sm:items-center sm:justify-between">
+          <div>© {new Date().getFullYear()} Refresh. {t('rights')}</div>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-savdo">{t('legal.privacy')}</a>
-            <a href="#" className="hover:text-savdo">{t('legal.terms')}</a>
-            <a href="#" className="hover:text-savdo">{t('legal.cookies')}</a>
+            <a href="#" className="hover:text-lime-300">{t('legal.privacy')}</a>
+            <a href="#" className="hover:text-lime-300">{t('legal.terms')}</a>
+            <a href="#" className="hover:text-lime-300">{t('legal.cookies')}</a>
           </div>
         </div>
       </div>

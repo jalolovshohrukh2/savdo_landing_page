@@ -10,7 +10,7 @@ export const localeNames: Record<Locale, string> = {
 };
 
 export const siteConfig = {
-  name: 'Savdo',
+  name: 'Refresh',
   url: 'https://savdo.io',
   appUrl: 'https://savdo-pos-web.vercel.app',
   phone: '+992 000 100 010',

@@ -24,7 +24,7 @@ export function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-800 transition hover:border-savdo hover:text-savdo"
+        className="flex items-center gap-1.5 rounded-full border border-forest-700 bg-forest-800 px-3 py-1.5 text-sm font-medium text-cream-100/90 transition hover:border-lime-300 hover:text-lime-300"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -36,18 +36,18 @@ export function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 mt-2 w-40 overflow-hidden rounded-xl border border-slate-300 bg-white shadow-card"
+          className="absolute right-0 mt-2 w-40 overflow-hidden rounded-xl border border-forest-700 bg-forest-900 shadow-card"
         >
           {locales.map((l) => (
             <li key={l}>
               <button
                 onClick={() => switchTo(l)}
-                className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition hover:bg-savdo-50 ${
-                  l === locale ? 'text-savdo font-semibold' : 'text-slate-800'
+                className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition hover:bg-forest-800 ${
+                  l === locale ? 'text-lime-300 font-semibold' : 'text-cream-100/85'
                 }`}
               >
                 <span>{localeNames[l]}</span>
-                <span className="text-xs uppercase text-slate-500">{l}</span>
+                <span className="text-xs uppercase text-cream-100/50">{l}</span>
               </button>
             </li>
           ))}

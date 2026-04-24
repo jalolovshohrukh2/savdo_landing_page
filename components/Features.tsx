@@ -29,15 +29,19 @@ export function Features() {
   const keys = ['inventory', 'customers', 'pos', 'analytics', 'marketing', 'finance'];
 
   return (
-    <section id="features" className="section bg-white">
+    <section id="features" className="section bg-cream-100 text-forest-950">
       <div className="container-savdo">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-900 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className="mt-4 font-serif text-4xl font-bold tracking-tight text-forest-950 sm:text-5xl">
+            {t('title')}
+          </h2>
+          <p className="mt-4 text-lg text-forest-900/80">{t('subtitle')}</p>
         </div>
 
-        <div className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {keys.map((k, i) => (
             <motion.article
               key={k}
@@ -45,16 +49,17 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.45, delay: i * 0.04 }}
+              className="rounded-3xl bg-lime-300 p-7"
             >
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-savdo-100 text-savdo-700">
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-forest-950 text-lime-300">
+                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor">
                   {ICONS[k]}
                 </svg>
               </div>
-              <h3 className="mt-5 font-display text-xl font-bold text-slate-900">
+              <h3 className="mt-5 font-serif text-2xl font-bold text-forest-950">
                 {t(`items.${k}.title`)}
               </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-slate-700">
+              <p className="mt-2 text-[15px] leading-relaxed text-forest-900/85">
                 {t(`items.${k}.description`)}
               </p>
             </motion.article>
