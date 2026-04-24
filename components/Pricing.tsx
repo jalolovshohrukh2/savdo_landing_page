@@ -89,21 +89,25 @@ export function Pricing() {
   }));
 
   return (
-    <section id="pricing" className="section bg-slate-50">
+    <section id="pricing" className="section bg-forest-900">
       <div className="container-savdo">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className="mt-4 font-serif text-4xl font-bold tracking-tight text-cream-100 sm:text-5xl">
+            {t('title')}
+          </h2>
+          <p className="mt-4 text-lg text-cream-100/80">{t('subtitle')}</p>
 
           {/* Country switcher */}
-          <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 rounded-full bg-white p-1 shadow-card">
+          <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 rounded-full bg-forest-800 p-1 ring-1 ring-forest-700">
             {visibleCountries.map((k) => (
               <button
                 key={k}
                 onClick={() => setCountry(k)}
                 className={`rounded-full px-4 py-2 text-sm font-bold transition ${
-                  country === k ? 'bg-savdo text-white' : 'text-slate-700 hover:bg-slate-50'
+                  country === k ? 'bg-lime-300 text-forest-950' : 'text-cream-100/80 hover:bg-forest-700'
                 }`}
               >
                 <span className="mr-1.5">{COUNTRIES[k].flag}</span>
@@ -113,11 +117,11 @@ export function Pricing() {
           </div>
 
           {/* Monthly / yearly toggle */}
-          <div className="mt-4 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white p-1">
+          <div className="mt-4 inline-flex items-center gap-1 rounded-full border border-forest-700 bg-forest-800 p-1">
             <button
               onClick={() => setYearly(false)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
-                !yearly ? 'bg-savdo text-white' : 'text-slate-700'
+                !yearly ? 'bg-lime-300 text-forest-950' : 'text-cream-100/80'
               }`}
             >
               {t('monthly')}
@@ -125,7 +129,7 @@ export function Pricing() {
             <button
               onClick={() => setYearly(true)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
-                yearly ? 'bg-savdo text-white' : 'text-slate-700'
+                yearly ? 'bg-lime-300 text-forest-950' : 'text-cream-100/80'
               }`}
             >
               {t('yearly')} <span className="ml-1 text-[10px] opacity-90">−20%</span>
@@ -141,30 +145,30 @@ export function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className={`relative rounded-2xl p-7 ${
+              className={`relative rounded-3xl p-7 ${
                 p.featured
-                  ? 'bg-white shadow-soft ring-2 ring-savdo lg:scale-105'
-                  : 'bg-white shadow-card'
+                  ? 'bg-lime-300 text-forest-950 lg:scale-105'
+                  : 'bg-cream-100 text-forest-950'
               }`}
             >
               {p.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-savdo px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-forest-950 px-3 py-1 text-xs font-bold uppercase tracking-wide text-lime-300">
                   {t('popular')}
                 </div>
               )}
-              <div className="font-display text-xl font-bold text-slate-900">
+              <div className="font-serif text-2xl font-bold">
                 {t(`plans.${p.key}.name`)}
               </div>
-              <div className="mt-1 text-sm text-slate-600">{t(`plans.${p.key}.tagline`)}</div>
+              <div className="mt-1 text-sm text-forest-900/70">{t(`plans.${p.key}.tagline`)}</div>
               <div className="mt-5 flex items-baseline gap-1">
-                <span className="font-display text-4xl font-extrabold text-slate-900">
+                <span className="font-serif text-4xl font-bold">
                   {c.format(p.price)}
                 </span>
-                <span className="font-display text-lg font-bold text-slate-700">{c.suffix}</span>
-                <span className="ml-1 text-slate-600">/ {t('perMonth')}</span>
+                <span className="font-serif text-lg font-bold">{c.suffix}</span>
+                <span className="ml-1 text-forest-900/70">/ {t('perMonth')}</span>
               </div>
               {yearly && (
-                <div className="mt-1 text-xs text-savdo-700">
+                <div className="mt-1 text-xs font-semibold text-forest-900/80">
                   {t('billedYearly', { value: `${c.format(p.price * 12)}${c.suffix}` })}
                 </div>
               )}
@@ -172,14 +176,18 @@ export function Pricing() {
                 href={siteConfig.appUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={p.featured ? 'btn-primary mt-6 w-full' : 'btn-secondary mt-6 w-full'}
+                className={
+                  p.featured
+                    ? 'mt-6 inline-flex w-full items-center justify-center rounded-full bg-forest-950 px-6 py-3 text-sm font-bold text-lime-300 transition hover:bg-forest-900'
+                    : 'mt-6 inline-flex w-full items-center justify-center rounded-full bg-forest-950 px-6 py-3 text-sm font-bold text-cream-100 transition hover:bg-forest-900'
+                }
               >
                 {t('cta')}
               </a>
               <ul className="mt-6 space-y-2.5">
                 {(['f1', 'f2', 'f3', 'f4', 'f5'] as const).map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-slate-800">
-                    <svg className="mt-0.5 h-4 w-4 flex-none text-savdo" viewBox="0 0 20 20" fill="currentColor">
+                  <li key={f} className="flex items-start gap-2 text-sm text-forest-900">
+                    <svg className="mt-0.5 h-4 w-4 flex-none text-forest-950" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0z" />
                     </svg>
                     {t(`plans.${p.key}.features.${f}`)}
@@ -190,10 +198,10 @@ export function Pricing() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-sm text-slate-700">
+        <p className="mt-8 text-center text-sm text-cream-100/80">
           {t('addLocation', { value: `${c.format(c.addLocation)}${c.suffix}` })}
         </p>
-        <p className="mt-2 text-center text-xs text-slate-600">{t('billzNote')}</p>
+        <p className="mt-2 text-center text-xs text-cream-100/60">{t('billzNote')}</p>
       </div>
     </section>
   );

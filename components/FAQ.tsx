@@ -10,22 +10,26 @@ export function FAQ() {
   const [open, setOpen] = useState<string | null>('q1');
 
   return (
-    <section id="faq" className="section">
+    <section id="faq" className="section bg-forest-950">
       <div className="container-savdo">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className="mt-4 font-serif text-4xl font-bold tracking-tight text-cream-100 sm:text-5xl">
+            {t('title')}
+          </h2>
         </div>
-        <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white">
+        <div className="mx-auto mt-12 max-w-3xl divide-y divide-forest-700 overflow-hidden rounded-3xl bg-forest-800 ring-1 ring-forest-700">
           {keys.map((k) => (
             <div key={k}>
               <button
                 onClick={() => setOpen(open === k ? null : k)}
                 className="flex w-full items-center justify-between px-6 py-5 text-left"
               >
-                <span className="font-semibold text-slate-900">{t(`items.${k}.q`)}</span>
+                <span className="font-semibold text-cream-100">{t(`items.${k}.q`)}</span>
                 <svg
-                  className={`h-4 w-4 text-slate-500 transition ${open === k ? 'rotate-180' : ''}`}
+                  className={`h-4 w-4 text-lime-300 transition ${open === k ? 'rotate-180' : ''}`}
                   viewBox="0 0 12 12"
                   fill="currentColor"
                 >
@@ -40,7 +44,7 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     className="overflow-hidden"
                   >
-                    <p className="px-6 pb-5 text-slate-700">{t(`items.${k}.a`)}</p>
+                    <p className="px-6 pb-5 text-cream-100/80">{t(`items.${k}.a`)}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

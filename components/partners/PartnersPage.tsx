@@ -2,12 +2,15 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useState } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+
+/* Shared tokens for the Mode-inspired theme */
+const H_SECTION = 'font-serif text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl';
+const H_SUB = 'font-serif text-3xl font-bold tracking-tight sm:text-4xl';
 
 export function PartnersPage() {
   return (
-    <>
+    <div className="bg-forest-950 text-cream-100">
       <Hero />
       <MarketPotential />
       <WhyUs />
@@ -18,21 +21,32 @@ export function PartnersPage() {
       <Calculator />
       <FAQ />
       <Apply />
-    </>
+    </div>
   );
 }
 
-/* ---------------- Repeatable CTA button ---------------- */
+/* ---------------- Repeatable CTAs ---------------- */
 function PrimaryCTA({ label }: { label: string }) {
   return (
     <a
       href="#apply"
-      className="inline-flex items-center gap-2 rounded-full bg-savdo px-7 py-3.5 text-sm font-bold text-white shadow-soft transition hover:bg-savdo-600"
+      className="inline-flex items-center gap-2 rounded-full bg-lime-300 px-7 py-3.5 text-sm font-bold text-forest-950 transition hover:bg-lime-200"
     >
       {label}
       <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="currentColor">
         <path d="M6.5 3l5 5-5 5-1.4-1.4L8.7 8 5.1 4.4 6.5 3z" />
       </svg>
+    </a>
+  );
+}
+
+function GhostCTA({ label }: { label: string }) {
+  return (
+    <a
+      href="#apply"
+      className="inline-flex items-center gap-2 rounded-full border border-lime-300/60 px-7 py-3.5 text-sm font-bold text-lime-200 transition hover:bg-lime-300 hover:text-forest-950"
+    >
+      {label}
     </a>
   );
 }
@@ -48,42 +62,107 @@ function Hero() {
     { key: 'training', value: t('cards.trainingValue') },
   ];
 
+  const bars = [
+    { h: 18, c: 'low' },
+    { h: 26, c: 'low' },
+    { h: 20, c: 'low' },
+    { h: 34, c: 'mid' },
+    { h: 30, c: 'mid' },
+    { h: 44, c: 'mid' },
+    { h: 38, c: 'hi' },
+    { h: 54, c: 'hi' },
+    { h: 48, c: 'hi' },
+    { h: 64, c: 'hi' },
+  ];
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-savdo-900 to-savdo-800 pt-20 pb-28 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_15%_10%,rgba(57,173,168,0.35),transparent_60%),radial-gradient(40%_60%_at_95%_100%,rgba(57,173,168,0.28),transparent_60%)]" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:radial-gradient(white_1px,transparent_1px)] [background-size:24px_24px]"
-      />
+    <section className="relative overflow-hidden bg-forest-950 p-3 pt-4 pb-6 sm:p-5 sm:pt-6 sm:pb-8 lg:p-6">
+      <div className="relative mx-auto max-w-7xl">
+        <div className="grid grid-cols-12 gap-3 sm:gap-4">
+          {/* Row 1 — Headline panel (lime) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="col-span-12 rounded-[28px] bg-lime-300 p-8 sm:p-12 lg:col-span-8 lg:rounded-[36px] lg:p-14"
+          >
+            <span className="inline-flex rounded-full bg-forest-950 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-lime-300">
+              {t('eyebrow')}
+            </span>
+            <h1 className="mt-6 text-4xl font-black leading-[0.95] tracking-tight text-forest-950 sm:text-5xl lg:text-6xl xl:text-[84px]">
+              {t('title')}
+            </h1>
+          </motion.div>
 
-      <div className="container-savdo relative">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider backdrop-blur">
-            {t('eyebrow')}
-          </span>
-          <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-            {t('title')}
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/85 sm:text-xl">{t('subtitle')}</p>
-        </div>
+          {/* Row 1 — Chart card (dark) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="col-span-12 flex flex-col rounded-[28px] bg-forest-800 p-6 lg:col-span-4 lg:rounded-[36px] lg:p-7"
+          >
+            <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-cream-100/60">
+              {t('cards.earnings')} · mo
+            </div>
+            <div className="mt-5 flex flex-1 items-end gap-1.5">
+              {bars.map((b, i) => (
+                <div
+                  key={i}
+                  style={{ height: `${b.h}px` }}
+                  className={`flex-1 rounded-sm ${
+                    b.c === 'hi'
+                      ? 'bg-lime-300'
+                      : b.c === 'mid'
+                      ? 'bg-lime-300/70'
+                      : 'bg-lime-300/30'
+                  }`}
+                />
+              ))}
+            </div>
+            <div className="mt-6 text-[11px] font-bold uppercase tracking-wider text-cream-100/60">
+              {t('cards.earnings')}
+            </div>
+            <div className="mt-1 text-2xl font-black text-lime-300 sm:text-3xl">
+              $1K — $10K
+            </div>
+          </motion.div>
 
-        <div className="mx-auto mt-14 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {cards.map((c, i) => (
-            <motion.div
-              key={c.key}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
-              className="rounded-2xl bg-white/10 p-6 backdrop-blur ring-1 ring-white/15"
-            >
-              <div className="font-display text-2xl font-extrabold">{c.value}</div>
-              <div className="mt-1 text-sm text-white/80">{t(`cards.${c.key}`)}</div>
-            </motion.div>
-          ))}
-        </div>
+          {/* Row 2 — Stats panel (lime, lower) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="col-span-12 rounded-[28px] bg-lime-300 p-8 sm:p-10 lg:col-span-7 lg:rounded-[36px]"
+          >
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-5">
+              {cards.map((c) => (
+                <div key={c.key}>
+                  <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-forest-950/60">
+                    {t(`cards.${c.key}`)}
+                  </div>
+                  <div className="mt-2 text-lg font-black leading-tight text-forest-950 sm:text-xl">
+                    {c.value}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
-        <div className="mt-12 flex justify-center">
-          <PrimaryCTA label={t('cta')} />
+          {/* Row 2 — Subtitle + CTAs panel (dark) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="col-span-12 flex flex-col justify-between gap-6 rounded-[28px] bg-forest-800 p-8 text-cream-100 lg:col-span-5 lg:rounded-[36px]"
+          >
+            <p className="text-base leading-relaxed text-cream-100/85 sm:text-lg">
+              {t('subtitle')}
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <PrimaryCTA label={t('cta')} />
+              <GhostCTA label={t('eyebrow')} />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
@@ -101,12 +180,14 @@ function MarketPotential() {
   ];
 
   return (
-    <section id="market" className="section bg-white">
+    <section id="market" className="bg-forest-950 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">{t('subtitle')}</p>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -117,12 +198,12 @@ function MarketPotential() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.06 }}
-              className="rounded-2xl bg-gradient-to-br from-savdo-50 to-white p-6 shadow-card ring-1 ring-slate-200/70"
+              className="rounded-3xl bg-lime-300 p-7 text-forest-950"
             >
               <div className="text-3xl">{c.flag}</div>
-              <div className="mt-4 font-display text-3xl font-extrabold text-savdo-800">{c.value}</div>
-              <div className="mt-1 text-sm font-semibold text-slate-700">{t(`countries.${c.key}`)}</div>
-              <div className="mt-1 text-xs text-slate-600">{t('annual')}</div>
+              <div className="mt-4 font-serif text-4xl font-bold">{c.value}</div>
+              <div className="mt-1 text-sm font-semibold">{t(`countries.${c.key}`)}</div>
+              <div className="mt-1 text-xs text-forest-900/70">{t('annual')}</div>
             </motion.div>
           ))}
         </div>
@@ -148,12 +229,14 @@ function WhyUs() {
   ];
 
   return (
-    <section className="section bg-slate-50">
+    <section className="bg-forest-900 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">{t('subtitle')}</p>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -164,10 +247,10 @@ function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.05 }}
-              className="rounded-2xl bg-white p-7 shadow-card"
+              className="rounded-3xl bg-forest-800 p-7 ring-1 ring-forest-700"
             >
-              <div className="font-display text-4xl font-extrabold text-savdo-700">{s.value}</div>
-              <div className="mt-2 text-sm font-semibold text-slate-800">{t(`stats.${s.key}.label`)}</div>
+              <div className="font-serif text-5xl font-bold text-lime-300">{s.value}</div>
+              <div className="mt-3 text-sm font-semibold text-cream-100">{t(`stats.${s.key}.label`)}</div>
             </motion.div>
           ))}
         </div>
@@ -186,36 +269,39 @@ function ProductFeatures() {
   const items = ['f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7'] as const;
 
   return (
-    <section className="section bg-white">
+    <section className="bg-cream-100 py-24 text-forest-950">
       <div className="container-savdo">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
-        </div>
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+          <div className="lg:col-span-5">
+            <span className="inline-block rounded-full bg-forest-900 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+              {t('eyebrow')}
+            </span>
+            <h2 className={`${H_SECTION} mt-4 text-forest-950`}>{t('title')}</h2>
+            <p className="mt-5 text-lg text-forest-900/80">{t('subtitle')}</p>
+            <div className="mt-8">
+              <PrimaryCTA label={t('cta')} />
+            </div>
+          </div>
 
-        <ul className="mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2">
-          {items.map((k, i) => (
-            <motion.li
-              key={k}
-              initial={{ opacity: 0, x: -8 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.35, delay: i * 0.04 }}
-              className="flex items-center gap-3 rounded-xl bg-slate-50 px-5 py-4"
-            >
-              <span className="inline-flex h-7 w-7 flex-none items-center justify-center rounded-full bg-savdo text-white">
-                <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="currentColor">
-                  <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0z" />
-                </svg>
-              </span>
-              <span className="font-semibold text-slate-900">{t(`items.${k}`)}</span>
-            </motion.li>
-          ))}
-        </ul>
-
-        <div className="mt-12 flex justify-center">
-          <PrimaryCTA label={t('cta')} />
+          <ul className="grid gap-3 sm:grid-cols-2 lg:col-span-7">
+            {items.map((k, i) => (
+              <motion.li
+                key={k}
+                initial={{ opacity: 0, x: -8 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: i * 0.04 }}
+                className="flex items-center gap-3 rounded-2xl bg-lime-300 px-5 py-4 text-forest-950"
+              >
+                <span className="inline-flex h-7 w-7 flex-none items-center justify-center rounded-full bg-forest-900 text-lime-300">
+                  <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="currentColor">
+                    <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0z" />
+                  </svg>
+                </span>
+                <span className="font-semibold">{t(`items.${k}`)}</span>
+              </motion.li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
@@ -226,14 +312,14 @@ function ProductFeatures() {
 function Demand() {
   const t = useTranslations('partners.demand');
   return (
-    <section className="section bg-gradient-to-br from-savdo-700 to-savdo-900 text-white">
+    <section className="bg-forest-950 py-28">
       <div className="container-savdo">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl">
-            <span className="block font-display text-6xl font-extrabold sm:text-7xl">100+</span>
-            <span className="mt-4 block">{t('title')}</span>
-          </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-white/85">{t('body')}</p>
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="inline-block rounded-3xl bg-lime-300 px-10 py-6 text-forest-950">
+            <div className="font-serif text-7xl font-extrabold sm:text-8xl">100+</div>
+          </div>
+          <h2 className={`${H_SUB} mt-8 text-cream-100`}>{t('title')}</h2>
+          <p className="mx-auto mt-6 max-w-xl text-lg text-cream-100/80">{t('body')}</p>
         </div>
       </div>
     </section>
@@ -246,11 +332,13 @@ function Benefits() {
   const items = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6'] as const;
 
   return (
-    <section className="section bg-white">
+    <section className="bg-forest-900 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
         </div>
 
         <ul className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
@@ -261,12 +349,12 @@ function Benefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="flex items-start gap-4 rounded-2xl bg-slate-50 p-6"
+              className="flex items-start gap-4 rounded-3xl bg-forest-800 p-6 ring-1 ring-forest-700"
             >
-              <span className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-savdo-100 font-display text-lg font-extrabold text-savdo-800">
+              <span className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-lime-300 font-serif text-lg font-bold text-forest-950">
                 {i + 1}
               </span>
-              <span className="text-base font-medium text-slate-900">{t(`items.${k}`)}</span>
+              <span className="text-base font-medium text-cream-100">{t(`items.${k}`)}</span>
             </motion.li>
           ))}
         </ul>
@@ -279,7 +367,7 @@ function Benefits() {
   );
 }
 
-/* ---------------- 6. Partner Types (the flagship section) ---------------- */
+/* ---------------- 6. Partner Types ---------------- */
 function PartnerTypes() {
   const t = useTranslations('partners.types');
 
@@ -314,12 +402,14 @@ function PartnerTypes() {
   ];
 
   return (
-    <section id="types" className="section bg-slate-50">
+    <section id="types" className="bg-forest-950 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">{t('subtitle')}</p>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
@@ -332,52 +422,36 @@ function PartnerTypes() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className={`relative overflow-hidden rounded-3xl p-8 sm:p-10 ${
                 tr.featured
-                  ? 'bg-gradient-to-br from-savdo to-savdo-700 text-white shadow-soft'
-                  : 'bg-white shadow-card'
+                  ? 'bg-lime-300 text-forest-950'
+                  : 'bg-cream-100 text-forest-950'
               }`}
             >
               {tr.featured && (
-                <div className="absolute right-6 top-6 rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-savdo-800">
+                <div className="absolute right-6 top-6 rounded-full bg-forest-950 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
                   {t('popular')}
                 </div>
               )}
 
-              <div
-                className={`text-xs font-bold uppercase tracking-wider ${
-                  tr.featured ? 'text-white/80' : 'text-savdo-700'
-                }`}
-              >
+              <div className="text-xs font-bold uppercase tracking-wider text-forest-900/70">
                 {t(`tracks.${tr.key}.tag`)}
               </div>
-              <h3
-                className={`mt-2 font-display text-3xl font-extrabold ${
-                  tr.featured ? 'text-white' : 'text-slate-900'
-                }`}
-              >
+              <h3 className="mt-2 font-serif text-3xl font-bold sm:text-4xl">
                 {t(`tracks.${tr.key}.name`)}
               </h3>
-              <p
-                className={`mt-2 text-base ${
-                  tr.featured ? 'text-white/85' : 'text-slate-700'
-                }`}
-              >
+              <p className="mt-2 text-base text-forest-900/80">
                 {t(`tracks.${tr.key}.description`)}
               </p>
 
               {/* Top stats row */}
-              <dl className="mt-7 grid grid-cols-3 gap-4 border-y border-white/15 py-5">
-                <Stat label={t('labels.investment')} value={tr.investment} featured={tr.featured} />
-                <Stat label={t('labels.time')} value={tr.time} featured={tr.featured} />
-                <Stat label={t('labels.clients')} value={tr.clients} featured={tr.featured} />
+              <dl className="mt-7 grid grid-cols-3 gap-4 border-y border-forest-900/20 py-5">
+                <Stat label={t('labels.investment')} value={tr.investment} />
+                <Stat label={t('labels.time')} value={tr.time} />
+                <Stat label={t('labels.clients')} value={tr.clients} />
               </dl>
 
               {/* Revenue streams */}
               <div className="mt-7">
-                <div
-                  className={`text-xs font-bold uppercase tracking-wider ${
-                    tr.featured ? 'text-white/75' : 'text-slate-500'
-                  }`}
-                >
+                <div className="text-xs font-bold uppercase tracking-wider text-forest-900/70">
                   {t('revenue')}
                 </div>
                 <ul className="mt-3 space-y-2.5">
@@ -385,21 +459,13 @@ function PartnerTypes() {
                     <li
                       key={r.k}
                       className={`flex items-center justify-between gap-4 rounded-xl px-4 py-3 ${
-                        tr.featured ? 'bg-white/10' : 'bg-slate-50'
+                        tr.featured ? 'bg-forest-950/10' : 'bg-forest-950/5'
                       }`}
                     >
-                      <span
-                        className={`text-sm font-medium ${
-                          tr.featured ? 'text-white/95' : 'text-slate-800'
-                        }`}
-                      >
+                      <span className="text-sm font-medium">
                         {t(`revenueItems.${r.k}`)}
                       </span>
-                      <span
-                        className={`font-display text-sm font-extrabold ${
-                          tr.featured ? 'text-white' : 'text-savdo-700'
-                        }`}
-                      >
+                      <span className="font-serif text-base font-bold">
                         {r.v}
                       </span>
                     </li>
@@ -411,8 +477,8 @@ function PartnerTypes() {
                 href="#apply"
                 className={
                   tr.featured
-                    ? 'mt-8 inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-bold text-savdo-800 transition hover:bg-savdo-50'
-                    : 'mt-8 inline-flex w-full items-center justify-center rounded-full bg-savdo px-6 py-3.5 text-sm font-bold text-white transition hover:bg-savdo-600'
+                    ? 'mt-8 inline-flex w-full items-center justify-center rounded-full bg-forest-950 px-6 py-3.5 text-sm font-bold text-lime-300 transition hover:bg-forest-900'
+                    : 'mt-8 inline-flex w-full items-center justify-center rounded-full bg-forest-950 px-6 py-3.5 text-sm font-bold text-cream-100 transition hover:bg-forest-900'
                 }
               >
                 {t('apply')}
@@ -425,20 +491,20 @@ function PartnerTypes() {
   );
 }
 
-function Stat({ label, value, featured }: { label: string; value: string; featured: boolean }) {
+function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className={`text-[10px] font-bold uppercase tracking-wider ${featured ? 'text-white/70' : 'text-slate-500'}`}>
+      <dt className="text-[10px] font-bold uppercase tracking-wider text-forest-900/60">
         {label}
       </dt>
-      <dd className={`mt-1 font-display text-base font-extrabold leading-tight ${featured ? 'text-white' : 'text-slate-900'}`}>
+      <dd className="mt-1 font-serif text-base font-bold leading-tight">
         {value}
       </dd>
     </div>
   );
 }
 
-/* ---------------- 7. Earnings Calculator (retained from prior build) ---------------- */
+/* ---------------- 7. Earnings Calculator ---------------- */
 type CalcCountry = 'tj' | 'uz' | 'kz' | 'kg' | 'us';
 
 const LOCALE_TO_COUNTRY: Record<string, CalcCountry> = {
@@ -464,7 +530,7 @@ function Calculator() {
 
   const fx = FX[country];
   const monthlyMrr = stores * fx.arpu;
-  const monthlyCommission = monthlyMrr * 0.5; // Sales Partner = 50% first year
+  const monthlyCommission = monthlyMrr * 0.5;
   const yearOneEarnings = monthlyCommission * 12;
   const usdYearOne = yearOneEarnings / fx.rate;
 
@@ -476,26 +542,30 @@ function Calculator() {
     locale === 'en' ? ['us', 'tj', 'uz', 'kz', 'kg'] : ['tj', 'uz', 'kz', 'kg'];
 
   return (
-    <section id="calc" className="section bg-white">
+    <section id="calc" className="bg-cream-100 py-24 text-forest-950">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-900 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-forest-950`}>{t('title')}</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-forest-900/80">{t('subtitle')}</p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-4xl rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 p-8 text-white shadow-soft sm:p-12">
+        <div className="mx-auto mt-12 max-w-4xl rounded-3xl bg-forest-950 p-8 text-cream-100 sm:p-12">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="space-y-6">
               <div>
-                <label className="text-sm font-semibold text-white/85">{t('country')}</label>
+                <label className="text-sm font-semibold text-cream-100/85">{t('country')}</label>
                 <div className={`mt-2 grid gap-2 ${calcCountries.length === 5 ? 'grid-cols-5' : 'grid-cols-4'}`}>
                   {calcCountries.map((c) => (
                     <button
                       key={c}
                       onClick={() => setCountry(c)}
                       className={`rounded-lg px-3 py-2 text-sm font-bold transition ${
-                        country === c ? 'bg-savdo text-white' : 'bg-white/10 text-white/85 hover:bg-white/20'
+                        country === c
+                          ? 'bg-lime-300 text-forest-950'
+                          : 'bg-forest-800 text-cream-100/85 hover:bg-forest-700'
                       }`}
                     >
                       {t(`countries.${c}`)}
@@ -504,9 +574,9 @@ function Calculator() {
                 </div>
               </div>
               <div>
-                <div className="flex items-center justify-between text-sm font-semibold text-white/85">
+                <div className="flex items-center justify-between text-sm font-semibold text-cream-100/85">
                   <label htmlFor="stores">{t('stores')}</label>
-                  <span className="font-display text-2xl font-extrabold text-white">{stores}</span>
+                  <span className="font-serif text-2xl font-bold text-lime-300">{stores}</span>
                 </div>
                 <input
                   id="stores"
@@ -515,40 +585,40 @@ function Calculator() {
                   max={200}
                   value={stores}
                   onChange={(e) => setStores(Number(e.target.value))}
-                  className="mt-3 w-full accent-[rgb(57,173,168)]"
+                  className="mt-3 w-full accent-lime-300"
                 />
-                <div className="mt-1 flex justify-between text-xs text-white/60">
+                <div className="mt-1 flex justify-between text-xs text-cream-100/60">
                   <span>1</span>
                   <span>200</span>
                 </div>
               </div>
-              <div className="text-xs text-white/70">{t('arpuNote', { value: formatLocal(fx.arpu) })}</div>
+              <div className="text-xs text-cream-100/70">{t('arpuNote', { value: formatLocal(fx.arpu) })}</div>
             </div>
 
             <div className="space-y-4">
-              <div className="rounded-2xl bg-white/10 p-5 backdrop-blur">
-                <div className="text-xs font-bold uppercase tracking-wider text-white/70">
+              <div className="rounded-2xl bg-forest-800 p-5 ring-1 ring-forest-700">
+                <div className="text-xs font-bold uppercase tracking-wider text-cream-100/70">
                   {t('monthlyEarnings')}
                 </div>
-                <div className="mt-1 font-display text-3xl font-extrabold">
+                <div className="mt-1 font-serif text-3xl font-bold text-cream-100">
                   {formatLocal(monthlyCommission)}
                 </div>
                 {country !== 'us' && (
-                  <div className="text-sm text-white/70">≈ {formatUsd(monthlyCommission / fx.rate)}</div>
+                  <div className="text-sm text-cream-100/70">≈ {formatUsd(monthlyCommission / fx.rate)}</div>
                 )}
               </div>
-              <div className="rounded-2xl bg-savdo p-5">
-                <div className="text-xs font-bold uppercase tracking-wider text-white/85">
+              <div className="rounded-2xl bg-lime-300 p-5 text-forest-950">
+                <div className="text-xs font-bold uppercase tracking-wider text-forest-900/70">
                   {t('yearOne')}
                 </div>
-                <div className="mt-1 font-display text-4xl font-extrabold">
+                <div className="mt-1 font-serif text-4xl font-bold">
                   {formatLocal(yearOneEarnings)}
                 </div>
                 {country !== 'us' && (
-                  <div className="text-sm text-white/85">≈ {formatUsd(usdYearOne)}</div>
+                  <div className="text-sm text-forest-900/80">≈ {formatUsd(usdYearOne)}</div>
                 )}
               </div>
-              <div className="text-xs text-white/60">{t('disclaimer')}</div>
+              <div className="text-xs text-cream-100/60">{t('disclaimer')}</div>
             </div>
           </div>
         </div>
@@ -564,29 +634,31 @@ function FAQ() {
   const [open, setOpen] = useState<string | null>('q1');
 
   return (
-    <section className="section bg-slate-50">
+    <section className="bg-forest-900 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
         </div>
-        <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 rounded-2xl bg-white shadow-card">
+        <div className="mx-auto mt-12 max-w-3xl divide-y divide-forest-700 overflow-hidden rounded-3xl bg-forest-800 ring-1 ring-forest-700">
           {keys.map((k) => (
             <div key={k}>
               <button
                 onClick={() => setOpen(open === k ? null : k)}
                 className="flex w-full items-center justify-between px-6 py-5 text-left"
               >
-                <span className="font-semibold text-slate-900">{t(`items.${k}.q`)}</span>
+                <span className="font-semibold text-cream-100">{t(`items.${k}.q`)}</span>
                 <svg
-                  className={`h-4 w-4 text-slate-500 transition ${open === k ? 'rotate-180' : ''}`}
+                  className={`h-4 w-4 text-lime-300 transition ${open === k ? 'rotate-180' : ''}`}
                   viewBox="0 0 12 12"
                   fill="currentColor"
                 >
                   <path d="M6 8.3L1.7 4l1-1L6 6.3 9.3 3l1 1L6 8.3z" />
                 </svg>
               </button>
-              {open === k && <p className="px-6 pb-5 text-slate-700">{t(`items.${k}.a`)}</p>}
+              {open === k && <p className="px-6 pb-5 text-cream-100/80">{t(`items.${k}.a`)}</p>}
             </div>
           ))}
         </div>
@@ -595,65 +667,57 @@ function FAQ() {
   );
 }
 
-/* ---------------- 9. Apply — Billz-style 8-field form ---------------- */
+/* ---------------- 9. Apply ---------------- */
 function Apply() {
   const t = useTranslations('partners.apply');
-
   const [hasBusiness, setHasBusiness] = useState<'yes' | 'no' | null>(null);
 
+  const inputCls =
+    'w-full rounded-xl bg-forest-800 px-4 py-3 text-sm font-medium text-cream-100 placeholder:text-cream-100/40 ring-1 ring-forest-700 focus:outline-none focus:ring-2 focus:ring-lime-300';
+
   return (
-    <section id="apply" className="section bg-white">
+    <section id="apply" className="bg-forest-950 py-24">
       <div className="container-savdo">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="h-section mt-4">{t('title')}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-700">{t('subtitle')}</p>
+          <span className="inline-block rounded-full bg-forest-800 px-3 py-1 text-xs font-bold uppercase tracking-wider text-lime-300">
+            {t('eyebrow')}
+          </span>
+          <h2 className={`${H_SECTION} mt-4 text-cream-100`}>{t('title')}</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">{t('subtitle')}</p>
         </div>
 
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="mx-auto mt-12 max-w-3xl rounded-3xl bg-gradient-to-br from-slate-50 to-white p-8 shadow-card ring-1 ring-slate-200/60 sm:p-10"
+          className="mx-auto mt-12 max-w-3xl rounded-3xl bg-forest-900 p-8 ring-1 ring-forest-700 sm:p-10"
         >
           <div className="grid gap-5 sm:grid-cols-2">
             <Field label={t('form.name')}>
-              <input
-                type="text"
-                className="w-full rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-                placeholder={t('form.namePh')}
-              />
+              <input type="text" className={inputCls} placeholder={t('form.namePh')} />
             </Field>
             <Field label={t('form.phone')}>
               <div className="flex gap-2">
-                <select className="rounded-xl bg-white px-3 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo">
+                <select className={inputCls + ' max-w-[130px]'}>
                   <option>🇹🇯 +992</option>
                   <option>🇺🇿 +998</option>
                   <option>🇰🇿 +7</option>
                   <option>🇰🇬 +996</option>
                 </select>
-                <input
-                  type="tel"
-                  className="flex-1 rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-                  placeholder="00 000 00 10"
-                />
+                <input type="tel" className={inputCls} placeholder="00 000 00 10" />
               </div>
             </Field>
           </div>
 
           <Field className="mt-5" label={t('form.motivation')}>
-            <textarea
-              rows={3}
-              className="w-full rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-              placeholder={t('form.motivationPh')}
-            />
+            <textarea rows={3} className={inputCls} placeholder={t('form.motivationPh')} />
           </Field>
 
           <Field className="mt-5" label={t('form.hasBusiness')}>
-            <div className="inline-flex rounded-full bg-white p-1 ring-1 ring-slate-300">
+            <div className="inline-flex rounded-full bg-forest-800 p-1 ring-1 ring-forest-700">
               <button
                 type="button"
                 onClick={() => setHasBusiness('yes')}
                 className={`rounded-full px-6 py-2 text-sm font-bold transition ${
-                  hasBusiness === 'yes' ? 'bg-savdo text-white' : 'text-slate-700'
+                  hasBusiness === 'yes' ? 'bg-lime-300 text-forest-950' : 'text-cream-100/80'
                 }`}
               >
                 {t('form.yes')}
@@ -662,7 +726,7 @@ function Apply() {
                 type="button"
                 onClick={() => setHasBusiness('no')}
                 className={`rounded-full px-6 py-2 text-sm font-bold transition ${
-                  hasBusiness === 'no' ? 'bg-savdo text-white' : 'text-slate-700'
+                  hasBusiness === 'no' ? 'bg-lime-300 text-forest-950' : 'text-cream-100/80'
                 }`}
               >
                 {t('form.no')}
@@ -671,46 +735,33 @@ function Apply() {
           </Field>
 
           <Field className="mt-5" label={t('form.experience')}>
-            <textarea
-              rows={3}
-              className="w-full rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-              placeholder={t('form.experiencePh')}
-            />
+            <textarea rows={3} className={inputCls} placeholder={t('form.experiencePh')} />
           </Field>
 
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
             <Field label={t('form.investment')}>
               <div className="relative">
-                <span className="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-slate-500">$</span>
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-cream-100/60">$</span>
                 <input
                   type="number"
                   min="0"
-                  className="w-full rounded-xl bg-white py-3 pl-8 pr-4 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
+                  className={inputCls + ' pl-8'}
                   placeholder="500"
                 />
               </div>
             </Field>
             <Field label={t('form.hours')}>
-              <input
-                type="number"
-                min="0"
-                className="w-full rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-                placeholder="20"
-              />
+              <input type="number" min="0" className={inputCls} placeholder="20" />
             </Field>
           </div>
 
           <Field className="mt-5" label={t('form.city')}>
-            <input
-              type="text"
-              className="w-full rounded-xl bg-white px-4 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-300 focus:outline-none focus:ring-2 focus:ring-savdo"
-              placeholder={t('form.cityPh')}
-            />
+            <input type="text" className={inputCls} placeholder={t('form.cityPh')} />
           </Field>
 
           <button
             type="submit"
-            className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-savdo px-7 py-4 text-base font-bold text-white shadow-soft transition hover:bg-savdo-600"
+            className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-lime-300 px-7 py-4 text-base font-bold text-forest-950 transition hover:bg-lime-200"
           >
             {t('form.submit')}
             <svg viewBox="0 0 16 16" className="h-4 w-4" fill="currentColor">
@@ -718,12 +769,9 @@ function Apply() {
             </svg>
           </button>
 
-          <p className="mt-5 text-center text-sm text-slate-600">
+          <p className="mt-5 text-center text-sm text-cream-100/70">
             {t('form.or')}{' '}
-            <a
-              href="https://t.me/savdo_partners"
-              className="font-semibold text-savdo-700 hover:underline"
-            >
+            <a href="https://t.me/savdo_partners" className="font-semibold text-lime-300 hover:underline">
               @savdo_partners
             </a>
           </p>
@@ -744,7 +792,7 @@ function Field({
 }) {
   return (
     <label className={`block ${className}`}>
-      <span className="block text-sm font-semibold text-slate-900">{label}</span>
+      <span className="block text-sm font-semibold text-cream-100">{label}</span>
       <div className="mt-2">{children}</div>
     </label>
   );

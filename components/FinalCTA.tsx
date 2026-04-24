@@ -8,39 +8,37 @@ export function FinalCTA() {
   const t = useTranslations('finalCta');
 
   return (
-    <section id="trial" className="section">
+    <section id="trial" className="section bg-forest-950">
       <div className="container-savdo">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-savdo to-savdo-700 px-8 py-16 text-center sm:px-16"
+          className="relative overflow-hidden rounded-3xl bg-lime-300 px-8 py-16 text-center sm:px-16"
         >
-          <div className="absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
-          <div className="absolute -right-10 -bottom-10 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
           <div className="relative">
-            <h2 className="font-display text-3xl font-extrabold text-white sm:text-4xl">
+            <h2 className="font-serif text-4xl font-bold text-forest-950 sm:text-5xl lg:text-6xl">
               {t('title')}
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-white">{t('subtitle')}</p>
+            <p className="mx-auto mt-4 max-w-xl text-forest-900/80 sm:text-lg">{t('subtitle')}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href={siteConfig.appUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-savdo-700 shadow transition hover:bg-savdo-50"
+                className="inline-flex items-center justify-center rounded-full bg-forest-950 px-7 py-3 text-sm font-bold text-lime-300 transition hover:bg-forest-900"
               >
                 {t('ctaPrimary')}
               </a>
               <a
                 href="#demo"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border border-forest-950/40 px-7 py-3 text-sm font-bold text-forest-950 transition hover:bg-forest-950 hover:text-lime-300"
               >
                 {t('ctaSecondary')}
               </a>
             </div>
-            <p className="mt-4 text-sm text-white/85">{t('note')}</p>
+            <p className="mt-4 text-sm text-forest-900/70">{t('note')}</p>
           </div>
         </motion.div>
       </div>
