@@ -27,7 +27,26 @@
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json','utf8'\\)\\); console.log\\('ok'\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/ru.json','utf8'\\)\\); console.log\\('ok'\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/uz.json','utf8'\\)\\); console.log\\('ok'\\)\")",
-      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok'\\\\''\\)')"
+      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok'\\\\''\\)')",
+      "Read(//c/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/app/**)",
+      "Read(//c/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/components/cosy/**)",
+      "Read(//c/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/objective-dijkstra-1e0139/app/**)",
+      "Read(//c/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/objective-dijkstra-1e0139/components/cosy/**)",
+      "Bash(mkdir -p 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/elated-archimedes-1c141f/app/[locale]/components')",
+      "Bash(cp 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/app/[locale]/components/page.tsx' 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/elated-archimedes-1c141f/app/[locale]/components/page.tsx')",
+      "Bash(cp -r 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/components/cosy' 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/elated-archimedes-1c141f/components/cosy')",
+      "Bash(cp 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/app/[locale]/layout.tsx' 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/elated-archimedes-1c141f/app/[locale]/layout.tsx')",
+      "Bash(cp 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/cranky-joliot-913885/app/globals.css' 'C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/.claude/worktrees/elated-archimedes-1c141f/app/globals.css')",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh pr *)",
+      "PowerShell(gh pr list --head claude/elated-archimedes-1c141f --state all --json number,url,state,title)",
+      "Read(//c/Program Files/**)",
+      "Bash(env)",
+      "Bash(git credential *)",
+      "Bash(python -c \"import sys, json; data=json.load\\(sys.stdin\\); print\\(json.dumps\\([{'number':p['number'],'state':p['state'],'url':p['html_url'],'title':p['title']} for p in data], indent=2\\)\\)\")",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d.get\\(k\\) for k in ['number','html_url','state','title','message','errors']}, indent=2\\)\\)\")"
     ]
   }
 }
