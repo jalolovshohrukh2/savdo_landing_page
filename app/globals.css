@@ -54,3 +54,136 @@ body {
   opacity: 0.22;
   pointer-events: none;
 }
+
+/* === Cosy POS theme (scoped under .cosy) === */
+.cosy {
+  /* Surfaces */
+  --cosy-bg: #111315;
+  --cosy-surface: #292C2D;
+  --cosy-surface-2: #1a1c1e;
+  --cosy-surface-3: #3a3d40;
+  --cosy-line: #1e2022;
+
+  /* Text */
+  --cosy-text: #FFFFFF;
+  --cosy-muted: #989898;
+  --cosy-muted-2: #676767;
+
+  /* Pastel accents */
+  --cosy-sage: #CFDDDB;
+  --cosy-lavender: #E4CDED;
+  --cosy-blue: #C2DBE9;
+  --cosy-pink: #F1C8D0;
+  --cosy-periwinkle: #C9CAEF;
+
+  background: var(--cosy-bg);
+  color: var(--cosy-text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.cosy .cosy-h-display {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--cosy-text);
+}
+
+.cosy .cosy-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--cosy-blue);
+}
+
+.cosy .cosy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.625rem;
+  background: var(--cosy-text);
+  color: var(--cosy-bg);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background 150ms ease, transform 150ms ease;
+  cursor: pointer;
+}
+.cosy .cosy-btn:hover {
+  background: #e8e8e8;
+}
+.cosy .cosy-btn:active {
+  transform: translateY(1px);
+}
+.cosy .cosy-btn:disabled {
+  background: var(--cosy-surface);
+  color: var(--cosy-muted-2);
+  cursor: not-allowed;
+}
+
+.cosy .cosy-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--cosy-muted);
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--cosy-surface);
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+  cursor: pointer;
+}
+.cosy .cosy-btn-secondary:hover {
+  background: var(--cosy-surface);
+  color: var(--cosy-text);
+}
+
+.cosy .cosy-card {
+  background: var(--cosy-surface);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.cosy .cosy-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--cosy-lavender);
+  color: var(--cosy-bg);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.cosy .cosy-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--cosy-surface);
+  color: var(--cosy-text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+.cosy .cosy-chip:hover {
+  background: var(--cosy-surface-3);
+}
+.cosy .cosy-chip[data-active="true"] {
+  background: var(--cosy-surface);
+  box-shadow: 0 0 0 2px var(--cosy-text);
+}
+
+.cosy .cosy-shadow-soft {
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+}
