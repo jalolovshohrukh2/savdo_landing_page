@@ -1,7 +1,8 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
+import { useEffect, useMemo, useState } from 'react';
 import { siteConfig } from '@/i18n.config';
 
 export function Hero() {
@@ -58,7 +59,7 @@ export function Hero() {
               className="mt-9 flex flex-wrap items-center gap-3"
             >
               <a
-                href={siteConfig.appUrl}
+                href={siteConfig.signupFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-savdo px-7 py-3.5 text-sm font-bold text-white shadow-soft transition hover:bg-savdo-600"
@@ -89,24 +90,13 @@ export function Hero() {
               {t('ctaNote')}
             </motion.p>
 
-            {/* Capability strip (no fake user claims — just product truths) */}
+            {/* Capability strip — product truths only, no language flags */}
             <motion.ul
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.4 }}
               className="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-slate-200/70 pt-6 text-sm font-medium text-slate-700"
             >
-              {[
-                { flag: '🇹🇯', label: 'Тоҷикӣ' },
-                { flag: '🇷🇺', label: 'Русский' },
-                { flag: '🇺🇿', label: 'Oʻzbekcha' },
-                { flag: '🇬🇧', label: 'English' },
-              ].map((l) => (
-                <li key={l.label} className="flex items-center gap-1.5">
-                  <span>{l.flag}</span>
-                  <span>{l.label}</span>
-                </li>
-              ))}
               <li className="flex items-center gap-1.5 text-slate-700">
                 <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-savdo-100">
                   <svg viewBox="0 0 20 20" className="h-2.5 w-2.5" fill="rgb(57,173,168)">
@@ -122,6 +112,14 @@ export function Hero() {
                   </svg>
                 </span>
                 {t('chips.currencies')}
+              </li>
+              <li className="flex items-center gap-1.5 text-slate-700">
+                <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-savdo-100">
+                  <svg viewBox="0 0 20 20" className="h-2.5 w-2.5" fill="rgb(57,173,168)">
+                    <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0z" />
+                  </svg>
+                </span>
+                {t('chips.support')}
               </li>
             </motion.ul>
           </div>
@@ -141,8 +139,128 @@ export function Hero() {
   );
 }
 
-/* ---------- Product visual: layered UI cards ---------- */
+/* ---------- Product visual: live dashboard ---------- */
+
+const RANGES = ['1D', '7D', '1M'] as const;
+type Range = (typeof RANGES)[number];
+
+/** Locale → BCP47 for Intl.DateTimeFormat. */
+const DATE_LOCALES: Record<string, string> = {
+  tj: 'ru-RU',
+  ru: 'ru-RU',
+  uz: 'uz-UZ',
+  en: 'en-US',
+};
+
+/** Generate a smooth wavy chart path that trends upward. `phase` shifts the wave for animation. */
+function generateChartPath(range: Range, tick: number): { area: string; ribbon: string; endY: number } {
+  // Different amplitudes/roughness per range
+  const config: Record<Range, { points: number; amp: number; drift: number; start: number; end: number }> = {
+    '1D': { points: 24, amp: 6, drift: 0.8, start: 55, end: 22 },
+    '7D': { points: 14, amp: 10, drift: 1.2, start: 62, end: 14 },
+    '1M': { points: 20, amp: 8, drift: 1.5, start: 68, end: 8 },
+  };
+  const { points, amp, drift, start, end } = config[range];
+  const width = 400;
+  const step = width / (points - 1);
+  const baseline = start + Math.sin(tick * 0.3) * drift;
+
+  const pts: Array<[number, number]> = [];
+  for (let i = 0; i < points; i++) {
+    const t = i / (points - 1);
+    const x = i * step;
+    const y =
+      baseline +
+      (end - baseline) * t +
+      Math.sin(i * 0.8 + tick * 0.25) * amp * (1 - t * 0.3);
+    pts.push([x, y]);
+  }
+
+  // Smooth bezier curve through points (returns a curve path string)
+  const toCurve = (series: Array<[number, number]>) => {
+    let d = `M${series[0][0]},${series[0][1].toFixed(2)}`;
+    for (let i = 1; i < series.length; i++) {
+      const [x0, y0] = series[i - 1];
+      const [x1, y1] = series[i];
+      const cp1x = x0 + (x1 - x0) * 0.5;
+      const cp2x = x1 - (x1 - x0) * 0.5;
+      d += ` C${cp1x},${y0.toFixed(2)} ${cp2x},${y1.toFixed(2)} ${x1},${y1.toFixed(2)}`;
+    }
+    return d;
+  };
+
+  // Area fill (from line down to bottom)
+  const topCurve = toCurve(pts);
+  const area = `${topCurve} L${width},80 L0,80 Z`;
+
+  // Thin filled ribbon that approximates a 2px line (no stroke attribute used)
+  const topOffset: Array<[number, number]> = pts.map(([x, y]) => [x, y - 1]);
+  const bottomOffset: Array<[number, number]> = pts.map(([x, y]) => [x, y + 1]);
+  const topPath = toCurve(topOffset);
+  // Traverse the bottom curve in reverse so the ribbon closes cleanly
+  const reversedBottom = [...bottomOffset].reverse();
+  const bottomPath = toCurve(reversedBottom).replace(/^M/, 'L'); // continue the current sub-path
+  const ribbon = `${topPath} ${bottomPath} Z`;
+
+  const endY = pts[pts.length - 1][1];
+  return { area, ribbon, endY };
+}
+
 function ProductVisual() {
+  const locale = useLocale();
+  const [range, setRange] = useState<Range>('7D');
+  const [tick, setTick] = useState(0);
+  const [date, setDate] = useState<string>('');
+
+  // Live date on mount (avoid SSR hydration mismatch)
+  useEffect(() => {
+    const now = new Date();
+    const fmt = new Intl.DateTimeFormat(DATE_LOCALES[locale] ?? 'en-US', {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+    });
+    let formatted = fmt.format(now);
+    // Capitalize first letter (some locales return lowercase weekday)
+    formatted = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+    // Replace comma with middle-dot for consistency
+    setDate(formatted.replace(/, /g, ' · '));
+  }, [locale]);
+
+  // Tick: refresh stats + chart every 20s
+  useEffect(() => {
+    const id = setInterval(() => setTick((t) => t + 1), 20_000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Slow chart breathing: shift phase every 2s for gentle live motion
+  const [phase, setPhase] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setPhase((p) => p + 1), 2_000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Deterministic stats from tick — gently drift upward
+  const stats = useMemo(() => {
+    const t = tick;
+    const rand = (seed: number) => {
+      const x = Math.sin(seed * 9301 + 49297) * 233280;
+      return x - Math.floor(x);
+    };
+    return {
+      today: Math.round(12430 + t * 110 + rand(t + 1) * 400 - 100),
+      orders: Math.round(284 + t * 2.4 + rand(t + 2) * 8 - 2),
+      customers: Math.round(196 + t * 1.3 + rand(t + 3) * 4),
+      todayDelta: (18 + Math.sin(t * 0.4) * 3).toFixed(1),
+      ordersDelta: (12 + Math.cos(t * 0.3) * 2).toFixed(1),
+      customersDelta: (9 + Math.sin(t * 0.5) * 1.5).toFixed(1),
+    };
+  }, [tick]);
+
+  const chart = useMemo(() => generateChartPath(range, phase), [range, phase]);
+
+  const fmtNum = (n: number) => n.toLocaleString('en-US').replace(/,/g, ',');
+
   return (
     <div className="relative mx-auto h-full w-full max-w-xl lg:max-w-none">
       {/* Glow behind */}
@@ -170,8 +288,11 @@ function ProductVisual() {
               <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
                 Dashboard
               </div>
-              <div className="mt-0.5 font-display text-lg font-bold text-slate-900">
-                Thursday · April 17
+              <div
+                suppressHydrationWarning
+                className="mt-0.5 font-display text-lg font-bold text-slate-900"
+              >
+                {date || '\u00A0'}
               </div>
             </div>
             <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-savdo-100 font-display text-xs font-extrabold text-savdo-800">
@@ -179,39 +300,49 @@ function ProductVisual() {
             </div>
           </div>
 
-          {/* Stats */}
+          {/* Live stats */}
           <div className="mt-5 grid grid-cols-3 gap-3">
             {[
-              { k: 'Today', v: '$12,430', c: '+18%' },
-              { k: 'Orders', v: '284', c: '+12%' },
-              { k: 'Customers', v: '196', c: '+9%' },
+              { k: 'Today', v: `$${fmtNum(stats.today)}`, c: `+${stats.todayDelta}%` },
+              { k: 'Orders', v: fmtNum(stats.orders), c: `+${stats.ordersDelta}%` },
+              { k: 'Customers', v: fmtNum(stats.customers), c: `+${stats.customersDelta}%` },
             ].map((m) => (
               <div key={m.k} className="rounded-xl bg-white p-3.5 ring-1 ring-slate-200/70">
                 <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
                   {m.k}
                 </div>
-                <div className="mt-1 font-display text-xl font-extrabold text-slate-900">
+                <motion.div
+                  key={m.v}
+                  initial={{ opacity: 0, y: 4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="mt-1 font-display text-xl font-extrabold text-slate-900"
+                >
                   {m.v}
-                </div>
+                </motion.div>
                 <div className="mt-0.5 text-[10px] font-bold text-savdo-700">{m.c}</div>
               </div>
             ))}
           </div>
 
-          {/* Chart */}
+          {/* Chart with clickable range tabs */}
           <div className="mt-4 rounded-xl bg-white p-4 ring-1 ring-slate-200/70">
             <div className="flex items-center justify-between">
               <div className="text-xs font-bold text-slate-900">Revenue</div>
               <div className="inline-flex gap-1.5">
-                {['1D', '7D', '1M'].map((r, i) => (
-                  <span
+                {RANGES.map((r) => (
+                  <button
                     key={r}
-                    className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
-                      i === 1 ? 'bg-savdo text-white' : 'bg-slate-100 text-slate-600'
+                    type="button"
+                    onClick={() => setRange(r)}
+                    className={`rounded-full px-2 py-0.5 text-[10px] font-bold transition ${
+                      r === range
+                        ? 'bg-savdo text-white'
+                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                     }`}
                   >
                     {r}
-                  </span>
+                  </button>
                 ))}
               </div>
             </div>
@@ -222,16 +353,30 @@ function ProductVisual() {
                   <stop offset="100%" stopColor="rgb(57,173,168)" stopOpacity="0" />
                 </linearGradient>
               </defs>
-              <path
-                d="M0,62 C40,56 80,48 120,44 C160,40 200,50 240,42 C280,34 320,22 400,14 L400,80 L0,80 Z"
+              <motion.path
+                animate={{ d: chart.area }}
+                transition={{ duration: 1.8, ease: 'easeInOut' }}
                 fill="url(#revGrad)"
               />
-              <path
-                d="M0,62 C40,56 80,48 120,44 C160,40 200,50 240,42 C280,34 320,22 400,14 L400,17 C320,25 280,37 240,45 C200,53 160,43 120,47 C80,51 40,59 0,65 Z"
+              <motion.path
+                animate={{ d: chart.ribbon }}
+                transition={{ duration: 1.8, ease: 'easeInOut' }}
                 fill="rgb(57,173,168)"
               />
-              <circle cx="400" cy="14" r="4" fill="rgb(57,173,168)" />
-              <circle cx="400" cy="14" r="2" fill="white" />
+              <motion.circle
+                animate={{ cy: chart.endY }}
+                transition={{ duration: 1.8, ease: 'easeInOut' }}
+                cx="400"
+                r="4"
+                fill="rgb(57,173,168)"
+              />
+              <motion.circle
+                animate={{ cy: chart.endY }}
+                transition={{ duration: 1.8, ease: 'easeInOut' }}
+                cx="400"
+                r="2"
+                fill="white"
+              />
             </svg>
           </div>
         </div>

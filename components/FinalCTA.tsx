@@ -26,7 +26,7 @@ export function FinalCTA() {
             <p className="mx-auto mt-4 max-w-xl text-white">{t('subtitle')}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
-                href={siteConfig.appUrl}
+                href={siteConfig.signupFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-savdo-700 shadow transition hover:bg-savdo-50"

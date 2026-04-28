@@ -13,6 +13,7 @@ export const siteConfig = {
   name: 'Savdo',
   url: 'https://savdo.io',
   appUrl: 'https://savdo-pos-web.vercel.app',
+  signupFormUrl: 'https://forms.gle/savdo-signup',
   phone: '+992 000 100 010',
   phoneHref: 'tel:+992000100010',
   email: 'hello@savdo.io',

@@ -13,10 +13,15 @@ export function InvestorsPage() {
       <Mission />
       <Opportunity />
       <Problem />
+      <GrowthModel />
+      <UnitEconomics />
       <Solution />
       <WhyNow />
       <Traction />
       <Roadmap />
+      <Risks />
+      <UseOfFunds />
+      <CapTable />
       <Team />
       <Ask />
     </>
@@ -514,6 +519,445 @@ function Ask() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Growth Partnership Model ---------------- */
+function GrowthModel() {
+  const t = useTranslations('investors.growthModel');
+  const tiers = [
+    { key: 't1', featured: false },
+    { key: 't2', featured: true },
+    { key: 't3', featured: false },
+  ] as const;
+
+  return (
+    <section className="section bg-gradient-to-br from-slate-900 to-savdo-900 text-white">
+      <div className="container-savdo">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur">
+            {t('eyebrow')}
+          </span>
+          <h2 className="mt-4 font-display text-4xl font-extrabold sm:text-5xl">{t('title')}</h2>
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-white/85">{t('subtitle')}</p>
+        </div>
+
+        {/* Three pillars */}
+        <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-3">
+          {(['p1', 'p2', 'p3'] as const).map((k) => (
+            <div key={k} className="rounded-2xl bg-white/10 p-5 backdrop-blur ring-1 ring-white/15">
+              <div className="font-display text-base font-extrabold">{t(`pillars.${k}.title`)}</div>
+              <p className="mt-2 text-sm text-white/85">{t(`pillars.${k}.body`)}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Three tiers */}
+        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          {tiers.map((tier, i) => (
+            <motion.div
+              key={tier.key}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className={`relative overflow-hidden rounded-3xl p-7 ${
+                tier.featured
+                  ? 'bg-white text-slate-900 shadow-soft lg:scale-105'
+                  : 'bg-white/10 backdrop-blur ring-1 ring-white/15'
+              }`}
+            >
+              {tier.featured && (
+                <div className="absolute right-5 top-5 rounded-full bg-savdo px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+                  {t('featured')}
+                </div>
+              )}
+              <div
+                className={`text-[10px] font-bold uppercase tracking-wider ${
+                  tier.featured ? 'text-savdo-700' : 'text-savdo-200'
+                }`}
+              >
+                {t(`tiers.${tier.key}.tag`)}
+              </div>
+              <h3
+                className={`mt-2 font-display text-2xl font-extrabold ${
+                  tier.featured ? 'text-slate-900' : 'text-white'
+                }`}
+              >
+                {t(`tiers.${tier.key}.name`)}
+              </h3>
+              <p className={`mt-3 text-sm ${tier.featured ? 'text-slate-700' : 'text-white/85'}`}>
+                {t(`tiers.${tier.key}.who`)}
+              </p>
+              <div
+                className={`mt-5 text-[10px] font-bold uppercase tracking-wider ${
+                  tier.featured ? 'text-slate-500' : 'text-white/60'
+                }`}
+              >
+                {t('weProvide')}
+              </div>
+              <div className={`mt-1 text-sm ${tier.featured ? 'text-slate-800' : 'text-white/90'}`}>
+                {t(`tiers.${tier.key}.provide`)}
+              </div>
+              <div
+                className={`mt-4 text-[10px] font-bold uppercase tracking-wider ${
+                  tier.featured ? 'text-slate-500' : 'text-white/60'
+                }`}
+              >
+                {t('weEarn')}
+              </div>
+              <div
+                className={`mt-1 font-display text-base font-extrabold ${
+                  tier.featured ? 'text-savdo-700' : 'text-savdo-200'
+                }`}
+              >
+                {t(`tiers.${tier.key}.earn`)}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Investor takeaway */}
+        <div className="mx-auto mt-12 max-w-3xl rounded-2xl bg-savdo/20 p-6 text-center backdrop-blur ring-1 ring-savdo/30">
+          <p className="text-lg font-semibold text-white">{t('takeaway')}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Use of Funds ---------------- */
+function UseOfFunds() {
+  const t = useTranslations('investors.useOfFunds');
+  const rows = [
+    { key: 'r2', pct: 32, color: 'bg-savdo-700' }, // Growth Partnership fund (now the largest)
+    { key: 'r1', pct: 22, color: 'bg-savdo-500' }, // Customer acquisition (focused on TJ first)
+    { key: 'r6', pct: 14, color: 'bg-savdo-400' }, // Ops/legal/buffer
+    { key: 'r3', pct: 12, color: 'bg-savdo-300' }, // Engineering
+    { key: 'r4', pct: 10, color: 'bg-savdo-200' }, // Sales & success
+    { key: 'r5', pct: 10, color: 'bg-slate-300' }, // Hardware
+  ];
+
+  return (
+    <section className="section bg-white">
+      <div className="container-savdo">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h-section mt-4">{t('title')}</h2>
+          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-4xl">
+          {/* Stacked bar visual */}
+          <div className="flex h-14 w-full overflow-hidden rounded-full ring-1 ring-slate-200">
+            {rows.map((r) => (
+              <div
+                key={r.key}
+                className={`${r.color} flex items-center justify-center text-xs font-bold text-white`}
+                style={{ width: `${r.pct}%` }}
+              >
+                {r.pct >= 8 ? `${r.pct}%` : ''}
+              </div>
+            ))}
+          </div>
+
+          {/* Table */}
+          <div className="mt-8 rounded-2xl bg-slate-50 p-6 sm:p-8">
+            {rows.map((r, i) => (
+              <div
+                key={r.key}
+                className={`grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 py-3 ${
+                  i > 0 ? 'border-t border-slate-200' : ''
+                }`}
+              >
+                <div className={`h-3 w-3 rounded-full ${r.color}`} />
+                <div>
+                  <div className="font-semibold text-slate-900">{t(`rows.${r.key}.label`)}</div>
+                  <div className="text-xs text-slate-600">{t(`rows.${r.key}.detail`)}</div>
+                </div>
+                <div className="font-display text-lg font-extrabold text-slate-900">{r.pct}%</div>
+                <div className="font-display text-lg font-extrabold text-savdo-700">
+                  ${Math.round((r.pct / 100) * 3000)}K
+                </div>
+              </div>
+            ))}
+
+            <div className="mt-5 border-t-2 border-slate-900/10 pt-4">
+              <div className="flex items-center justify-between">
+                <div className="font-display text-lg font-bold text-slate-900">
+                  {t('totalLabel')}
+                </div>
+                <div className="font-display text-2xl font-extrabold text-savdo-800">$3M</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl bg-savdo-50 p-5 ring-1 ring-savdo-100">
+              <div className="font-display text-3xl font-extrabold text-savdo-800">64%</div>
+              <div className="mt-1 text-sm font-semibold text-slate-800">{t('callout1')}</div>
+            </div>
+            <div className="rounded-xl bg-slate-100 p-5 ring-1 ring-slate-200">
+              <div className="font-display text-3xl font-extrabold text-slate-900">24 mo</div>
+              <div className="mt-1 text-sm font-semibold text-slate-800">{t('callout2')}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Cap Table / Dilution Trajectory ---------------- */
+function CapTable() {
+  const t = useTranslations('investors.capTable');
+  const rounds = [
+    { key: 'seed', founder: 65, bearFounder: 60, investor: 25, raise: '$3M', post: '$12M' },
+    { key: 'seriesA', founder: 47, bearFounder: 40, investor: 28, raise: '$7M', post: '$28M' },
+    { key: 'seriesB', founder: 35, bearFounder: 27, investor: 42, raise: '$16M', post: '$70M' },
+    { key: 'exit', founder: 33, bearFounder: 25, investor: 45, raise: '—', post: '$120M+' },
+  ];
+
+  return (
+    <section className="section bg-slate-50">
+      <div className="container-savdo">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h-section mt-4">{t('title')}</h2>
+          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-200/70">
+          <div className="grid grid-cols-[1.4fr_0.7fr_0.9fr_0.9fr_1fr_1fr] gap-2 border-b border-slate-200 bg-slate-900 px-6 py-4 text-xs font-bold uppercase tracking-wider text-white">
+            <div>{t('stage')}</div>
+            <div className="text-center">{t('raise')}</div>
+            <div className="text-center">{t('post')}</div>
+            <div className="text-center">{t('investor')}</div>
+            <div className="text-center text-savdo-200">{t('founderBase')}</div>
+            <div className="text-center text-amber-200">{t('founderBear')}</div>
+          </div>
+          {rounds.map((r, i) => (
+            <div
+              key={r.key}
+              className={`grid grid-cols-[1.4fr_0.7fr_0.9fr_0.9fr_1fr_1fr] items-center gap-2 px-6 py-5 text-sm ${
+                i > 0 ? 'border-t border-slate-100' : ''
+              } ${r.key === 'seed' ? 'bg-savdo-50/50' : ''}`}
+            >
+              <div>
+                <div className="font-display font-bold text-slate-900">
+                  {t(`rounds.${r.key}.name`)}
+                </div>
+                <div className="text-xs text-slate-600">{t(`rounds.${r.key}.when`)}</div>
+              </div>
+              <div className="text-center font-semibold text-slate-900">{r.raise}</div>
+              <div className="text-center font-semibold text-slate-900">{r.post}</div>
+              <div className="flex items-center justify-center">
+                <div className="flex w-full items-center gap-2">
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-slate-100">
+                    <div className="h-full bg-slate-400" style={{ width: `${r.investor}%` }} />
+                  </div>
+                  <span className="w-10 text-right text-xs font-bold text-slate-700">
+                    {r.investor}%
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="flex w-full items-center gap-2">
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-slate-100">
+                    <div className="h-full bg-savdo" style={{ width: `${r.founder}%` }} />
+                  </div>
+                  <span className="w-10 text-right text-xs font-bold text-savdo-700">
+                    {r.founder}%
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="flex w-full items-center gap-2">
+                  <div className="h-2 flex-1 overflow-hidden rounded-full bg-slate-100">
+                    <div className="h-full bg-amber-500" style={{ width: `${r.bearFounder}%` }} />
+                  </div>
+                  <span className="w-10 text-right text-xs font-bold text-amber-700">
+                    {r.bearFounder}%
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-slate-600">
+          {t('footnote')}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Unit Economics (answers Buffett's CAC / LTV questions) ---------------- */
+function UnitEconomics() {
+  const t = useTranslations('investors.unitEconomics');
+
+  return (
+    <section className="section bg-white">
+      <div className="container-savdo">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h-section mt-4">{t('title')}</h2>
+          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+        </div>
+
+        {/* Pilot proof commitment */}
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-savdo-50 p-6 ring-1 ring-savdo-100 sm:p-8">
+          <div className="text-xs font-bold uppercase tracking-wider text-savdo-800">
+            {t('pilotLabel')}
+          </div>
+          <h3 className="mt-2 font-display text-xl font-bold text-slate-900 sm:text-2xl">
+            {t('pilotTitle')}
+          </h3>
+          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            {(['p1', 'p2', 'p3'] as const).map((k) => (
+              <div key={k} className="rounded-xl bg-white p-4 ring-1 ring-savdo-100">
+                <div className="font-display text-3xl font-extrabold text-savdo-800">
+                  {t(`pilot.${k}.value`)}
+                </div>
+                <div className="mt-1 text-sm font-semibold text-slate-800">
+                  {t(`pilot.${k}.label`)}
+                </div>
+                <div className="mt-1 text-xs text-slate-600">{t(`pilot.${k}.detail`)}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Unit economics grid */}
+        <div className="mx-auto mt-10 grid max-w-5xl gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {(['u1', 'u2', 'u3', 'u4'] as const).map((k, i) => (
+            <div
+              key={k}
+              className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200"
+            >
+              <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                {t(`unit.${k}.label`)}
+              </div>
+              <div className="mt-2 font-display text-3xl font-extrabold text-slate-900">
+                {t(`unit.${k}.value`)}
+              </div>
+              <div className="mt-1 text-xs text-slate-600">{t(`unit.${k}.detail`)}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Kill switches */}
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-slate-900 p-6 text-white sm:p-8">
+          <div className="text-xs font-bold uppercase tracking-wider text-savdo-200">
+            {t('killLabel')}
+          </div>
+          <h3 className="mt-2 font-display text-xl font-bold sm:text-2xl">{t('killTitle')}</h3>
+          <p className="mt-3 text-sm text-white/85">{t('killSubtitle')}</p>
+          <ul className="mt-5 space-y-3">
+            {(['k1', 'k2', 'k3'] as const).map((k) => (
+              <li key={k} className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-savdo/30">
+                  <svg viewBox="0 0 20 20" className="h-3 w-3" fill="rgb(57,173,168)">
+                    <path d="M10 1a9 9 0 110 18 9 9 0 010-18zm1 5h-2v6h2V6zm0 8h-2v2h2v-2z" />
+                  </svg>
+                </span>
+                <div className="text-sm">
+                  <span className="font-bold text-white">{t(`kill.${k}.trigger`)}</span>
+                  <span className="text-white/80"> → {t(`kill.${k}.action`)}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Partnership fund math */}
+        <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-200">
+          <div className="bg-savdo-50 px-6 py-4 sm:px-8">
+            <div className="text-xs font-bold uppercase tracking-wider text-savdo-800">
+              {t('fundLabel')}
+            </div>
+            <h3 className="mt-1 font-display text-xl font-bold text-slate-900">
+              {t('fundTitle')}
+            </h3>
+          </div>
+          <div className="divide-y divide-slate-100 px-6 py-4 sm:px-8">
+            {(['f1', 'f2', 'f3', 'f4', 'f5'] as const).map((k) => (
+              <div key={k} className="flex items-center justify-between py-3 text-sm">
+                <span className="text-slate-700">{t(`fund.${k}.label`)}</span>
+                <span className="font-display font-extrabold text-slate-900">
+                  {t(`fund.${k}.value`)}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="border-t-2 border-savdo/30 bg-savdo-50 px-6 py-4 sm:px-8">
+            <div className="flex items-center justify-between">
+              <span className="font-display text-base font-bold text-slate-900">
+                {t('fundIrrLabel')}
+              </span>
+              <span className="font-display text-2xl font-extrabold text-savdo-800">
+                {t('fundIrrValue')}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Risks & Mitigants (addresses geopolitical, currency, competition, capacity) ---------------- */
+function Risks() {
+  const t = useTranslations('investors.risks');
+  const items = ['r1', 'r2', 'r3', 'r4'] as const;
+
+  return (
+    <section className="section bg-slate-50">
+      <div className="container-savdo">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h-section mt-4">{t('title')}</h2>
+          <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
+        </div>
+
+        <div className="mt-14 grid gap-5 md:grid-cols-2">
+          {items.map((k, i) => (
+            <motion.div
+              key={k}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: i * 0.05 }}
+              className="rounded-2xl bg-white p-7 shadow-card ring-1 ring-slate-200"
+            >
+              <div className="flex items-start gap-4">
+                <span className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-amber-50 text-amber-700">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                    <path d="M12 2l11 19H1L12 2zm0 7v5h0a1 1 0 002 0V9a1 1 0 00-2 0zm1 9a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+                  </svg>
+                </span>
+                <div className="flex-1">
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    {t(`items.${k}.label`)}
+                  </div>
+                  <h3 className="mt-1 font-display text-lg font-bold text-slate-900">
+                    {t(`items.${k}.title`)}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-700">{t(`items.${k}.risk`)}</p>
+                </div>
+              </div>
+              <div className="mt-5 rounded-xl bg-savdo-50 p-4 ring-1 ring-savdo-100">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-savdo-800">
+                  {t('mitigantLabel')}
+                </div>
+                <p className="mt-1 text-sm text-slate-800">{t(`items.${k}.mitigant`)}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

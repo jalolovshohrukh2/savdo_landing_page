@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Inter, Manrope } from 'next/font/google';
 import { locales, type Locale } from '@/i18n.config';
 import { buildMetadata, organizationJsonLd, softwareJsonLd } from '@/lib/seo';
+import { TopBar } from '@/components/TopBar';
 import '../globals.css';
 
 const inter = Inter({
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
               __html: JSON.stringify(softwareJsonLd(t as unknown as (key: string) => string)),
             }}
           />
+          <TopBar />
           {children}
         </NextIntlClientProvider>
       </body>

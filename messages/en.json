@@ -6,14 +6,164 @@
     "trial": "14-day free trial, no card required"
   },
   "nav": {
-    "solutions": "Solutions",
     "features": "Features",
     "pricing": "Pricing",
-    "testimonials": "Reviews",
-    "faq": "FAQ",
     "investors": "Investors",
     "partners": "Partners",
+    "solutions": "Solutions",
     "tryFree": "Try for free"
+  },
+  "topbar": {
+    "contact": "Contact manager:",
+    "signIn": "Sign in"
+  },
+  "solutions": {
+    "backAll": "All solutions",
+    "categoryLabel": "Built for",
+    "megaHeading": "Store management",
+    "megaOther": "Other",
+    "megaAllFeatures": "All features",
+    "megaPartners": "Partners & integrations",
+    "index": {
+      "eyebrow": "Solutions",
+      "title": "Built for every kind of store",
+      "subtitle": "From fashion boutiques to hardware stores — Savdo adapts to the way your business sells.",
+      "seoTitle": "Solutions for every type of store — Savdo",
+      "seoDescription": "Savdo is the operating system for retail: clothing, shoes, grocery, hardware, cosmetics, accessories, electronics and home goods."
+    },
+    "shared": {
+      "subtitle": "Track inventory, learn customer preferences, grow sales with analytics, and manage staff and finances — all in one cloud platform.",
+      "ctaPrimary": "Try for free",
+      "ctaSecondary": "See pricing",
+      "benefitsEyebrow": "Why Savdo for you",
+      "platformEyebrow": "Every store, same platform",
+      "platformTitle": "Everything included, out of the box",
+      "platformSubtitle": "Whatever you sell, the core platform does the heavy lifting.",
+      "finalTitle": "Ready to run your store the modern way?",
+      "finalSubtitle": "Try Savdo free for 14 days. Setup in 15 minutes, support in your language.",
+      "finalContact": "Talk to partnerships",
+      "stats": {
+        "stat1": { "value": "−40%", "label": "Time on inventory" },
+        "stat2": { "value": "+30%", "label": "Repeat sales" },
+        "stat3": { "value": "0%", "label": "Loss to shrinkage" }
+      },
+      "platform": {
+        "f1": "Inventory with color / size / attribute tracking",
+        "f2": "Fast POS that works offline",
+        "f3": "Customer database & loyalty",
+        "f4": "Marketing (SMS + Telegram)",
+        "f5": "Real-time reports & analytics",
+        "f6": "Cash flow & supplier debts",
+        "f7": "Staff shifts & KPIs",
+        "f8": "Mobile app for owner and cashier"
+      }
+    },
+    "items": {
+      "clothing": {
+        "name": "Clothing store",
+        "short": "Sizes, colors, seasons — all under control.",
+        "title": "Clothing stores grow with Savdo",
+        "seoTitle": "Savdo for clothing stores — POS, inventory, CRM",
+        "seoDescription": "Retail platform for fashion boutiques and clothing chains. Track sizes and colors, run loyalty, grow sales.",
+        "benefitsTitle": "Made for the way you sell clothes",
+        "benefits": {
+          "b1": { "title": "Size × color matrix", "body": "Track every SKU by size and color. One-click variants, photos per item." },
+          "b2": { "title": "Seasonal collections", "body": "Plan drops by season, tag items with collection labels, archive old lines fast." },
+          "b3": { "title": "Smart discounts", "body": "Automatic end-of-season markdowns, coupon codes, bundled outfits." }
+        }
+      },
+      "shoes": {
+        "name": "Shoe store",
+        "short": "Pair storage, size grids, fast restock.",
+        "title": "Shoe stores grow with Savdo",
+        "seoTitle": "Savdo for shoe stores — POS, size grids, CRM",
+        "seoDescription": "Built for sneaker shops and footwear chains. Track size grids, manage paired stock, scale across stores.",
+        "benefitsTitle": "Built for footwear retail",
+        "benefits": {
+          "b1": { "title": "Size grids per model", "body": "Manage sizes 35–48 per model and color. See exactly what's low." },
+          "b2": { "title": "Paired storage logic", "body": "Both shoes count as one item; mispairs and returns tracked automatically." },
+          "b3": { "title": "Lookbook photos", "body": "Attach multiple photos to each model — staff and customers see what they're buying." }
+        }
+      },
+      "grocery": {
+        "name": "Grocery store",
+        "short": "Weighing scales, expiry, fast checkout.",
+        "title": "Grocery stores grow with Savdo",
+        "seoTitle": "Savdo for grocery stores — fast POS, expiry tracking",
+        "seoDescription": "POS for supermarkets and convenience stores. Weighing scales, expiry alerts, fast checkout, shrinkage control.",
+        "benefitsTitle": "Speed and shrinkage control for grocery",
+        "benefits": {
+          "b1": { "title": "Scales & weighed items", "body": "Native support for weighing scales, price-per-kilo items, and sticker barcodes." },
+          "b2": { "title": "Expiry tracking", "body": "Shelf-life alerts before products expire. Zero write-offs you didn't expect." },
+          "b3": { "title": "Blazing fast POS", "body": "Sub-3-second checkout with barcode scan and keypad shortcuts for top SKUs." }
+        }
+      },
+      "hardware": {
+        "name": "Hardware store",
+        "short": "Multi-warehouse, bulk upload, revaluation.",
+        "title": "Hardware stores grow with Savdo",
+        "seoTitle": "Savdo for hardware stores — inventory, multi-warehouse",
+        "seoDescription": "Retail software for construction and hardware shops. Bulk upload, inter-warehouse transfers, price revaluation by FX.",
+        "benefitsTitle": "Made for hardware and construction retail",
+        "benefits": {
+          "b1": { "title": "Bulk import from Excel", "body": "Thousands of SKUs? Upload a spreadsheet. Update prices in batch." },
+          "b2": { "title": "Multi-warehouse transfers", "body": "Move stock between storefront and backroom. Consolidated view across all locations." },
+          "b3": { "title": "FX-based revaluation", "body": "Imported goods? Revalue the whole catalog when exchange rates shift." }
+        }
+      },
+      "cosmetics": {
+        "name": "Cosmetics store",
+        "short": "Batches, expiry, promos and testers.",
+        "title": "Cosmetics stores grow with Savdo",
+        "seoTitle": "Savdo for cosmetics stores — batches, expiry, loyalty",
+        "seoDescription": "Beauty retail platform with batch tracking, expiry alerts, sample management, and loyalty for repeat buyers.",
+        "benefitsTitle": "Built for beauty retail",
+        "benefits": {
+          "b1": { "title": "Batch & expiry tracking", "body": "Every bottle tracked by batch. FIFO rotation, alerts before expiry." },
+          "b2": { "title": "Tester & sample stock", "body": "Split consumable testers from sellable stock. No more fake shrinkage." },
+          "b3": { "title": "VIP loyalty", "body": "Reward repeat customers with tiered discounts and birthday offers." }
+        }
+      },
+      "accessories": {
+        "name": "Accessories store",
+        "short": "Bags, watches, jewelry — track each SKU.",
+        "title": "Accessories stores grow with Savdo",
+        "seoTitle": "Savdo for accessories stores — bags, watches, jewelry",
+        "seoDescription": "For bag, watch, and jewelry retailers. Per-item photos, certificate tracking, anti-theft audit trail.",
+        "benefitsTitle": "For bags, watches and jewelry",
+        "benefits": {
+          "b1": { "title": "Per-item photos & codes", "body": "High-value items get unique IDs, photos and certificates attached." },
+          "b2": { "title": "Anti-theft audit trail", "body": "Every view, move and sale logged. Know exactly who touched what." },
+          "b3": { "title": "Custom engraving & orders", "body": "Handle made-to-order, engraving, and reservations without spreadsheets." }
+        }
+      },
+      "electronics": {
+        "name": "Electronics store",
+        "short": "IMEI, serials, warranty and service.",
+        "title": "Electronics stores grow with Savdo",
+        "seoTitle": "Savdo for electronics stores — IMEI, warranty, service",
+        "seoDescription": "For phone shops and electronics retailers. IMEI/serial tracking, warranty claims, after-sales service history.",
+        "benefitsTitle": "Built for electronics retail",
+        "benefits": {
+          "b1": { "title": "IMEI & serial tracking", "body": "Every device scanned and linked to the buyer. Instant lookup in returns or warranty." },
+          "b2": { "title": "Warranty & service", "body": "Track warranty period per item, log repairs, attach invoices." },
+          "b3": { "title": "Online catalog", "body": "Sync your stock to your website and marketplaces in one click." }
+        }
+      },
+      "home-goods": {
+        "name": "Home goods",
+        "short": "Furniture, decor, inter-store transfers.",
+        "title": "Home goods stores grow with Savdo",
+        "seoTitle": "Savdo for home goods — furniture, decor, delivery",
+        "seoDescription": "For furniture and home decor chains. Showroom stock, special orders, delivery scheduling, multi-location transfers.",
+        "benefitsTitle": "Built for furniture and home decor",
+        "benefits": {
+          "b1": { "title": "Showroom vs. warehouse", "body": "Separate display items from sellable stock. Order fulfillment from any warehouse." },
+          "b2": { "title": "Special orders & deposits", "body": "Take partial payments, schedule deliveries, keep the customer in the loop." },
+          "b3": { "title": "Inter-store transfers", "body": "Move heavy items between stores with full tracking and cost allocation." }
+        }
+      }
+    }
   },
   "partners": {
     "seo": {
@@ -351,42 +501,246 @@
     },
     "roadmap": {
       "eyebrow": "Roadmap",
-      "title": "What the next 24 months look like.",
+      "title": "One market per year — and each one funds the next.",
       "items": {
         "r1": {
-          "when": "Q2 2026",
-          "title": "Tajikistan GA · 500 stores",
-          "body": "Launch in Dushanbe and Khujand. Local payment rails (Alif, DC, Humo) and TJ fiscalization live."
+          "when": "2026 · Year 1",
+          "title": "🇹🇯 Tajikistan — dominate the home market",
+          "body": "Concentrated launch in Dushanbe, Khujand and Bokhtar. Alif · DC · Humo · Korti Milli live. Target 500 paying stores and 100 Growth Partnerships. No new market opens until unit economics are proven."
         },
         "r2": {
-          "when": "Q4 2026",
-          "title": "Uzbekistan launch · multi-currency",
-          "body": "Open Tashkent office. UZS/TJS/USD multi-currency, Payme + Click + Uzum integrations. Target 2,500 stores by year-end 2027."
+          "when": "2027 · Year 2",
+          "title": "🇺🇿 Uzbekistan — replicate the playbook",
+          "body": "Tashkent office. UZS multi-currency · Payme · Click · Uzum · LakLak integrations. Tajikistan hits 1,500 stores; Uzbekistan hits 1,000. Series A raised on proven 2-market expansion."
         },
         "r3": {
-          "when": "2027",
-          "title": "Kazakhstan & Kyrgyzstan",
-          "body": "Expand to Almaty and Bishkek. Warehousing module, B2B supplier marketplace. Target 8,000 stores."
+          "when": "2028 · Year 3",
+          "title": "🇰🇿 Kazakhstan — funded by cash flow",
+          "body": "Almaty + Astana entry. KZT pricing · Kaspi / Halyk integrations · B2B supplier marketplace launches. Total 8,000 stores. Third-market expansion funded by UZ+TJ revenue, not venture capital."
         },
         "r4": {
-          "when": "2028+",
-          "title": "Embedded finance",
-          "body": "Working-capital loans to merchants using transaction data — monetize the Billz→TBC playbook on our own terms."
+          "when": "2029+ · Year 4 & beyond",
+          "title": "🇰🇬 Kyrgyzstan + embedded finance",
+          "body": "Bishkek launch. Working-capital loans to Growth Partnership merchants using their Savdo transaction history. This is where we monetize the Billz→TBC playbook on our own terms."
         }
       }
     },
     "team": {
       "eyebrow": "Team",
-      "title": "Builders who've shipped to this market before.",
-      "body": "Founding team with backgrounds in retail operations, payments infra, and multi-lingual product engineering across the CIS."
+      "title": "Jockeys, not just horses.",
+      "body": "Two operators with direct accountability for every dollar of this raise. Shohrukh Jalolov (CEO) previously shipped [specific company × role × outcome — TO FILL]. [Co-founder name] (CTO) previously led [specific product × users × outcome — TO FILL]. Engineering leadership for mobile, web, and backend hired before month 3."
+    },
+    "unitEconomics": {
+      "eyebrow": "Unit economics",
+      "title": "The numbers are proven before the raise closes.",
+      "subtitle": "We don't want your money on hope. Here's what we'll have demonstrated in Tajikistan before you wire a dollar — and the exact triggers that tell us to pivot if any metric breaks.",
+      "pilotLabel": "Pre-close commitment",
+      "pilotTitle": "What we'll have proven before the round closes",
+      "pilot": {
+        "p1": {
+          "value": "10+",
+          "label": "Paying pilot merchants",
+          "detail": "Tajikistan · full subscription · 30+ days active"
+        },
+        "p2": {
+          "value": "2",
+          "label": "Growth Partnership contracts signed",
+          "detail": "Real revenue-share agreements, not LOIs"
+        },
+        "p3": {
+          "value": "$5K",
+          "label": "Pre-raise marketing test",
+          "detail": "30-day paid acquisition run · real CAC data"
+        }
+      },
+      "unit": {
+        "u1": {
+          "label": "Target CAC (Tajikistan)",
+          "value": "$35–50",
+          "detail": "Validated in pre-raise pilot · capped at $75"
+        },
+        "u2": {
+          "label": "ARPU (Pro plan)",
+          "value": "$35/mo",
+          "detail": "Pre-partnership · blended across Start/Pro/Business"
+        },
+        "u3": {
+          "label": "LTV (36 months)",
+          "value": "$1,260+",
+          "detail": "Subscription only · partnership adds 2–3× upside"
+        },
+        "u4": {
+          "label": "Payback period",
+          "value": "< 6 mo",
+          "detail": "CAC:LTV > 1:20 · well above SaaS benchmarks"
+        }
+      },
+      "killLabel": "Kill switches",
+      "killTitle": "What makes us pivot — not burn your capital",
+      "killSubtitle": "We've pre-committed to specific metric thresholds. If any one breaks for two consecutive months, we cut that line and redirect capital.",
+      "kill": {
+        "k1": {
+          "trigger": "If blended CAC > $150 by month 12",
+          "action": "freeze paid acquisition · pivot to pure partner-sales channel"
+        },
+        "k2": {
+          "trigger": "If Growth Partnership conversion < 20% of qualified merchants",
+          "action": "restructure revenue-share terms or sunset the program"
+        },
+        "k3": {
+          "trigger": "If Tajikistan store count < 300 by month 18",
+          "action": "delay Uzbekistan entry by 12 months · fix the playbook first"
+        }
+      },
+      "fundLabel": "Partnership fund mechanics",
+      "fundTitle": "How the $960K returns — explicit math for fintech-literate investors",
+      "fund": {
+        "f1": { "label": "Total deployment (24 months)", "value": "$960K" },
+        "f2": { "label": "Average deployment per merchant", "value": "$4,800" },
+        "f3": { "label": "Merchants funded (year 1–2)", "value": "~200" },
+        "f4": { "label": "Avg. revenue share recovery per merchant", "value": "$12,000 / 24 mo" },
+        "f5": { "label": "Gross fund return (year 5)", "value": "$2.4M" }
+      },
+      "fundIrrLabel": "Gross fund IRR (3-year)",
+      "fundIrrValue": "~35%"
+    },
+    "risks": {
+      "eyebrow": "Risks & mitigants",
+      "title": "What could kill this company — and what we do about it.",
+      "subtitle": "Every risk below is priced in. We're not pretending they don't exist — we're showing how we respond when they materialize.",
+      "mitigantLabel": "Mitigant",
+      "items": {
+        "r1": {
+          "label": "Risk 1",
+          "title": "Geopolitical & currency volatility",
+          "risk": "Tajikistan borders Afghanistan. Uzbekistan decontrolled currency in 2016, wiping out foreign capital overnight. Kazakhstan had civil unrest in 2022. Kyrgyzstan's government has changed 3 times in 20 years.",
+          "mitigant": "Revenue invoiced in local currency, banked in USD-pegged accounts where possible. 6-month cash buffer in USD. Legal entity per country with local counsel. Pilot validates one market before capital deploys to next."
+        },
+        "r2": {
+          "label": "Risk 2",
+          "title": "Growth Partnership adverse selection",
+          "risk": "Merchants who sign up for revenue-share might be the desperate ones, not the good ones. Strong merchants prefer to keep 100% of their upside.",
+          "mitigant": "Partnership is gated — we qualify merchants on 90 days of subscription use first, proving basic competency. Revenue-share is only on incremental growth above a 3-month trailing baseline, aligning with strong operators who want marketing capital."
+        },
+        "r3": {
+          "label": "Risk 3",
+          "title": "Kaspi / TBC-backed competitor enters with free software",
+          "risk": "Kaspi.kz offers free POS bundled with payments in Kazakhstan. TBC Bank (owner of Billz) could replicate the Growth Partnership model with banking muscle. Shopify / Square could finally localize.",
+          "mitigant": "Tajikistan has no Kaspi equivalent. We get 2-year head start before KZ entry. Growth Partnership contracts are 24-month — switching cost compounds. Shopify still can't offer halal-compliant or offline-first for under $5M engineering investment."
+        },
+        "r4": {
+          "label": "Risk 4",
+          "title": "Founder capacity — building + selling + managing a fintech fund",
+          "risk": "Buffett's real objection: two founders managing product + sales + partnership fund + 4-country expansion + 5 engineers = too many jobs. Burnout risk.",
+          "mitigant": "Clear role split: CEO owns sales + partnerships + fundraising. CTO owns product + engineering. Head of Operations hired by month 4 (funded from the 14% Ops line). No geographic expansion handled personally by founders — each new market gets a dedicated country lead before entry."
+        }
+      }
+    },
+    "growthModel": {
+      "eyebrow": "The differentiator",
+      "title": "We don't just sell software. We invest in our customers.",
+      "subtitle": "Most retail platforms charge a flat fee and leave merchants to figure out growth on their own. We do the opposite — we put capital into our merchants, help them scale, and share only in the growth we helped create.",
+      "featured": "Core model",
+      "weProvide": "What we provide",
+      "weEarn": "What we earn",
+      "takeaway": "32% of investor dollars flow directly INTO Tajikistan merchants in year one — making each dollar go 2–3× further than a spread-out multi-country expansion. Subscription is the floor; partnership revenue is the upside.",
+      "pillars": {
+        "p1": {
+          "title": "We share growth, not revenue",
+          "body": "Merchants keep 100% of their existing revenue. We share only the incremental growth we helped create, for a fixed 24-month window."
+        },
+        "p2": {
+          "title": "We invest first, they pay after",
+          "body": "Savdo funds the merchant's first marketing campaigns. If it doesn't work, they owe nothing. If it does, we share in the result."
+        },
+        "p3": {
+          "title": "Aligned to the last dollar",
+          "body": "Our revenue scales with theirs. No hidden fees, no churn games, no upsell pressure — just one shared P&L direction."
+        }
+      },
+      "tiers": {
+        "t1": {
+          "tag": "Tier 1 · Self-serve",
+          "name": "Standard plans",
+          "who": "Any shop — from a single storefront to a small chain — ready to modernize but not to commit to a long-term partnership.",
+          "provide": "Software (Start · Advanced · Pro). Full feature access, 4 languages, 4 currencies, 24/7 support.",
+          "earn": "Monthly subscription"
+        },
+        "t2": {
+          "tag": "Tier 2 · The growth engine",
+          "name": "Growth Partnership",
+          "who": "Ambitious merchants with proven unit economics but under-capitalized for paid marketing. Where our investor dollars flow.",
+          "provide": "Discounted software + marketing co-investment from our fund + weekly growth playbook support.",
+          "earn": "Reduced subscription + 15–25% share of incremental revenue, 24 months"
+        },
+        "t3": {
+          "tag": "Tier 3 · Enterprise",
+          "name": "Top Partner Program",
+          "who": "Established chains (10+ locations) wanting deeper integration, dedicated roadmap influence, and joint market expansion.",
+          "provide": "Co-branded campaigns · dedicated success team · priority features · exclusive market access.",
+          "earn": "Custom revenue share + optional equity warrants"
+        }
+      }
+    },
+    "useOfFunds": {
+      "eyebrow": "Use of funds",
+      "title": "Where every dollar goes",
+      "subtitle": "64% of this raise flows directly to growth — and 32% goes straight into merchant capital, not our ads. We dominate one country before opening the next.",
+      "totalLabel": "Total raise",
+      "callout1": "Direct growth spend — partnership capital, acquisition, field sales",
+      "callout2": "24-month runway · full Tajikistan dominance · Series A-ready",
+      "rows": {
+        "r2": {
+          "label": "Growth Partnership fund",
+          "detail": "Capital deployed INTO merchants — the largest line, because this is the moat"
+        },
+        "r1": {
+          "label": "Customer acquisition (paid)",
+          "detail": "Concentrated on Tajikistan Y1 → Uzbekistan Y2 → Kazakhstan Y3 → Kyrgyzstan Y4"
+        },
+        "r6": {
+          "label": "Operations, legal, buffer",
+          "detail": "Partnership contracts · 6-month cash cushion · cross-border legal in 4 jurisdictions"
+        },
+        "r3": {
+          "label": "Engineering team",
+          "detail": "2 mobile + 2 web + 1 backend · 24 months · infrastructure & tooling"
+        },
+        "r4": {
+          "label": "Sales & customer success",
+          "detail": "4 field reps in Tajikistan Y1, scaling with each new market"
+        },
+        "r5": {
+          "label": "Hardware & onboarding kits",
+          "detail": "Scanners, printers, receipt paper stocked for partnership merchants"
+        }
+      }
+    },
+    "capTable": {
+      "eyebrow": "Cap table trajectory",
+      "title": "How ownership evolves — base case AND bear case",
+      "subtitle": "Showing both scenarios. Base case = plan hits Series A at $28M. Bear case = Series A at $20M with heavier ESOP top-ups. Even the bear case keeps founders at 25%+ at exit — long-term alignment holds.",
+      "stage": "Stage",
+      "raise": "Raise",
+      "post": "Post-money",
+      "investor": "Investors",
+      "founderBase": "Founders (base)",
+      "founderBear": "Founders (bear)",
+      "footnote": "Base case assumes Series A at 10–13× ARR (standard for emerging-markets SaaS with strong unit economics). Bear case assumes 7× ARR and 15% ESOP top-up each round. We showed both so you can underwrite the downside before the upside.",
+      "rounds": {
+        "seed": { "name": "Seed (this round)", "when": "Now · SAFE · $12M cap" },
+        "seriesA": { "name": "Series A", "when": "Month 18–24 · 2,500+ stores, $1.5M+ ARR" },
+        "seriesB": { "name": "Series B", "when": "Month 36–42 · 10,000+ stores, $6M+ ARR" },
+        "exit": { "name": "Exit / IPO", "when": "Month 60+ · $120M+ valuation" }
+      }
     },
     "ask": {
       "eyebrow": "The ask",
       "title": "We're raising our seed round.",
       "body": "Looking for partners who understand frontier-market SaaS and are ready to back a category leader from day one.",
-      "raising": { "label": "Raising", "value": "$2.5M" },
-      "stage": { "label": "Stage", "value": "Seed" },
-      "use": { "label": "Use of funds", "value": "Engineering (45%) · Sales in UZ+KZ (35%) · Ops (20%)" },
+      "raising": { "label": "Raising", "value": "$3M" },
+      "stage": { "label": "Stage · Instrument", "value": "Seed · SAFE" },
+      "use": { "label": "Valuation cap", "value": "$12M post-money" },
       "runway": { "label": "Runway", "value": "24 mo" },
       "form": {
         "title": "Talk to the founders",
@@ -409,7 +763,8 @@
     "ctaNote": "14 days free · No credit card · Setup in 15 minutes",
     "chips": {
       "offline": "Works offline",
-      "currencies": "TJS · UZS · KZT · KGS"
+      "currencies": "TJS · UZS · KZT · KGS",
+      "support": "Local support"
     }
   },
   "trust": {
@@ -491,22 +846,6 @@
       }
     }
   },
-  "solutions": {
-    "eyebrow": "Solutions",
-    "title": "Tuned for every store type",
-    "subtitle": "Savdo adapts to your business — from a boutique to a pharmacy chain.",
-    "learnMore": "Learn more",
-    "items": {
-      "clothing": { "title": "Clothing", "description": "Sizes, colors, seasons and discounts — all under control." },
-      "shoes": { "title": "Shoes", "description": "Pair storage, size grids, seasonal collections." },
-      "cosmetics": { "title": "Cosmetics", "description": "Expiry, batches, promos and testers." },
-      "electronics": { "title": "Electronics", "description": "IMEI, serial numbers, warranty and service." },
-      "grocery": { "title": "Grocery", "description": "Weighed items, expiry, promos and fast checkout." },
-      "pharmacy": { "title": "Pharmacy", "description": "Batches, expiry, prescriptions and records." },
-      "sports": { "title": "Sports goods", "description": "Sizes, bundles, seasons and rentals." },
-      "kids": { "title": "Kids goods", "description": "Age groups, sizes, loyalty for moms." }
-    }
-  },
   "integrations": {
     "eyebrow": "Trusted by",
     "title": "The brands that run on Savdo",
@@ -537,7 +876,7 @@
   "pricing": {
     "eyebrow": "Pricing",
     "title": "Honest pricing in your local currency",
-    "subtitle": "Up to 20% cheaper than Billz on equivalent tiers. All plans include updates, cloud storage and local-language support.",
+    "subtitle": "Simple plans that scale with your shop. All tiers include updates, cloud storage and local-language support.",
     "monthly": "Monthly",
     "yearly": "Yearly",
     "popular": "Popular",
@@ -545,7 +884,8 @@
     "cta": "Get started",
     "addLocation": "Additional location: {value}/mo · upgrade or downgrade anytime.",
     "billedYearly": "Billed yearly: {value}",
-    "billzNote": "Pricing benchmarked against Billz Uzbekistan (March 2026): Start 299 000 UZS, Advanced 499 000 UZS, Pro 999 000 UZS.",
+    "showingFor": "Showing prices for",
+    "billzNote": "Prices shown in your local currency. Switch countries to see regional pricing.",
     "countries": {
       "us": "USD",
       "tj": "Tajikistan",
@@ -553,38 +893,112 @@
       "kz": "Kazakhstan",
       "kg": "Kyrgyzstan"
     },
+    "compare": {
+      "eyebrow": "Plan comparison",
+      "title": "Everything included, tier by tier",
+      "subtitle": "Full feature matrix so you can see exactly what's in each plan.",
+      "cta": "Start free",
+      "ctaSecondary": "See prices",
+      "categories": {
+        "inventory": "Inventory management",
+        "pos": "POS & sales",
+        "customers": "Customers & loyalty",
+        "marketing": "Marketing",
+        "finance": "Finance",
+        "reports": "Reports & analytics",
+        "staff": "Staff & access",
+        "integrations": "Integrations"
+      },
+      "features": {
+        "i1": "Categorize products by colors, sizes and attributes",
+        "i2": "Track by unit of measure (pieces, meters, kg, …)",
+        "i3": "Kits, bundles and services",
+        "i4": "Auto-create products from GS1 barcode database",
+        "i5": "Bulk upload via Excel",
+        "i6": "Live stock view across all locations",
+        "i7": "Fast search and filters",
+        "i8": "Print price tags and labels",
+        "i9": "Transfers between locations",
+        "i10": "Low-stock alerts and reorder points",
+        "i11": "Multi-warehouse with separate zones",
+        "p1": "Fast POS on laptop, tablet or phone",
+        "p2": "Barcode scanner and fiscal printer support",
+        "p3": "Offline mode — keeps selling without internet",
+        "p4": "Receipts, returns and refunds",
+        "p5": "Cash, card and online payment acceptance",
+        "p6": "Split payment across methods",
+        "p7": "Gift cards and store credit",
+        "p8": "Pre-orders and layaway",
+        "c1": "Customer database with contact info",
+        "c2": "Purchase history per customer",
+        "c3": "Loyalty program with points and levels",
+        "c4": "Customer segments and tags",
+        "c5": "Birthday and inactivity reminders",
+        "c6": "Custom fields and attributes",
+        "m1": "SMS campaigns",
+        "m2": "Telegram bot and broadcasts",
+        "m3": "Promo codes and discount rules",
+        "m4": "Seasonal sales and automatic discounts",
+        "m5": "Automated marketing flows",
+        "f1": "Cash management and daily closing",
+        "f2": "Revenue and expense tracking",
+        "f3": "Supplier debts and payables",
+        "f4": "Multi-currency accounting",
+        "f5": "P&L statement and cash-flow forecast",
+        "r1": "Daily sales and best-seller reports",
+        "r2": "Inventory and shrinkage reports",
+        "r3": "ABC analysis and turnover",
+        "r4": "Staff KPIs and commissions",
+        "r5": "Custom report builder",
+        "r6": "Scheduled email reports",
+        "s1": "User accounts with basic permissions",
+        "s2": "Activity log per cashier",
+        "s3": "Shift scheduling and timesheets",
+        "s4": "Commission rules per employee",
+        "s5": "Role-based access control (RBAC)",
+        "n1": "Local payments (Humo, Alif, Korti Milli)",
+        "n2": "Payme, Click, Apelsin",
+        "n3": "Fiscal printer / receipt printer",
+        "n4": "Telegram bot",
+        "n5": "1C sync",
+        "n7": "LakLak marketplace integration",
+        "n8": "Webmarket marketplace integration",
+        "n9": "Alif Marketplace integration",
+        "n6": "Open API and webhooks"
+      }
+    },
     "plans": {
       "start": {
         "name": "Start",
-        "tagline": "For a single location",
+        "tagline": "For a single shop",
         "features": {
-          "f1": "1 register, 1 user",
-          "f2": "Inventory & stock",
-          "f3": "Basic reports",
-          "f4": "Receipts & fiscalization",
-          "f5": "Chat support"
+          "f1": "Up to 10 users",
+          "f2": "5,000 customers in database",
+          "f3": "Up to 3 locations",
+          "f4": "Core modules: POS, inventory, receipts & basic reports",
+          "f5": "Email & chat support"
         }
       },
       "pro": {
-        "name": "Pro",
+        "name": "Advanced",
         "tagline": "For growing businesses",
         "features": {
-          "f1": "Up to 3 registers, 5 users",
-          "f2": "CRM and loyalty program",
-          "f3": "SMS & Telegram marketing",
-          "f4": "Advanced analytics",
-          "f5": "Priority support"
+          "f1": "Everything in Start, plus:",
+          "f2": "Up to 20 users",
+          "f3": "25,000 customers · up to 5 locations",
+          "f4": "CRM, loyalty program & marketing (SMS + Telegram)",
+          "f5": "Advanced analytics · priority support"
         }
       },
       "business": {
-        "name": "Business",
+        "name": "Pro",
         "tagline": "For retail chains",
         "features": {
-          "f1": "Unlimited registers & users",
-          "f2": "Multi-warehouse & transfers",
-          "f3": "API and integrations",
-          "f4": "Enterprise reports & KPIs",
-          "f5": "Dedicated manager"
+          "f1": "Everything in Advanced, plus:",
+          "f2": "Unlimited users, customers & locations",
+          "f3": "All modules · multi-warehouse & transfers",
+          "f4": "API and integrations",
+          "f5": "Dedicated account manager"
         }
       }
     }

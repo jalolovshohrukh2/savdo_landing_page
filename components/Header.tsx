@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
 import { LogoWithWordmark } from './Logo';
-import { LanguageSwitcher } from './LanguageSwitcher';
+import { SolutionsMenu } from './SolutionsMenu';
 import { siteConfig } from '@/i18n.config';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -20,10 +20,10 @@ export function Header() {
   const anchor = (hash: string) => (isHome ? hash : `${homeBase}${hash}`);
 
   const links = [
-    { href: anchor('#features'), label: t('features') },
     { href: anchor('#pricing'), label: t('pricing') },
     { href: `${homeBase}/partners`, label: t('partners') },
     { href: `${homeBase}/investors`, label: t('investors') },
+    { href: `${homeBase}/test`, label: 'POS Demo' },
   ];
 
   return (
@@ -34,6 +34,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
+          <SolutionsMenu />
           {links.map((l) => (
             <Link
               key={l.href}
@@ -47,14 +48,7 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href={siteConfig.phoneHref}
-            className="hidden text-sm font-semibold text-slate-700 transition hover:text-savdo md:block"
-          >
-            {siteConfig.phone}
-          </a>
-          <LanguageSwitcher />
-          <a
-            href={siteConfig.appUrl}
+            href={siteConfig.signupFormUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden btn-primary sm:inline-flex"
@@ -86,6 +80,13 @@ export function Header() {
             className="overflow-hidden border-t border-slate-200 bg-white lg:hidden"
           >
             <nav className="container-savdo flex flex-col gap-1 py-4">
+              <Link
+                href={`${homeBase}/solutions`}
+                onClick={() => setMobileOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-savdo-50 hover:text-savdo"
+              >
+                {t('solutions')}
+              </Link>
               {links.map((l) => (
                 <Link
                   key={l.href}
@@ -97,7 +98,7 @@ export function Header() {
                 </Link>
               ))}
               <a
-                href={siteConfig.appUrl}
+                href={siteConfig.signupFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary mt-2"

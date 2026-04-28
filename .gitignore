@@ -7,3 +7,5 @@ dist/
 .vercel
 .DS_Store
 next-env.d.ts
+tsconfig.tsbuildinfo
+.claude/worktrees/

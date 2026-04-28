@@ -1,23 +1,19 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { siteConfig } from '@/i18n.config';
-
-type CountryKey = 'tj' | 'uz' | 'kz' | 'kg' | 'us';
-
-const LOCALE_TO_COUNTRY: Record<string, CountryKey> = {
-  tj: 'tj',
-  uz: 'uz',
-  ru: 'kz', // Russian is the lingua franca, default to Kazakhstan (largest RU-speaking market)
-  en: 'us', // International — show USD by default
-};
+import {
+  resolveCountry,
+  COUNTRY_NAME,
+  COUNTRY_FLAG,
+  type CountryKey,
+} from '@/lib/country';
 
 const COUNTRIES: Record<
   CountryKey,
   {
-    flag: string;
     code: string;
     suffix: string;
     plans: { start: number; pro: number; business: number };
@@ -26,7 +22,6 @@ const COUNTRIES: Record<
   }
 > = {
   tj: {
-    flag: '🇹🇯',
     code: 'TJS',
     suffix: 'сом.',
     plans: { start: 179, pro: 329, business: 649 },
@@ -34,7 +29,6 @@ const COUNTRIES: Record<
     format: (n) => `${n.toLocaleString('en-US')} `,
   },
   uz: {
-    flag: '🇺🇿',
     code: 'UZS',
     suffix: 'soʻm',
     plans: { start: 229000, pro: 419000, business: 819000 },
@@ -42,7 +36,6 @@ const COUNTRIES: Record<
     format: (n) => `${n.toLocaleString('en-US').replace(/,/g, ' ')} `,
   },
   kz: {
-    flag: '🇰🇿',
     code: 'KZT',
     suffix: '₸',
     plans: { start: 8900, pro: 16500, business: 32500 },
@@ -50,7 +43,6 @@ const COUNTRIES: Record<
     format: (n) => `${n.toLocaleString('en-US').replace(/,/g, ' ')} `,
   },
   kg: {
-    flag: '🇰🇬',
     code: 'KGS',
     suffix: 'сом',
     plans: { start: 1690, pro: 2990, business: 5990 },
@@ -58,7 +50,6 @@ const COUNTRIES: Record<
     format: (n) => `${n.toLocaleString('en-US').replace(/,/g, ' ')} `,
   },
   us: {
-    flag: '🇺🇸',
     code: 'USD',
     suffix: '',
     plans: { start: 19, pro: 35, business: 69 },
@@ -71,19 +62,24 @@ export function Pricing() {
   const t = useTranslations('pricing');
   const locale = useLocale();
   const [yearly, setYearly] = useState(false);
-  const [country, setCountry] = useState<CountryKey>(LOCALE_TO_COUNTRY[locale] ?? 'uz');
+
+  // Start with locale-based fallback for SSR; upgrade to IP-detected country after mount.
+  const [country, setCountry] = useState<CountryKey>(() =>
+    resolveCountry(locale),
+  );
+
+  useEffect(() => {
+    // Cookie may only exist after first client render — re-resolve.
+    setCountry(resolveCountry(locale));
+  }, [locale]);
 
   const c = COUNTRIES[country];
-  const visibleCountries: CountryKey[] =
-    locale === 'en' ? ['us', 'tj', 'uz', 'kz', 'kg'] : ['tj', 'uz', 'kz', 'kg'];
 
-  const plans = (
-    [
-      { key: 'start' as const, featured: false, base: c.plans.start },
-      { key: 'pro' as const, featured: true, base: c.plans.pro },
-      { key: 'business' as const, featured: false, base: c.plans.business },
-    ]
-  ).map((p) => ({
+  const plans = [
+    { key: 'start' as const, featured: false, base: c.plans.start },
+    { key: 'pro' as const, featured: true, base: c.plans.pro },
+    { key: 'business' as const, featured: false, base: c.plans.business },
+  ].map((p) => ({
     ...p,
     price: yearly ? Math.round(p.base * 0.8) : p.base,
   }));
@@ -96,24 +92,20 @@ export function Pricing() {
           <h2 className="h-section mt-4">{t('title')}</h2>
           <p className="mt-4 text-lg text-slate-700">{t('subtitle')}</p>
 
-          {/* Country switcher */}
-          <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 rounded-full bg-white p-1 shadow-card">
-            {visibleCountries.map((k) => (
-              <button
-                key={k}
-                onClick={() => setCountry(k)}
-                className={`rounded-full px-4 py-2 text-sm font-bold transition ${
-                  country === k ? 'bg-savdo text-white' : 'text-slate-700 hover:bg-slate-50'
-                }`}
-              >
-                <span className="mr-1.5">{COUNTRIES[k].flag}</span>
-                {t(`countries.${k}`)}
-              </button>
-            ))}
+          {/* Detected-country indicator */}
+          <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-card ring-1 ring-slate-200/70">
+            <span className="text-base leading-none">{COUNTRY_FLAG[country]}</span>
+            <span>
+              {t('showingFor')}{' '}
+              <span className="font-bold text-slate-900">{COUNTRY_NAME[country]}</span>
+            </span>
+            <span className="ml-1 rounded-full bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-600">
+              {c.code}
+            </span>
           </div>
 
           {/* Monthly / yearly toggle */}
-          <div className="mt-4 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white p-1">
+          <div className="mt-6 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white p-1">
             <button
               onClick={() => setYearly(false)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
@@ -169,7 +161,7 @@ export function Pricing() {
                 </div>
               )}
               <a
-                href={siteConfig.appUrl}
+                href={siteConfig.signupFormUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={p.featured ? 'btn-primary mt-6 w-full' : 'btn-secondary mt-6 w-full'}
@@ -193,7 +185,6 @@ export function Pricing() {
         <p className="mt-8 text-center text-sm text-slate-700">
           {t('addLocation', { value: `${c.format(c.addLocation)}${c.suffix}` })}
         </p>
-        <p className="mt-2 text-center text-xs text-slate-600">{t('billzNote')}</p>
       </div>
     </section>
   );

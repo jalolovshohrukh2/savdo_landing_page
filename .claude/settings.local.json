@@ -27,7 +27,27 @@
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json','utf8'\\)\\); console.log\\('ok'\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/ru.json','utf8'\\)\\); console.log\\('ok'\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/uz.json','utf8'\\)\\); console.log\\('ok'\\)\")",
-      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok'\\\\''\\)')"
+      "Bash(node -e 'JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok'\\\\''\\)')",
+      "Bash(gh auth *)",
+      "Bash(ssh-add -l)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new -T git@github.com)",
+      "Bash(ssh-keygen -lf ~/.ssh/id_ed25519.pub)",
+      "Bash(cmdkey /list)",
+      "Bash(cmdkey.exe /list)",
+      "Bash(git credential *)",
+      "Bash(powershell -Command \"Get-Process git -ErrorAction SilentlyContinue | Stop-Process -Force; Get-Process git-credential* -ErrorAction SilentlyContinue | Stop-Process -Force; Write-Output done\")",
+      "Bash(cmdkey.exe /delete:\"git:https://github.com\")",
+      "Bash(cmdkey.exe /delete:\"git:https://jalolovshohrukh@github.com\")",
+      "Bash(cmdkey.exe /delete:\"LegacyGeneric:target=git:https://github.com\")",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 1; Write-Output clean\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/ru.json','utf8'\\)\\); console.log\\('ru ok'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/uz.json','utf8'\\)\\); console.log\\('uz ok'\\)\")",
+      "Bash(node -e \"const m = require\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json'\\); console.log\\(JSON.stringify\\(m.solutions.items.clothing.benefits, null, 2\\)\\);\")",
+      "Bash(node -e \"const m = require\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json'\\); console.log\\('solutions keys:', Object.keys\\(m.solutions || {}\\)\\); console.log\\('solutions.items keys:', Object.keys\\(m.solutions?.items || {}\\)\\); console.log\\('solutions.items.clothing keys:', Object.keys\\(m.solutions?.items?.clothing || {}\\)\\);\")",
+      "Bash(node -e 'const m=JSON.parse\\(require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/__TRACKED_VAR__.json'\\\\'','\\\\''utf8'\\\\''\\)\\); console.log\\('\\\\''__TRACKED_VAR__ ok · items:'\\\\'', Object.keys\\(m.solutions.items\\).join\\('\\\\'','\\\\''\\)\\);')",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/shohr/OneDrive/Desktop/Savdo Landing Page/messages/en.json','utf8'\\)\\); console.log\\('en ok'\\)\")",
+      "WebFetch(domain:mode.com)"
     ]
   }
 }

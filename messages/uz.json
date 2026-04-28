@@ -6,14 +6,164 @@
     "trial": "14 kun bepul, karta talab qilinmaydi"
   },
   "nav": {
-    "solutions": "Yechimlar",
     "features": "Imkoniyatlar",
     "pricing": "Tariflar",
-    "testimonials": "Sharhlar",
-    "faq": "Savollar",
     "investors": "Investorlarga",
     "partners": "Hamkorlarga",
+    "solutions": "Yechimlar",
     "tryFree": "Bepul sinab koʻring"
+  },
+  "topbar": {
+    "contact": "Menejer bilan bogʻlanish:",
+    "signIn": "Kirish"
+  },
+  "solutions": {
+    "backAll": "Barcha yechimlar",
+    "categoryLabel": "Moʻljallangan",
+    "megaHeading": "Doʻkonni boshqarish",
+    "megaOther": "Boshqa",
+    "megaAllFeatures": "Barcha imkoniyatlar",
+    "megaPartners": "Hamkorlar va integratsiyalar",
+    "index": {
+      "eyebrow": "Yechimlar",
+      "title": "Har qanday doʻkon turi uchun",
+      "seoTitle": "Har qanday doʻkon turi uchun yechimlar — Savdo",
+      "seoDescription": "Savdo — chakana savdo uchun operatsion tizim: kiyim, poyabzal, oziq-ovqat, qurilish, kosmetika, aksessuarlar, elektronika va uy uchun.",
+      "subtitle": "Moda butiklaridan qurilish doʻkonlarigacha — Savdo sizning savdo usulingizga moslashadi."
+    },
+    "shared": {
+      "subtitle": "Qoldiqlarni kuzating, mijoz afzalliklarini oʻrganing, analitika bilan savdoni oshiring, xodimlar va moliyani boshqaring — barchasi bitta bulutli platformada.",
+      "ctaPrimary": "Bepul sinab koʻring",
+      "ctaSecondary": "Tariflarni koʻrish",
+      "benefitsEyebrow": "Nega Savdo sizga mos",
+      "platformEyebrow": "Har qanday doʻkon — bitta platforma",
+      "platformTitle": "Hamma narsa qutidan",
+      "platformSubtitle": "Nima sotayotganingizdan qatʼi nazar, platforma yadrosi ogʻir ishni bajaradi.",
+      "finalTitle": "Doʻkoningizni zamonaviy boshqarishga tayyormisiz?",
+      "finalSubtitle": "Savdo’ni 14 kun bepul sinab koʻring. 15 daqiqada sozlash, tilingizda qoʻllab-quvvatlash.",
+      "finalContact": "Hamkorlik",
+      "stats": {
+        "stat1": { "value": "−40%", "label": "Inventarizatsiya vaqti" },
+        "stat2": { "value": "+30%", "label": "Takroriy savdo" },
+        "stat3": { "value": "0%", "label": "Yoʻqotish" }
+      },
+      "platform": {
+        "f1": "Rang, oʻlcham va atributlar boʻyicha hisob",
+        "f2": "Tez kassa — oflayn ishlaydi",
+        "f3": "Mijozlar bazasi va sadoqat",
+        "f4": "Marketing (SMS + Telegram)",
+        "f5": "Real vaqtda hisobot va tahlil",
+        "f6": "Kassa oqimi va taʼminotchi qarzlari",
+        "f7": "Smena va xodim KPI",
+        "f8": "Ega va kassir uchun mobil ilova"
+      }
+    },
+    "items": {
+      "clothing": {
+        "name": "Kiyim doʻkoni",
+        "short": "Oʻlchamlar, ranglar, mavsumlar nazorat ostida.",
+        "title": "Kiyim doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Kiyim doʻkonlari uchun Savdo — kassa, ombor, CRM",
+        "seoDescription": "Moda butiklar va tarmoqlari uchun platforma. Oʻlcham va rang hisobi, sadoqat, savdo oʻsishi.",
+        "benefitsTitle": "Siz kiyim sotayotgan usulga moslashgan",
+        "benefits": {
+          "b1": { "title": "Oʻlcham × rang matritsasi", "body": "Har bir SKU oʻlcham va rang boʻyicha. Bir bosishda variantlar, har mahsulotga foto." },
+          "b2": { "title": "Mavsumiy kolleksiyalar", "body": "Drop’larni mavsum boʻyicha rejalashtiring, kolleksiyalarga teg qoʻying, eskilarini tez arxivlang." },
+          "b3": { "title": "Aqlli chegirmalar", "body": "Avtomatik mavsum oxiri chegirmalari, promokodlar, kombinatsiyalar." }
+        }
+      },
+      "shoes": {
+        "name": "Poyabzal doʻkoni",
+        "short": "Juft saqlash, oʻlcham setlari, tez toʻldirish.",
+        "title": "Poyabzal doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Poyabzal doʻkonlari uchun Savdo — oʻlcham setlari",
+        "seoDescription": "Krossovkalar va poyabzal tarmoqlari uchun. Oʻlcham setlari, juft hisob, koʻp doʻkon.",
+        "benefitsTitle": "Poyabzal chakana savdosi uchun",
+        "benefits": {
+          "b1": { "title": "Har modelga oʻlcham seti", "body": "Har bir model va rang uchun 35–48 oʻlcham. Aniq nima kamligini koʻrasiz." },
+          "b2": { "title": "Juft saqlash mantiqi", "body": "Ikkala poyabzal — bitta pozitsiya; juft xatolari va qaytarishlar avtomatik." },
+          "b3": { "title": "Foto lukbuk", "body": "Har modelga bir nechta foto — sotuvchi va mijoz nimani sotayotganini koʻradi." }
+        }
+      },
+      "grocery": {
+        "name": "Oziq-ovqat doʻkoni",
+        "short": "Tarozi, yaroqlilik muddati, tez kassa.",
+        "title": "Oziq-ovqat doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Oziq-ovqat doʻkonlari uchun Savdo — tez kassa",
+        "seoDescription": "Supermarket va konvinent doʻkonlar uchun kassa. Tarozi, muddat, tez chek, yoʻqotishni nazorat qilish.",
+        "benefitsTitle": "Oziq-ovqat uchun tezlik va nazorat",
+        "benefits": {
+          "b1": { "title": "Tarozi va tortiladigan tovar", "body": "Tarozi, kilogramm tovarlari va stiker shtrix-kodlariga native qoʻllab-quvvatlash." },
+          "b2": { "title": "Yaroqlilik muddati", "body": "Muddat tugashidan oldin ogohlantirish. Kutilmagan hisobdan chiqarish yoʻq." },
+          "b3": { "title": "Juda tez kassa", "body": "<3 soniyada chek — skan va top-SKU uchun tezkor tugmalar." }
+        }
+      },
+      "hardware": {
+        "name": "Qurilish doʻkoni",
+        "short": "Koʻp ombor, ommaviy yuklash, qayta baholash.",
+        "title": "Qurilish doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Qurilish doʻkonlari uchun Savdo — ombor, koʻp nuqta",
+        "seoDescription": "Qurilish va xoʻjalik molari uchun. Ommaviy yuklash, koʻchirish, kursga qarab qayta baholash.",
+        "benefitsTitle": "Qurilish chakana savdosi uchun",
+        "benefits": {
+          "b1": { "title": "Excel’dan ommaviy import", "body": "Minglab SKU? Jadval bilan yuklang. Paketda narxlarni yangilang." },
+          "b2": { "title": "Koʻp ombor", "body": "Tovarni zal va orqa xona oʻrtasida harakatlantiring. Barcha nuqtalar boʻyicha yagona koʻrinish." },
+          "b3": { "title": "Kursga qarab qayta baholash", "body": "Import tovarlarimi? Kurs oʻzgarganda butun katalogni qayta baholang." }
+        }
+      },
+      "cosmetics": {
+        "name": "Kosmetika doʻkoni",
+        "short": "Seriyalar, muddatlar, aksiyalar, testerlar.",
+        "title": "Kosmetika doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Kosmetika doʻkonlari uchun Savdo — seriya, muddat",
+        "seoDescription": "Goʻzallik chakana savdosi: seriya hisobi, muddat, testerlar, sadoqat dasturi.",
+        "benefitsTitle": "Goʻzallik chakana savdosi uchun",
+        "benefits": {
+          "b1": { "title": "Seriya va muddat", "body": "Har bir flakon — seriya boʻyicha. FIFO aylanishi, muddat oldidan ogohlantirish." },
+          "b2": { "title": "Tester alohida", "body": "Sarflanadigan testerlar sotuv stokidan ajratiladi. Yolgʻon yoʻqotish yoʻq." },
+          "b3": { "title": "VIP sadoqat", "body": "Doimiy mijozlarni bosqichli chegirmalar va tugʻilgan kun sovgʻalari bilan taqdirlang." }
+        }
+      },
+      "accessories": {
+        "name": "Aksessuar doʻkoni",
+        "short": "Sumkalar, soatlar, zargarlik — har dona hisob.",
+        "title": "Aksessuar doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Aksessuar doʻkonlari uchun Savdo",
+        "seoDescription": "Sumka, soat va zargarlik uchun. Har buyumga foto, sertifikat, harakat jurnali.",
+        "benefitsTitle": "Sumka, soat va zargarlik uchun",
+        "benefits": {
+          "b1": { "title": "Har buyumga foto va ID", "body": "Qimmat buyum uchun oʻz ID, foto va sertifikat." },
+          "b2": { "title": "Anti-oʻgʻirlik jurnali", "body": "Har harakat, koʻrish, sotuv qayd qilinadi. Kim nimaga tegganini bilasiz." },
+          "b3": { "title": "Gravura va buyurtma", "body": "Individual buyurtma, gravura, bron — Excel’siz." }
+        }
+      },
+      "electronics": {
+        "name": "Elektronika doʻkoni",
+        "short": "IMEI, seriya raqami, kafolat, servis.",
+        "title": "Elektronika doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Elektronika uchun Savdo — IMEI, kafolat, servis",
+        "seoDescription": "Aloqa salonlari va elektronika uchun: IMEI/seriya, kafolat, servis tarixi.",
+        "benefitsTitle": "Elektronika chakana savdosi uchun",
+        "benefits": {
+          "b1": { "title": "IMEI va seriya raqami", "body": "Har bir qurilma skanerlanib xaridorga biriktirilar. Qaytarishda darhol qidiruv." },
+          "b2": { "title": "Kafolat va servis", "body": "Har buyumga kafolat muddati, taʼmir jurnali, biriktirilgan hisoblar." },
+          "b3": { "title": "Onlayn katalog", "body": "Qoldiqlarni sayt va marketpleyslarga bir bosishda sinxronlash." }
+        }
+      },
+      "home-goods": {
+        "name": "Uy uchun tovarlar",
+        "short": "Mebel, dekor, nuqtalar oʻrtasida koʻchirish.",
+        "title": "Uy uchun tovarlar doʻkonlari Savdo bilan oʻsadi",
+        "seoTitle": "Uy uchun tovarlar — Savdo",
+        "seoDescription": "Mebel va dekor tarmoqlari uchun: zal/ombor, mijoz buyurtmasi, yetkazib berish, koʻchirish.",
+        "benefitsTitle": "Mebel va dekor uchun",
+        "benefits": {
+          "b1": { "title": "Zal va ombor", "body": "Koʻrgazma namunalarini sotuv stokidan ajrating. Har qanday ombordan yetkazib berish." },
+          "b2": { "title": "Oldindan toʻlov buyurtmasi", "body": "Qisman toʻlov qabul qiling, yetkazib berishni rejalashtiring, mijozni xabardor qiling." },
+          "b3": { "title": "Nuqtalar oʻrtasida koʻchirish", "body": "Ogʻir mebelni doʻkonlar oʻrtasida toʻliq hisob va xarajat taqsimoti bilan koʻchiring." }
+        }
+      }
+    }
   },
   "partners": {
     "seo": {
@@ -327,42 +477,246 @@
     },
     "roadmap": {
       "eyebrow": "Yoʻl xaritasi",
-      "title": "Keyingi 24 oy qanday koʻrinadi.",
+      "title": "Yiliga bitta bozor — va har biri keyingisini moliyalashtiradi.",
       "items": {
         "r1": {
-          "when": "2-chor. 2026",
-          "title": "Tojikiston GA · 500 doʻkon",
-          "body": "Dushanbe va Xoʻjandda ishga tushirish. Mahalliy toʻlovlar (Alif, DC, Humo) va TJ fiskalizatsiyasi jangda."
+          "when": "2026 · 1-yil",
+          "title": "🇹🇯 Tojikiston — uy bozorida hukmronlik",
+          "body": "Dushanbe, Xoʻjand va Bokhtarda konsentrlangan ishga tushirish. Alif · DC · Humo · Korti Milli. 500 toʻlovchi doʻkon va 100 Growth Partnership. Unit-iqtisodiyot isbotlanmaguncha yangi bozor ochilmaydi."
         },
         "r2": {
-          "when": "4-chor. 2026",
-          "title": "Oʻzbekiston · koʻp valyuta",
-          "body": "Toshkentda ofis. UZS/TJS/USD, Payme + Click + Uzum. 2027 oxirida 2500 doʻkon."
+          "when": "2027 · 2-yil",
+          "title": "🇺🇿 Oʻzbekiston — pleybukni takrorlash",
+          "body": "Toshkent ofisi. UZS · Payme · Click · Uzum · LakLak. Tojikiston 1500 doʻkon; Oʻzbekiston 1000. Series A 2-bozorli kengayish isboti bilan jalb qilinadi."
         },
         "r3": {
-          "when": "2027",
-          "title": "Qozogʻiston va Qirgʻiziston",
-          "body": "Olmaota va Bishkekka kengayish. Ombor moduli, B2B taʼminotchi marketpleysi. Maqsad — 8000 doʻkon."
+          "when": "2028 · 3-yil",
+          "title": "🇰🇿 Qozogʻiston — kassa oqimi bilan moliyalashtirilgan",
+          "body": "Olmaota + Astana. KZT · Kaspi / Halyk · B2B taʼminotchi marketpleysi. Jami 8000 doʻkon. 3-bozor kengayishi venchur kapitali emas, UZ+TJ daromadi bilan moliyalashtiriladi."
         },
         "r4": {
-          "when": "2028+",
-          "title": "Embedded finance",
-          "body": "Tranzaksiya maʼlumotlari asosida savdogarlarga aylanma kredit — Billz→TBC pleybukini oʻz shartlarimizda monetizatsiya qilamiz."
+          "when": "2029+ · 4-yil va undan keyin",
+          "title": "🇰🇬 Qirgʻiziston + embedded finance",
+          "body": "Bishkek ishga tushirilishi. Savdogarlarga Savdo tranzaksiya tarixi asosida aylanma kredit. Bu yerda Billz→TBC pleybukini oʻz shartlarimizda monetizatsiya qilamiz."
         }
       }
     },
     "team": {
       "eyebrow": "Jamoa",
-      "title": "Bu bozorga mahsulot yetkazib bergan quruvchilar.",
-      "body": "Asoschilar jamoasi chakana operatsiyalar, toʻlov infratuzilmasi va MDH boʻylab koʻp tilli mahsulot muhandisligi sohalarida tajribaga ega."
+      "title": "Otlar emas — jokeylar.",
+      "body": "Ikki operator, ushbu raundning har bir dollari uchun shaxsan javobgar. Shohrukh Jalolov (CEO) avval [aniq kompaniya × rol × natija — TOʻLDIRILADI] ni ishga tushirdi. [Hammuassis] (CTO) avval [aniq mahsulot × foydalanuvchi × natija — TOʻLDIRILADI] ga rahbarlik qildi. Mobil, veb va bekend uchun yetakchilar 3-oyga yollanadi."
+    },
+    "unitEconomics": {
+      "eyebrow": "Unit iqtisodiyoti",
+      "title": "Raqamlar raund yopilishidan oldin isbotlanadi.",
+      "subtitle": "Pulingizni umidga olmaymiz. Siz dollar pul oʻtkazishdan oldin Tojikistonda nima isbotlaganimizni va biror metrika sinsa, bizga toʻxtashni aytadigan aniq triggerlarni koʻring.",
+      "pilotLabel": "Yopish oldi majburiyat",
+      "pilotTitle": "Raund yopilishidan oldin nimani isbotlagan boʻlamiz",
+      "pilot": {
+        "p1": {
+          "value": "10+",
+          "label": "Toʻlovchi pilot doʻkonlar",
+          "detail": "Tojikiston · toʻliq obuna · 30+ kun faol"
+        },
+        "p2": {
+          "value": "2",
+          "label": "Imzolangan Growth Partnership shartnomalari",
+          "detail": "Haqiqiy revenue-share shartnomalar, LOI emas"
+        },
+        "p3": {
+          "value": "$5K",
+          "label": "Raund oldi marketing testi",
+          "detail": "30 kun toʻlovli jalb · real CAC maʼlumotlari"
+        }
+      },
+      "unit": {
+        "u1": {
+          "label": "Maqsadli CAC (Tojikiston)",
+          "value": "$35–50",
+          "detail": "Raund oldi pilotda tasdiqlanadi · cheki $75"
+        },
+        "u2": {
+          "label": "ARPU (Pro tarif)",
+          "value": "$35/oy",
+          "detail": "Sheriklikgacha · barcha tariflar boʻyicha blend"
+        },
+        "u3": {
+          "label": "LTV (36 oy)",
+          "value": "$1 260+",
+          "detail": "Faqat obuna · sheriklik 2–3× qoʻshadi"
+        },
+        "u4": {
+          "label": "Payback muddati",
+          "value": "< 6 oy",
+          "detail": "CAC:LTV > 1:20 · SaaS benchmarkdan yuqori"
+        }
+      },
+      "killLabel": "Kill switch lar",
+      "killTitle": "Nimalar bizni burilishga majbur qiladi — kapitalingizni yoqmasdan",
+      "killSubtitle": "Aniq metrika chegaralarini oldindan belgilab qoʻydik. Agar biror metrika 2 oy ketma-ket sinsa — shu liniyani kesamiz va kapitalni yoʻnaltiramiz.",
+      "kill": {
+        "k1": {
+          "trigger": "12-oyga blend CAC > $150 boʻlsa",
+          "action": "toʻlovli jalbni toʻxtatamiz · sheriklik sotuv kanaliga oʻtamiz"
+        },
+        "k2": {
+          "trigger": "Growth Partnership konvertatsiyasi malakali savdogarlarning 20% dan kam boʻlsa",
+          "action": "revenue-share shartlarini qayta tuzamiz yoki dasturni sunset qilamiz"
+        },
+        "k3": {
+          "trigger": "18-oyga Tojikistonda doʻkonlar soni < 300 boʻlsa",
+          "action": "Oʻzbekiston kirishini 12 oy kechiktiramiz · avval pleybukni tuzatamiz"
+        }
+      },
+      "fundLabel": "Sheriklik fondi mexanikasi",
+      "fundTitle": "Qanday qilib $960K qaytadi — fintex-savodli investorlar uchun aniq matematika",
+      "fund": {
+        "f1": { "label": "Umumiy deployment (24 oy)", "value": "$960K" },
+        "f2": { "label": "Har savdogar uchun oʻrtacha", "value": "$4 800" },
+        "f3": { "label": "Moliyalashtirilgan savdogarlar (1–2-yil)", "value": "~200" },
+        "f4": { "label": "Har savdogardan oʻrtacha revenue-share qaytishi", "value": "$12 000 / 24 oy" },
+        "f5": { "label": "Fond umumiy qaytishi (5-yil)", "value": "$2,4M" }
+      },
+      "fundIrrLabel": "Fondning umumiy IRR (3 yil)",
+      "fundIrrValue": "~35%"
+    },
+    "risks": {
+      "eyebrow": "Xavflar va yumshatgichlar",
+      "title": "Kompaniyani nima oʻldirishi mumkin — va biz bu bilan nima qilamiz.",
+      "subtitle": "Har bir xavf narxda. Yoʻqligini koʻrsatmaymiz — ular yuz berganda qanday javob berishimizni koʻrsatamiz.",
+      "mitigantLabel": "Yumshatgich",
+      "items": {
+        "r1": {
+          "label": "Xavf 1",
+          "title": "Geosiyosat va valyuta volatiligi",
+          "risk": "Tojikiston Afgʻoniston bilan chegaradosh. Oʻzbekiston 2016 yilda valyutani chiqarib yuborib, xorijiy kapitalni yoʻq qildi. Qozogʻistonda 2022 da notinchlik boʻldi. Qirgʻizistonda 20 yilda hukumat 3 marta oʻzgardi.",
+          "mitigant": "Mahalliy valyutada daromad, iloji boricha USD hisoblarida saqlash. 6 oylik USD zaxira. Har mamlakatda mahalliy maslahatchi bilan yuridik shaxs. Pilot navbatdagisiga kapital boshlashdan oldin bitta bozorni tasdiqlaydi."
+        },
+        "r2": {
+          "label": "Xavf 2",
+          "title": "Growth Partnership adverse selection",
+          "risk": "Revenue-share ga tushishgan umidsiz savdogarlar boʻlishi mumkin, kuchlilari emas. Kuchlilari 100% oʻz oʻsishini saqlashni afzal koʻrishadi.",
+          "mitigant": "Sheriklik yopiq — savdogarni 90 kunlik obuna asosida malakali deb tasdiqlaymiz. Revenue-share faqat 3 oylik bazaviy daromaddan yuqori oʻsim uchun — kuchli operatorlar uchun maʼqul."
+        },
+        "r3": {
+          "label": "Xavf 3",
+          "title": "Kaspi / TBC-kuchli raqib bepul dastur bilan kiradi",
+          "risk": "Kaspi.kz Qozogʻistonda toʻlovlar bilan bepul POS taklif qiladi. TBC (Billz egasi) Growth Partnership modelini bank kuchi bilan takrorlashi mumkin. Shopify / Square nihoyat mahalliylashishi mumkin.",
+          "mitigant": "Tojikistonda Kaspi ekvivalenti yoʻq. KZ kirishigacha 2 yillik forsik. Growth Partnership — 24 oy, switching cost oshib boradi. Shopify hali ham $5M muhandislik investitsiyasisiz halal-compliant / oflayn-first taklif eta olmaydi."
+        },
+        "r4": {
+          "label": "Xavf 4",
+          "title": "Asoschi quvvati — mahsulot + sotuv + fintex fond",
+          "risk": "Buffettning asl eʼtirozi: ikki asoschi mahsulot + sotuv + fond + kengayish + 5 muhandis + 4 sotuvchi = 5 ish. Kuyib ketish xavfi.",
+          "mitigant": "Aniq rol taqsimlash: CEO — sotuv + sheriklik + fundraising. CTO — mahsulot + muhandislik. Head of Ops 4-oyga yollanadi (14% Ops dan). Yangi bozorlarga kengayishni country lead lar, asoschilarshaxsan emas, boshqaradi."
+        }
+      }
+    },
+    "growthModel": {
+      "eyebrow": "Farqlovchi xususiyat",
+      "title": "Biz faqat dastur sotmaymiz. Mijozlarimizga sarmoya kiritamiz.",
+      "subtitle": "Koʻpgina chakana platformalar qatʼiy toʻlov oladi va oʻsish muammosini doʻkonlarga qoldiradi. Biz aksincha — mijozlarimizga kapital kiritamiz, kengayishiga yordam beramiz va faqat yordam berib yaratgan oʻsishimizni ulushamiz.",
+      "featured": "Asosiy model",
+      "weProvide": "Biz nima beramiz",
+      "weEarn": "Biz nimaga ega boʻlamiz",
+      "takeaway": "Birinchi yilda investor dollarining 32% toʻgʻridan-toʻgʻri Tojikiston savdogarlariga oqadi — har bir dollar 4 mamlakat boʻylab tarqalganidan 2–3× samarali. Obuna — pol; sheriklik daromadi — shipol.",
+      "pillars": {
+        "p1": {
+          "title": "Oʻsishni ulushamiz, daromadni emas",
+          "body": "Doʻkonlar mavjud daromadning 100% ni oʻzida saqlab qoladi. Biz faqat yordam berib yaratgan oʻsimlikni 24 oy davomida ulushamiz."
+        },
+        "p2": {
+          "title": "Biz oldin toʻlaymiz, ular natija boʻyicha",
+          "body": "Savdo doʻkonning birinchi marketing kampaniyalarini moliyalashtiradi. Ishlamasa — doʻkon hech narsa qarzdor emas. Ishlasa — natijani ulushamiz."
+        },
+        "p3": {
+          "title": "Oxirgi dollargacha moslashgan",
+          "body": "Bizning daromadimiz ularniki bilan birga oʻsadi. Yashirin toʻlov yoʻq, zoʻrlik yoʻq, apsel bosimi yoʻq — bir umumiy P&L yoʻnalishi."
+        }
+      },
+      "tiers": {
+        "t1": {
+          "tag": "Tier 1 · Oʻz-oʻzidan",
+          "name": "Standart tariflar",
+          "who": "Har qanday doʻkon — bitta nuqtadan kichik tarmoqqacha — zamonaviyga tayyor, lekin uzoq muddatli sheriklikka emas.",
+          "provide": "Dastur (Start · Advanced · Pro). Toʻliq funksiya, 4 til, 4 valyuta, 24/7 qoʻllab-quvvatlash.",
+          "earn": "Oylik obuna"
+        },
+        "t2": {
+          "tag": "Tier 2 · Oʻsish dvigateli",
+          "name": "Growth Partnership",
+          "who": "Tasdiqlangan unit-iqtisodiyotga ega lekin toʻlovli marketing uchun kapital yetishmaydigan shijoatli doʻkonlar. Investor dollari shu yerga oqadi.",
+          "provide": "Chegirma dastur + bizning fondimizdan marketing ko-investitsiyasi + haftalik oʻsish pleybuki qoʻllab-quvvatlashi.",
+          "earn": "Chegirma obuna + 15–25% qoʻshimcha daromaddan ulush, 24 oy"
+        },
+        "t3": {
+          "tag": "Tier 3 · Enterprise",
+          "name": "Top Partner Program",
+          "who": "Koʻproq integratsiya, yoʻl xaritasiga taʼsir va qoʻshma bozor kengayishini istagan mavjud tarmoqlar (10+ nuqta).",
+          "provide": "Ko-brending kampaniyalar · maxsus muvaffaqiyat jamoasi · ustuvor funksiyalar · eksklyuziv bozor.",
+          "earn": "Xususiy daromad ulushi + ixtiyoriy equity varrantlar"
+        }
+      }
+    },
+    "useOfFunds": {
+      "eyebrow": "Mablagʻlar qayerga",
+      "title": "Har dollarning manzili",
+      "subtitle": "Raundning 64% toʻgʻridan-toʻgʻri oʻsishga — va 32% toʻgʻridan-toʻgʻri savdogar kapitaliga, reklamaga emas. Birinchi mamlakatni toʻliq egallab, keyingisini ochamiz.",
+      "totalLabel": "Jami jalb",
+      "callout1": "Toʻgʻridan-toʻgʻri oʻsish — sheriklik kapitali, jalb, dala sotuvi",
+      "callout2": "24 oy runway · Tojikistonda toʻliq hukmronlik · Series A ga tayyor",
+      "rows": {
+        "r2": {
+          "label": "Growth Partnership fondi",
+          "detail": "Savdogarlarga yoʻnaltirilgan kapital — eng katta modda, chunki bu moat"
+        },
+        "r1": {
+          "label": "Mijoz jalb (toʻlovli)",
+          "detail": "Y1 Tojikistonga konsentrlangan → Y2 Oʻzbekiston → Y3 Qozogʻiston → Y4 Qirgʻiziston"
+        },
+        "r6": {
+          "label": "Operatsiyalar, huquq, zaxira",
+          "detail": "Sheriklik shartnomalari · 6 oylik zaxira · 4 yurisdiksiyada yuridik ish"
+        },
+        "r3": {
+          "label": "Muhandislik jamoasi",
+          "detail": "2 mobil + 2 veb + 1 bekend · 24 oy · asboblar va infratuzilma"
+        },
+        "r4": {
+          "label": "Sotuv va mijoz muvaffaqiyati",
+          "detail": "Y1 da Tojikistonda 4 dala vakili, har yangi bozor bilan kengaytirish"
+        },
+        "r5": {
+          "label": "Uskuna va onbording kitlar",
+          "detail": "Skaner, printer, chek qogʻozi zaxirasi sheriklik doʻkonlari uchun"
+        }
+      }
+    },
+    "capTable": {
+      "eyebrow": "Kap-jadval trayektoriyasi",
+      "title": "Ulush qanday rivojlanadi — eksitgacha",
+      "subtitle": "Toʻliq 3-raund yoʻlini modelladik, shunda siz ham sarmoya kiritayotgan raundni, ham undan keyingilarini baholay olasiz.",
+      "stage": "Bosqich",
+      "raise": "Raund",
+      "post": "Post-money",
+      "investor": "Investorlar",
+      "founderBase": "Asoschilar (baza)",
+      "founderBear": "Asoschilar (ayiq)",
+      "footnote": "Baza stsenariy — Series A 10–13× ARR boʻyicha (rivojlanayotgan bozor SaaS uchun standart). Ayiq stsenariy — 7× ARR va har raundda 15% ESOP top-up. Ikkovini koʻrsatdikki, siz upside’dan oldin downside’ni baholay olasiz.",
+      "rounds": {
+        "seed": { "name": "Seed (ushbu raund)", "when": "Hozir · SAFE · $12M cap" },
+        "seriesA": { "name": "Series A", "when": "Oy 18–24 · 2500+ doʻkon, $1,5M+ ARR" },
+        "seriesB": { "name": "Series B", "when": "Oy 36–42 · 10 000+ doʻkon, $6M+ ARR" },
+        "exit": { "name": "Exit / IPO", "when": "Oy 60+ · $120M+ baholash" }
+      }
     },
     "ask": {
       "eyebrow": "Soʻrov",
       "title": "Seed raundi ochyapmiz.",
       "body": "Frontir bozor SaaS’ini tushunadigan va birinchi kundan kategoriya yetakchisini qoʻllab-quvvatlashga tayyor hamkorlarni izlaymiz.",
-      "raising": { "label": "Jalb qilyapmiz", "value": "$2.5M" },
-      "stage": { "label": "Bosqich", "value": "Seed" },
-      "use": { "label": "Sarflash", "value": "Muhandislik (45%) · Sotuv UZ+KZ (35%) · Operatsiyalar (20%)" },
+      "raising": { "label": "Jalb qilyapmiz", "value": "$3M" },
+      "stage": { "label": "Bosqich · Vosita", "value": "Seed · SAFE" },
+      "use": { "label": "Baholash cap", "value": "$12M post-money" },
       "runway": { "label": "Runway", "value": "24 oy" },
       "form": {
         "title": "Asoschilar bilan gaplashing",
@@ -385,7 +739,8 @@
     "ctaNote": "14 kun bepul · Kartasiz · 15 daqiqada sozlash",
     "chips": {
       "offline": "Oflayn ishlaydi",
-      "currencies": "TJS · UZS · KZT · KGS"
+      "currencies": "TJS · UZS · KZT · KGS",
+      "support": "Mahalliy qoʻllab-quvvatlash"
     }
   },
   "trust": {
@@ -467,22 +822,6 @@
       }
     }
   },
-  "solutions": {
-    "eyebrow": "Yechimlar",
-    "title": "Har qanday doʻkon turi uchun",
-    "subtitle": "Savdo biznesingizga moslashadi — butikdan dorixona tarmogʻigacha.",
-    "learnMore": "Batafsil",
-    "items": {
-      "clothing": { "title": "Kiyim-kechak", "description": "Oʻlchamlar, ranglar, mavsumlar va chegirmalar nazoratda." },
-      "shoes": { "title": "Poyabzal", "description": "Juftlab saqlash, oʻlcham jadvallari, mavsumiy kolleksiyalar." },
-      "cosmetics": { "title": "Kosmetika", "description": "Yaroqlilik muddati, partiyalar, aksiya va testerlar." },
-      "electronics": { "title": "Elektronika", "description": "IMEI, seriya raqamlari, kafolat va servis." },
-      "grocery": { "title": "Oziq-ovqat", "description": "Tortiladigan tovarlar, muddatlar, aksiyalar, tez kassa." },
-      "pharmacy": { "title": "Dorixonalar", "description": "Partiyalar, muddatlar, retseptlar va hisob." },
-      "sports": { "title": "Sport tovarlari", "description": "Oʻlchamlar, toʻplamlar, mavsum va ijara." },
-      "kids": { "title": "Bolalar tovarlari", "description": "Yosh guruhlari, oʻlchamlar, onalar uchun bonuslar." }
-    }
-  },
   "integrations": {
     "eyebrow": "Bizga ishonadi",
     "title": "Savdo bilan ishlayotgan brendlar",
@@ -513,7 +852,7 @@
   "pricing": {
     "eyebrow": "Tariflar",
     "title": "Halol narxlar mahalliy valyutangizda",
-    "subtitle": "Tegishli darajalarda Billz’dan 20% gacha arzon. Barcha tariflarda yangilanishlar, bulut va mahalliy tilda qoʻllab-quvvatlash bor.",
+    "subtitle": "Doʻkoningiz bilan birga oʻsadigan sodda tariflar. Barcha darajalar yangilanish, bulut va mahalliy tilda qoʻllab-quvvatlashni oʻz ichiga oladi.",
     "monthly": "Oylik",
     "yearly": "Yillik",
     "popular": "Mashhur",
@@ -521,44 +860,119 @@
     "cta": "Boshlash",
     "addLocation": "Qoʻshimcha nuqta: {value}/oy · istalgan vaqtda tarifni oʻzgartiring.",
     "billedYearly": "Yiliga toʻlov: {value}",
-    "billzNote": "Narxlar Billz Oʻzbekiston bilan solishtirildi (mart 2026): Start 299 000 UZS, Advanced 499 000 UZS, Pro 999 000 UZS.",
+    "showingFor": "Narxlar",
+    "billzNote": "Narxlar mahalliy valyutangizda koʻrsatilgan. Mintaqaviy tariflarni koʻrish uchun mamlakatni almashtiring.",
     "countries": {
       "tj": "Tojikiston",
       "uz": "Oʻzbekiston",
       "kz": "Qozogʻiston",
       "kg": "Qirgʻiziston"
     },
+    "compare": {
+      "eyebrow": "Tariflarni solishtirish",
+      "title": "Har bir tarifga nima kiradi",
+      "subtitle": "Toʻliq funksiya matritsasi — har bir tarifda nima borligini darhol koʻrasiz.",
+      "cta": "Bepul boshlash",
+      "ctaSecondary": "Narxlarni koʻrish",
+      "categories": {
+        "inventory": "Ombor hisobi",
+        "pos": "Kassa va savdo",
+        "customers": "Mijozlar va sadoqat",
+        "marketing": "Marketing",
+        "finance": "Moliya",
+        "reports": "Hisobot va tahlil",
+        "staff": "Xodimlar va kirish",
+        "integrations": "Integratsiyalar"
+      },
+      "features": {
+        "i1": "Tovarlarni rang, oʻlcham va boshqa xususiyatlar boʻyicha kategoriyalash",
+        "i2": "Oʻlchov birliklari (dona, metr, kg va b.)",
+        "i3": "Toʻplam va xizmatlar hisobi",
+        "i4": "GS1 bazasi orqali tovarlarni avtomatik yaratish",
+        "i5": "Excel orqali toʻplamli yuklash",
+        "i6": "Barcha nuqtalarda qoldiqlarni onlayn koʻrish",
+        "i7": "Tez va kengaytirilgan qidiruv",
+        "i8": "Narx belgilari va yorliqlarni chop etish",
+        "i9": "Doʻkonlar oʻrtasida koʻchirish",
+        "i10": "Past qoldiq haqida ogohlantirishlar",
+        "i11": "Alohida zonali koʻp omborli hisob",
+        "p1": "Planshet, noutbuk yoki telefonda tez kassa",
+        "p2": "Shtrix-kod skaneri va fiskal printer",
+        "p3": "Oflayn rejim — internetsiz ishlaydi",
+        "p4": "Cheklar, qaytarish va bekor qilish",
+        "p5": "Naqd, karta va onlayn toʻlov qabul qilish",
+        "p6": "Bir chekda bir nechta toʻlov usuli",
+        "p7": "Sovgʻa sertifikatlari va depozitlar",
+        "p8": "Oldindan buyurtma va boʻlib toʻlash",
+        "c1": "Aloqa maʼlumotlari bilan mijozlar bazasi",
+        "c2": "Har bir mijoz boʻyicha xarid tarixi",
+        "c3": "Sadoqat dasturi: ballar va darajalar",
+        "c4": "Mijoz segmentlari va teglar",
+        "c5": "Tugʻilgan kun va passivlik eslatmalari",
+        "c6": "Foydalanuvchi maydonlari va atributlar",
+        "m1": "SMS kampaniyalar",
+        "m2": "Telegram bot va xabarlar",
+        "m3": "Promokodlar va chegirma qoidalari",
+        "m4": "Mavsumiy aksiyalar va avtomatik chegirmalar",
+        "m5": "Avtomatik marketing ssenariylari",
+        "f1": "Kassa boshqaruvi va smena yopish",
+        "f2": "Daromad va xarajatlar hisobi",
+        "f3": "Taʼminotchi qarzlari",
+        "f4": "Koʻp valyutali hisob",
+        "f5": "P&L va kassa oqimi bashorati",
+        "r1": "Kunlik savdo va eng yaxshi sotuvchi hisobotlari",
+        "r2": "Ombor va kamayish hisobotlari",
+        "r3": "ABC tahlili va aylanma",
+        "r4": "Xodim KPI va komissiyalari",
+        "r5": "Maxsus hisobot konstruktori",
+        "r6": "Email boʻyicha rejadagi hisobotlar",
+        "s1": "Asosiy huquqlar bilan foydalanuvchi hisoblari",
+        "s2": "Kassir boʻyicha harakatlar jurnali",
+        "s3": "Smenalar va tabel hisobi",
+        "s4": "Xodim boʻyicha komissiya qoidalari",
+        "s5": "Rolli kirish boshqaruvi (RBAC)",
+        "n1": "Mahalliy toʻlovlar (Humo, Alif, Korti Milli)",
+        "n2": "Payme, Click, Apelsin",
+        "n3": "Fiskal va chek printerlari",
+        "n4": "Telegram bot",
+        "n5": "1С bilan sinxronlash",
+        "n7": "LakLak marketpleysi bilan integratsiya",
+        "n8": "Webmarket marketpleysi bilan integratsiya",
+        "n9": "Alif Marketplace bilan integratsiya",
+        "n6": "Ochiq API va webhooklar"
+      }
+    },
     "plans": {
       "start": {
         "name": "Start",
-        "tagline": "Bitta nuqta uchun",
+        "tagline": "Bitta doʻkon uchun",
         "features": {
-          "f1": "1 kassa va 1 foydalanuvchi",
-          "f2": "Tovar va ombor hisobi",
-          "f3": "Asosiy hisobotlar",
-          "f4": "Cheklar va fiskalizatsiya",
-          "f5": "Chatda qoʻllab-quvvatlash"
+          "f1": "10 tagacha foydalanuvchi",
+          "f2": "Bazada 5 000 mijoz",
+          "f3": "3 tagacha nuqta",
+          "f4": "Asosiy modullar: kassa, ombor, chek, hisobotlar",
+          "f5": "Email va chatda qoʻllab-quvvatlash"
         }
       },
       "pro": {
-        "name": "Pro",
+        "name": "Advanced",
         "tagline": "Oʻsayotgan biznes uchun",
         "features": {
-          "f1": "3 tagacha kassa va 5 foydalanuvchi",
-          "f2": "CRM va sadoqat dasturi",
-          "f3": "SMS va Telegram marketing",
-          "f4": "Kengaytirilgan tahlillar",
-          "f5": "Prioritet qoʻllab-quvvatlash"
+          "f1": "«Start» dagi hamma narsa, plyus:",
+          "f2": "20 tagacha foydalanuvchi",
+          "f3": "25 000 mijoz · 5 tagacha nuqta",
+          "f4": "CRM, sadoqat va marketing (SMS + Telegram)",
+          "f5": "Kengaytirilgan tahlillar · prioritet qoʻllab-quvvatlash"
         }
       },
       "business": {
-        "name": "Business",
+        "name": "Pro",
         "tagline": "Doʻkon tarmoqlari uchun",
         "features": {
-          "f1": "Cheklanmagan kassa va foydalanuvchilar",
-          "f2": "Bir nechta ombor va koʻchirishlar",
-          "f3": "API va integratsiyalar",
-          "f4": "Korporativ hisobotlar va KPI",
+          "f1": "«Advanced» dagi hamma narsa, plyus:",
+          "f2": "Cheksiz foydalanuvchi, mijoz va nuqta",
+          "f3": "Barcha modullar · bir nechta ombor va koʻchirishlar",
+          "f4": "API va integratsiyalar",
           "f5": "Shaxsiy menejer"
         }
       }
