@@ -12,11 +12,16 @@ import { CategoryCard } from '@/components/cosy/CategoryCard';
 import { FontSpecimen } from '@/components/cosy/Typography';
 import { OrderTable, Table, THead, TBody, Tr, Th, Td } from '@/components/cosy/Table';
 import { List, ListRow, NavItem, OrderLineItem, UpsaleRow } from '@/components/cosy/List';
-import { Checkbox } from '@/components/cosy/Form';
+import { Checkbox, PhoneInput } from '@/components/cosy/Form';
 import { Kbd } from '@/components/cosy/Kbd';
 import { EmptyState } from '@/components/cosy/EmptyState';
 import { NavRail } from '@/components/cosy/NavRail';
 import { Menu, MenuHeader, MenuItem } from '@/components/cosy/Menu';
+import { Chip } from '@/components/cosy/Chip';
+import { Highlight } from '@/components/cosy/Highlight';
+import { Receipt, ReceiptLine, ReceiptDivider, ReceiptItem } from '@/components/cosy/Receipt';
+import { ShortcutsPanel, ShortcutGroup, ShortcutRow } from '@/components/cosy/Shortcuts';
+import { PaymentRow } from '@/components/cosy/PaymentRow';
 import { FormDemo } from '@/components/cosy/showcase/FormDemo';
 import { Section, Example, Row } from '@/components/cosy/showcase/Section';
 import { Sidebar, type TocItem } from '@/components/cosy/showcase/Sidebar';
@@ -29,6 +34,8 @@ import { NumpadDemo } from '@/components/cosy/showcase/NumpadDemo';
 import { StepperDemo } from '@/components/cosy/showcase/StepperDemo';
 import { SegmentedControlDemo } from '@/components/cosy/showcase/SegmentedControlDemo';
 import { DatePickerDemo } from '@/components/cosy/showcase/DatePickerDemo';
+import { ComboboxDemo } from '@/components/cosy/showcase/ComboboxDemo';
+import { TagInputDemo } from '@/components/cosy/showcase/TagInputDemo';
 
 const toc: TocItem[] = [
   { id: 'colors', label: 'Colors' },
@@ -52,10 +59,15 @@ const toc: TocItem[] = [
   { id: 'data-tables', label: 'Data tables' },
   { id: 'forms', label: 'Forms' },
   { id: 'steppers', label: 'Steppers' },
+  { id: 'combobox', label: 'Combobox' },
+  { id: 'highlight', label: 'Highlight' },
   { id: 'date-picker', label: 'Date picker' },
   { id: 'empty-states', label: 'Empty states' },
   { id: 'payment-methods', label: 'Payment methods' },
+  { id: 'payment-rows', label: 'Payment rows' },
   { id: 'numpad', label: 'Numpad' },
+  { id: 'receipt', label: 'Receipt' },
+  { id: 'shortcuts', label: 'Shortcuts panel' },
   { id: 'sheets', label: 'Sheets' },
   { id: 'footers', label: 'Footers' },
 ];
@@ -305,10 +317,18 @@ export default function ComponentsPage({
             <Section
               id="chips"
               title="Chips"
-              description="Tap targets for filters and tables. Active state shows a 2px white ring."
+              description="Tap targets for filters and tables. Active state shows a 2px white ring. Optional removable (×) variant for tag-style chips inside a TagInput."
             >
-              <Example>
+              <Example label="Default & active">
                 <ChipDemo />
+              </Example>
+              <Example label="Removable (tag chips)">
+                <Row>
+                  <Chip removable>vip</Chip>
+                  <Chip removable>wholesale</Chip>
+                  <Chip removable>returning</Chip>
+                  <Chip active removable>selected</Chip>
+                </Row>
               </Example>
             </Section>
 
@@ -507,7 +527,8 @@ export default function ComponentsPage({
               <Example>
                 <div className="flex">
                   <NavRail
-                    brand={<>R</>}
+                    brand={<>Z</>}
+                    collapseSlot={<span aria-hidden className="text-base">»</span>}
                     items={[
                       { id: 'cart', icon: '🛒', label: 'Cart' },
                       { id: 'scan', icon: '📦', label: 'Scan', active: true },
@@ -705,6 +726,20 @@ export default function ComponentsPage({
                   <Checkbox label="Wholesale" checked readOnly />
                 </Row>
               </Example>
+              <Example label="Phone input with country prefix">
+                <div className="max-w-md">
+                  <PhoneInput
+                    label="Phone"
+                    required
+                    countryFlag="🇹🇯"
+                    countryCode="+992"
+                    placeholder="Enter phone"
+                  />
+                </div>
+              </Example>
+              <Example label="Tag input (chip field)">
+                <TagInputDemo />
+              </Example>
             </Section>
 
             {/* Steppers */}
@@ -715,6 +750,39 @@ export default function ComponentsPage({
             >
               <Example>
                 <StepperDemo />
+              </Example>
+            </Section>
+
+            {/* Combobox */}
+            <Section
+              id="combobox"
+              title="Combobox"
+              description="Search input + results panel for product / customer lookup. Each result is an avatar/image cell, multi-line text, and optional trailing meta (price, qty). Use Highlight inside titles and subtitles to mark the matched substring."
+            >
+              <Example>
+                <ComboboxDemo />
+              </Example>
+            </Section>
+
+            {/* Highlight */}
+            <Section
+              id="highlight"
+              title="Highlight"
+              description="Inline text matcher — wraps the matched substring in a pastel pill. Used inside Combobox results to surface the search term in product names, SKUs, and barcodes."
+            >
+              <Example>
+                <Row>
+                  <span className="text-sm text-cosy-text">
+                    SW-FB<Highlight text="047" query="047" />
+                  </span>
+                  <span className="text-sm text-cosy-text">
+                    <Highlight text="478" query="478" />
+                    0000041385
+                  </span>
+                  <span className="text-sm text-cosy-muted">
+                    Smart fitness <Highlight text="watch" query="watch" />
+                  </span>
+                </Row>
               </Example>
             </Section>
 
@@ -766,6 +834,26 @@ export default function ComponentsPage({
               </Example>
             </Section>
 
+            {/* Payment rows */}
+            <Section
+              id="payment-rows"
+              title="Payment rows"
+              description="Horizontal payment-method tile for the checkout grid — card icon, name, F-key shortcut, and a + button to apply the method."
+            >
+              <Example>
+                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  <PaymentRow icon="💵" name="Cash" shortcut="F1" />
+                  <PaymentRow icon="💳" name="Card" shortcut="F2" />
+                  <PaymentRow icon="💳" name="UzCard" shortcut="F3" />
+                  <PaymentRow icon="💳" name="HUMO" shortcut="F4" />
+                  <PaymentRow icon="💳" name="VISA" shortcut="F5" />
+                  <PaymentRow icon="💳" name="Mastercard" shortcut="F6" />
+                  <PaymentRow icon="💳" name="UnionPay" shortcut="F7" />
+                  <PaymentRow icon="💵" name="Credit" shortcut="F8" />
+                </div>
+              </Example>
+            </Section>
+
             {/* Numpad */}
             <Section
               id="numpad"
@@ -774,6 +862,104 @@ export default function ComponentsPage({
             >
               <Example>
                 <NumpadDemo />
+              </Example>
+            </Section>
+
+            {/* Shortcuts panel */}
+            <Section
+              id="shortcuts"
+              title="Shortcuts panel"
+              description="Categorized keyboard-shortcut reference. Two-column grid of groups — title in blue, then label/keys rows. Use one Kbd per key; arrow groups pass two keys."
+            >
+              <Example>
+                <ShortcutsPanel
+                  title="Shortcuts"
+                  action={
+                    <button
+                      type="button"
+                      aria-label="Collapse"
+                      className="flex h-8 w-8 items-center justify-center rounded-full bg-cosy-surface text-cosy-muted-2 transition hover:text-cosy-text"
+                    >
+                      ▾
+                    </button>
+                  }
+                >
+                  <ShortcutGroup title="Search and add products">
+                    <ShortcutRow label="Search products" keys="/" />
+                    <ShortcutRow label="Move in search" keys={['↑', '↓']} />
+                    <ShortcutRow label="Add product" keys="Enter" />
+                  </ShortcutGroup>
+                  <ShortcutGroup title="Cart">
+                    <ShortcutRow label="Move in cart" keys={['↑', '↓']} />
+                    <ShortcutRow label="Change quantity" keys={['→', '←']} />
+                    <ShortcutRow label="Manual product discount" keys="S" />
+                    <ShortcutRow label="Remove product" keys="D" />
+                  </ShortcutGroup>
+                  <ShortcutGroup title="Customer & discount">
+                    <ShortcutRow label="Add customer" keys="J" />
+                    <ShortcutRow label="Manual cart discount" keys="K" />
+                    <ShortcutRow label="Toggle discount type" keys={['→', '←']} />
+                  </ShortcutGroup>
+                  <ShortcutGroup title="Payment">
+                    <ShortcutRow label="Pick payment type" keys="L" />
+                    <ShortcutRow label="Quick pay — cash" keys="F1" />
+                    <ShortcutRow label="Quick pay — card" keys="F2" />
+                  </ShortcutGroup>
+                </ShortcutsPanel>
+              </Example>
+            </Section>
+
+            {/* Receipt */}
+            <Section
+              id="receipt"
+              title="Receipt"
+              description="Printable sale receipt with zigzag-cut top/bottom edges. White surface, monospace, dotted dot-leaders between label and value, bold totals, and a barcode placeholder."
+            >
+              <Example>
+                <div className="flex justify-center">
+                  <Receipt className="w-full max-w-xs">
+                    <ReceiptDivider />
+                    <div className="space-y-1.5">
+                      <p>
+                        <span className="font-bold">Sale:</span> #000402080246
+                      </p>
+                      <p>
+                        <span className="font-bold">Store Sabad</span>
+                      </p>
+                      <p>
+                        <span className="font-bold">Date:</span> 28.04.2026, 23:23
+                      </p>
+                      <p>
+                        <span className="font-bold">Hours:</span> 09:00 – 18:00
+                      </p>
+                      <p>
+                        <span className="font-bold">Seller:</span> Fayzali Saidov
+                      </p>
+                      <p>
+                        <span className="font-bold">Cashier:</span> Fayzali Saidov
+                      </p>
+                      <p>
+                        <span className="font-bold">Customer:</span>
+                      </p>
+                      <p>
+                        <span className="font-bold">Contact:</span>
+                      </p>
+                    </div>
+                    <ReceiptDivider />
+                    <ReceiptItem
+                      index={1}
+                      name="Smart fitness watch"
+                      qty={1}
+                      unitPrice="1 687"
+                      total="1 687 TJS"
+                    />
+                    <ReceiptDivider />
+                    <ReceiptLine label="Subtotal" value="1 687 TJS" />
+                    <ReceiptLine label="TOTAL" value="1 687 TJS" bold />
+                    <ReceiptDivider />
+                    <div className="mt-2 flex h-12 items-center justify-center bg-[repeating-linear-gradient(90deg,#111315_0,#111315_2px,transparent_2px,transparent_5px,#111315_5px,#111315_6px,transparent_6px,transparent_10px)]" />
+                  </Receipt>
+                </div>
               </Example>
             </Section>
 

@@ -1,6 +1,7 @@
 export type ChipProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   active?: boolean;
   iconLeft?: React.ReactNode;
+  removable?: boolean;
   onRemove?: () => void;
   removeLabel?: string;
 };
@@ -8,6 +9,7 @@ export type ChipProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export function Chip({
   active = false,
   iconLeft,
+  removable,
   onRemove,
   removeLabel = 'Remove',
   className = '',
@@ -15,6 +17,7 @@ export function Chip({
   type = 'button',
   ...rest
 }: ChipProps) {
+  const showRemove = removable || !!onRemove;
   return (
     <button
       type={type}
@@ -28,7 +31,7 @@ export function Chip({
     >
       {iconLeft && <span aria-hidden>{iconLeft}</span>}
       <span>{children}</span>
-      {onRemove && (
+      {showRemove && (onRemove ? (
         <span
           role="button"
           tabIndex={0}
@@ -48,7 +51,14 @@ export function Chip({
         >
           ×
         </span>
-      )}
+      ) : (
+        <span
+          aria-hidden
+          className="ml-0.5 flex h-4 w-4 items-center justify-center rounded-full text-cosy-muted-2"
+        >
+          ×
+        </span>
+      ))}
     </button>
   );
 }
