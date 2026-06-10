@@ -10,17 +10,17 @@ export const localeNames: Record<Locale, string> = {
 };
 
 export const siteConfig = {
-  name: 'Savdo',
+  name: 'Refresh',
   url: 'https://savdo.io',
   appUrl: 'https://savdo-pos-web.vercel.app',
   signupFormUrl: 'https://forms.gle/savdo-signup',
-  phone: '+992 000 100 010',
-  phoneHref: 'tel:+992000100010',
-  email: 'hello@savdo.io',
+  phone: '+992 985 36 65 60',
+  phoneHref: 'tel:+992985366560',
+  email: 'info@refresh.tj',
   social: {
-    telegram: 'https://t.me/savdo',
-    instagram: 'https://instagram.com/savdo',
-    facebook: 'https://facebook.com/savdo',
-    youtube: 'https://youtube.com/@savdo',
+    telegram: 'https://t.me/refresh_tj',
+    instagram: 'https://instagram.com/refresh.tj',
+    whatsapp: 'https://wa.me/992985366560',
+    facebook: 'https://facebook.com/refresh.tj',
   },
 } as const;

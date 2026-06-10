@@ -41,24 +41,26 @@ export default async function SolutionsIndex({
     <>
       <Header />
       <main>
-        <section className="section">
-          <div className="container-savdo">
+        <section className="py-20 sm:py-28">
+          <div className="container-refresh">
             <div className="mx-auto max-w-3xl text-center">
-              <span className="eyebrow">{tIndex('eyebrow')}</span>
-              <h1 className="h-display mt-5">{tIndex('title')}</h1>
-              <p className="mx-auto mt-6 max-w-xl text-lg text-slate-700 sm:text-xl">
+              <span className="refresh-eyebrow">{tIndex('eyebrow')}</span>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-refresh-text sm:text-5xl">
+                {tIndex('title')}
+              </h1>
+              <p className="mx-auto mt-5 max-w-xl text-base text-refresh-muted sm:text-lg">
                 {tIndex('subtitle')}
               </p>
             </div>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
               {SOLUTIONS.map((sol) => (
                 <Link
                   key={sol.slug}
                   href={`/${locale}/solutions/${sol.slug}`}
-                  className="group relative overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-1 hover:shadow-soft"
+                  className="group relative overflow-hidden rounded-xl border border-refresh-line bg-refresh-surface transition hover:-translate-y-1 hover:border-refresh-surface-3 sm:rounded-2xl"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-square overflow-hidden sm:aspect-[4/3]">
                     <Image
                       src={sol.image}
                       alt=""
@@ -66,18 +68,18 @@ export default async function SolutionsIndex({
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover transition duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-refresh-bg/70 to-transparent" />
                   </div>
-                  <div className="p-5">
-                    <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-savdo-100 text-savdo-800">
-                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+                  <div className="p-3.5 sm:p-5">
+                    <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-refresh-sage/15 text-refresh-sage sm:h-9 sm:w-9">
+                      <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="currentColor">
                         <path d={sol.icon} />
                       </svg>
                     </div>
-                    <h2 className="mt-4 font-display text-lg font-bold text-slate-900">
+                    <h2 className="mt-3 text-sm font-semibold text-refresh-text sm:mt-4 sm:text-lg">
                       {t(`items.${sol.slug}.name`)}
                     </h2>
-                    <p className="mt-1 text-sm text-slate-700">
+                    <p className="mt-1 text-xs text-refresh-muted sm:text-sm">
                       {t(`items.${sol.slug}.short`)}
                     </p>
                   </div>

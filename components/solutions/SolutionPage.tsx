@@ -186,12 +186,6 @@ export function SolutionPage({
               >
                 {tShared('ctaPrimary')}
               </a>
-              <Link
-                href={`/${locale}/partners`}
-                className="inline-flex items-center rounded-full border border-white/30 px-7 py-3 text-sm font-bold text-white transition hover:bg-white/10"
-              >
-                {tShared('finalContact')}
-              </Link>
             </div>
           </div>
         </div>

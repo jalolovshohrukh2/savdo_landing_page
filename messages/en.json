@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Savdo — All-in-one retail management: inventory, POS, CRM, analytics",
-    "description": "Savdo is cloud retail management software for Central Asia. Inventory, POS, customers, finance and marketing in one system.",
-    "keywords": "retail POS, inventory management, shop software, CRM retail, Central Asia POS, Tajikistan, Uzbekistan, Savdo",
-    "trial": "14-day free trial, no card required"
+    "title": "Refresh — All-in-one retail management: inventory, POS, CRM, analytics",
+    "description": "Refresh is cloud retail management software for Central Asia. Inventory, POS, customers, finance and marketing in one system.",
+    "keywords": "retail POS, inventory management, shop software, CRM retail, Central Asia POS, Tajikistan, Uzbekistan, Refresh",
+    "trial": "7-day free trial, no card required"
   },
   "nav": {
     "features": "Features",
@@ -11,7 +11,30 @@
     "investors": "Investors",
     "partners": "Partners",
     "solutions": "Solutions",
-    "tryFree": "Try for free"
+    "tryFree": "Try Demo"
+  },
+  "demo": {
+    "accent": "Leave a request",
+    "rest": "and our managers will get in touch with you",
+    "name": { "label": "Full name", "placeholder": "Enter your full name" },
+    "phone": { "label": "Phone number" },
+    "store": { "label": "Store name", "placeholder": "Enter store name" },
+    "type": { "label": "Store type", "placeholder": "Select a type" },
+    "types": {
+      "clothing": "Clothing",
+      "shoes": "Shoes",
+      "grocery": "Grocery",
+      "electronics": "Electronics",
+      "cosmetics": "Cosmetics",
+      "pharmacy": "Pharmacy",
+      "other": "Other"
+    },
+    "submit": "Submit request",
+    "errors": { "required": "This field is required" },
+    "success": {
+      "title": "Thank you! Your request was sent",
+      "body": "Our manager will reach out to you shortly."
+    }
   },
   "topbar": {
     "contact": "Contact manager:",
@@ -27,20 +50,20 @@
     "index": {
       "eyebrow": "Solutions",
       "title": "Built for every kind of store",
-      "subtitle": "From fashion boutiques to hardware stores — Savdo adapts to the way your business sells.",
-      "seoTitle": "Solutions for every type of store — Savdo",
-      "seoDescription": "Savdo is the operating system for retail: clothing, shoes, grocery, hardware, cosmetics, accessories, electronics and home goods."
+      "subtitle": "From fashion boutiques to hardware stores — Refresh adapts to the way your business sells.",
+      "seoTitle": "Solutions for every type of store — Refresh",
+      "seoDescription": "Refresh is the operating system for retail: clothing, shoes, grocery, hardware, cosmetics, accessories, electronics and home goods."
     },
     "shared": {
       "subtitle": "Track inventory, learn customer preferences, grow sales with analytics, and manage staff and finances — all in one cloud platform.",
       "ctaPrimary": "Try for free",
       "ctaSecondary": "See pricing",
-      "benefitsEyebrow": "Why Savdo for you",
+      "benefitsEyebrow": "Why Refresh for you",
       "platformEyebrow": "Every store, same platform",
       "platformTitle": "Everything included, out of the box",
       "platformSubtitle": "Whatever you sell, the core platform does the heavy lifting.",
       "finalTitle": "Ready to run your store the modern way?",
-      "finalSubtitle": "Try Savdo free for 14 days. Setup in 15 minutes, support in your language.",
+      "finalSubtitle": "Try Refresh free for 7 days. Setup in 15 minutes, support in your language.",
       "finalContact": "Talk to partnerships",
       "stats": {
         "stat1": { "value": "−40%", "label": "Time on inventory" },
@@ -62,8 +85,8 @@
       "clothing": {
         "name": "Clothing store",
         "short": "Sizes, colors, seasons — all under control.",
-        "title": "Clothing stores grow with Savdo",
-        "seoTitle": "Savdo for clothing stores — POS, inventory, CRM",
+        "title": "Clothing stores grow with Refresh",
+        "seoTitle": "Refresh for clothing stores — POS, inventory, CRM",
         "seoDescription": "Retail platform for fashion boutiques and clothing chains. Track sizes and colors, run loyalty, grow sales.",
         "benefitsTitle": "Made for the way you sell clothes",
         "benefits": {
@@ -75,8 +98,8 @@
       "shoes": {
         "name": "Shoe store",
         "short": "Pair storage, size grids, fast restock.",
-        "title": "Shoe stores grow with Savdo",
-        "seoTitle": "Savdo for shoe stores — POS, size grids, CRM",
+        "title": "Shoe stores grow with Refresh",
+        "seoTitle": "Refresh for shoe stores — POS, size grids, CRM",
         "seoDescription": "Built for sneaker shops and footwear chains. Track size grids, manage paired stock, scale across stores.",
         "benefitsTitle": "Built for footwear retail",
         "benefits": {
@@ -88,8 +111,8 @@
       "grocery": {
         "name": "Grocery store",
         "short": "Weighing scales, expiry, fast checkout.",
-        "title": "Grocery stores grow with Savdo",
-        "seoTitle": "Savdo for grocery stores — fast POS, expiry tracking",
+        "title": "Grocery stores grow with Refresh",
+        "seoTitle": "Refresh for grocery stores — fast POS, expiry tracking",
         "seoDescription": "POS for supermarkets and convenience stores. Weighing scales, expiry alerts, fast checkout, shrinkage control.",
         "benefitsTitle": "Speed and shrinkage control for grocery",
         "benefits": {
@@ -101,8 +124,8 @@
       "hardware": {
         "name": "Hardware store",
         "short": "Multi-warehouse, bulk upload, revaluation.",
-        "title": "Hardware stores grow with Savdo",
-        "seoTitle": "Savdo for hardware stores — inventory, multi-warehouse",
+        "title": "Hardware stores grow with Refresh",
+        "seoTitle": "Refresh for hardware stores — inventory, multi-warehouse",
         "seoDescription": "Retail software for construction and hardware shops. Bulk upload, inter-warehouse transfers, price revaluation by FX.",
         "benefitsTitle": "Made for hardware and construction retail",
         "benefits": {
@@ -114,8 +137,8 @@
       "cosmetics": {
         "name": "Cosmetics store",
         "short": "Batches, expiry, promos and testers.",
-        "title": "Cosmetics stores grow with Savdo",
-        "seoTitle": "Savdo for cosmetics stores — batches, expiry, loyalty",
+        "title": "Cosmetics stores grow with Refresh",
+        "seoTitle": "Refresh for cosmetics stores — batches, expiry, loyalty",
         "seoDescription": "Beauty retail platform with batch tracking, expiry alerts, sample management, and loyalty for repeat buyers.",
         "benefitsTitle": "Built for beauty retail",
         "benefits": {
@@ -127,8 +150,8 @@
       "accessories": {
         "name": "Accessories store",
         "short": "Bags, watches, jewelry — track each SKU.",
-        "title": "Accessories stores grow with Savdo",
-        "seoTitle": "Savdo for accessories stores — bags, watches, jewelry",
+        "title": "Accessories stores grow with Refresh",
+        "seoTitle": "Refresh for accessories stores — bags, watches, jewelry",
         "seoDescription": "For bag, watch, and jewelry retailers. Per-item photos, certificate tracking, anti-theft audit trail.",
         "benefitsTitle": "For bags, watches and jewelry",
         "benefits": {
@@ -140,8 +163,8 @@
       "electronics": {
         "name": "Electronics store",
         "short": "IMEI, serials, warranty and service.",
-        "title": "Electronics stores grow with Savdo",
-        "seoTitle": "Savdo for electronics stores — IMEI, warranty, service",
+        "title": "Electronics stores grow with Refresh",
+        "seoTitle": "Refresh for electronics stores — IMEI, warranty, service",
         "seoDescription": "For phone shops and electronics retailers. IMEI/serial tracking, warranty claims, after-sales service history.",
         "benefitsTitle": "Built for electronics retail",
         "benefits": {
@@ -153,8 +176,8 @@
       "home-goods": {
         "name": "Home goods",
         "short": "Furniture, decor, inter-store transfers.",
-        "title": "Home goods stores grow with Savdo",
-        "seoTitle": "Savdo for home goods — furniture, decor, delivery",
+        "title": "Home goods stores grow with Refresh",
+        "seoTitle": "Refresh for home goods — furniture, decor, delivery",
         "seoDescription": "For furniture and home decor chains. Showroom stock, special orders, delivery scheduling, multi-location transfers.",
         "benefitsTitle": "Built for furniture and home decor",
         "benefits": {
@@ -167,12 +190,12 @@
   },
   "partners": {
     "seo": {
-      "title": "Earn up to $10,000 with Savdo — Partner program",
+      "title": "Earn up to $10,000 with Refresh — Partner program",
       "description": "Start your business in IT by selling one of the best retail automation platforms in Central Asia. Earn $1,000–$10,000/month. Payback from month 2."
     },
     "hero": {
       "eyebrow": "Partner program",
-      "title": "Earn up to $10,000 with Savdo",
+      "title": "Earn up to $10,000 with Refresh",
       "subtitle": "Start your business in IT by selling one of the best retail automation platforms in Central Asia.",
       "cards": {
         "investment": "Investment",
@@ -198,7 +221,7 @@
       "cta": "Request a consultation"
     },
     "why": {
-      "eyebrow": "Why Savdo",
+      "eyebrow": "Why Refresh",
       "title": "One of the fastest-growing retail-tech platforms in Central Asia",
       "subtitle": "Built for modern retail: cloud-first, multi-currency, offline-ready, four languages out of the box.",
       "stats": {
@@ -232,7 +255,7 @@
     },
     "benefits": {
       "eyebrow": "Benefits",
-      "title": "Why partner with Savdo",
+      "title": "Why partner with Refresh",
       "items": {
         "b1": "One of the best retail-automation products on the market",
         "b2": "Full launch and process setup — we train you end-to-end",
@@ -288,7 +311,7 @@
       "monthlyEarnings": "Monthly commission (steady state)",
       "yearOne": "Year-one total earnings",
       "arpuNote": "Calculation: stores × {value} avg ARPU × 50% commission (Sales Partner, year 1).",
-      "disclaimer": "Estimates based on Savdo Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
+      "disclaimer": "Estimates based on Refresh Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
       "countries": {
         "us": "🇺🇸 USD",
         "tj": "🇹🇯 TJ",
@@ -307,7 +330,7 @@
         },
         "q2": {
           "q": "When does commission start?",
-          "a": "Commission becomes payable once the client has actively used Savdo for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
+          "a": "Commission becomes payable once the client has actively used Refresh for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
         },
         "q3": {
           "q": "How and when am I paid?",
@@ -319,7 +342,7 @@
         },
         "q5": {
           "q": "Do I have to install hardware?",
-          "a": "No — Savdo runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
+          "a": "No — Refresh runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
         },
         "q6": {
           "q": "Can I charge the shop for onboarding?",
@@ -353,13 +376,13 @@
   },
   "investors": {
     "seo": {
-      "title": "Investors — Savdo",
-      "description": "Savdo is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
+      "title": "Investors — Refresh",
+      "description": "Refresh is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
     },
     "hero": {
       "eyebrow": "Investor deck · 2026",
       "title": "Arming 2.4 million small retailers to compete with the giants.",
-      "subtitle": "Savdo is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
+      "subtitle": "Refresh is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
       "ctaPrimary": "Get in touch",
       "ctaSecondary": "Download deck",
       "stats": {
@@ -372,7 +395,7 @@
     "mission": {
       "eyebrow": "Mission",
       "title": "Small businesses deserve enterprise-grade tools.",
-      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Savdo closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
+      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Refresh closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
     },
     "opportunity": {
       "eyebrow": "Market",
@@ -434,7 +457,7 @@
       },
       "quote": {
         "label": "From the field",
-        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Savdo report.",
+        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Refresh report.",
         "author": "Shop owner interview, Dushanbe 2025"
       }
     },
@@ -492,7 +515,7 @@
         "kpi3": { "label": "Blended CAC payback", "value": "5 mo", "delta": "at $50 blended ARPU" }
       },
       "chart": {
-        "title": "Stores on Savdo",
+        "title": "Stores on Refresh",
         "subtitle": "Plan · paying customers, year-end",
         "tag": "Projection",
         "calloutLabel": "By 2030:",
@@ -521,7 +544,7 @@
         "r4": {
           "when": "2029+ · Year 4 & beyond",
           "title": "🇰🇬 Kyrgyzstan + embedded finance",
-          "body": "Bishkek launch. Working-capital loans to Growth Partnership merchants using their Savdo transaction history. This is where we monetize the Billz→TBC playbook on our own terms."
+          "body": "Bishkek launch. Working-capital loans to Growth Partnership merchants using their Refresh transaction history. This is where we monetize the Billz→TBC playbook on our own terms."
         }
       }
     },
@@ -651,7 +674,7 @@
         },
         "p2": {
           "title": "We invest first, they pay after",
-          "body": "Savdo funds the merchant's first marketing campaigns. If it doesn't work, they owe nothing. If it does, we share in the result."
+          "body": "Refresh funds the merchant's first marketing campaigns. If it doesn't work, they owe nothing. If it does, we share in the result."
         },
         "p3": {
           "title": "Aligned to the last dollar",
@@ -757,10 +780,11 @@
   "hero": {
     "eyebrow": "The retail OS for Central Asia",
     "title": "A superpower for your store",
-    "subtitle": "One cloud platform for POS, inventory, CRM and finance — built for retailers in Tajikistan, Uzbekistan, Kazakhstan and Kyrgyzstan.",
-    "ctaPrimary": "Start free",
-    "ctaSecondary": "See pricing",
-    "ctaNote": "14 days free · No credit card · Setup in 15 minutes",
+    "subtitle": "One cloud platform for POS, inventory, CRM and finance — built for retailers in Tajikistan.",
+    "ctaPrimary": "Try Demo",
+    "ctaSecondary": "Plans",
+    "ctaNote": "7 days free · No credit card · Setup in 15 minutes",
+    "integrations": "Integrations",
     "chips": {
       "offline": "Works offline",
       "currencies": "TJS · UZS · KZT · KGS",
@@ -769,10 +793,10 @@
   },
   "trust": {
     "rating": "4.9 out of 5",
-    "stores": "5000+ stores run on Savdo"
+    "stores": "5000+ stores run on Refresh"
   },
   "showcase": {
-    "eyebrow": "Savdo in action",
+    "eyebrow": "Refresh in action",
     "title": "One platform — everywhere your store works",
     "subtitle": "POS on tablet, inventory on phone, analytics on laptop — all data syncs automatically.",
     "items": {
@@ -811,7 +835,7 @@
   "features": {
     "eyebrow": "Features",
     "title": "One program — every store task",
-    "subtitle": "Savdo replaces a dozen disconnected tools and unifies them into a single management system.",
+    "subtitle": "Refresh replaces a dozen disconnected tools and unifies them into a single management system.",
     "more": "See all features",
     "items": {
       "inventory": {
@@ -848,21 +872,21 @@
   },
   "integrations": {
     "eyebrow": "Trusted by",
-    "title": "The brands that run on Savdo",
+    "title": "The brands that run on Refresh",
     "subtitle": "From family boutiques to growing retail chains across Central Asia."
   },
   "testimonials": {
     "eyebrow": "Customers",
     "title": "Trusted by thousands of stores",
-    "subtitle": "Stories from entrepreneurs who grew with Savdo.",
+    "subtitle": "Stories from entrepreneurs who grew with Refresh.",
     "items": {
       "one": {
-        "quote": "Six months with Savdo and we opened a second location. Clear reports, stock under control, and POS works even with no internet.",
+        "quote": "Six months with Refresh and we opened a second location. Clear reports, stock under control, and POS works even with no internet.",
         "name": "Aziza Rahimova",
         "role": "Clothing chain, Dushanbe"
       },
       "two": {
-        "quote": "We moved from 1C to Savdo — simpler, faster, no license fees. Support is always there.",
+        "quote": "We moved from 1C to Refresh — simpler, faster, no license fees. Support is always there.",
         "name": "Dilshod Karimov",
         "role": "Electronics store, Tashkent"
       },
@@ -1007,7 +1031,7 @@
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": {
-      "q1": { "q": "Do I need to install anything?", "a": "No. Savdo runs in the browser and mobile apps. Just sign up." },
+      "q1": { "q": "Do I need to install anything?", "a": "No. Refresh runs in the browser and mobile apps. Just sign up." },
       "q2": { "q": "Does POS work offline?", "a": "Yes. The register keeps working offline and syncs when you're back online." },
       "q3": { "q": "How do I migrate from 1C or Excel?", "a": "Import items, stock and customers via spreadsheets or API. We assist for free during onboarding." },
       "q4": { "q": "How much is onboarding?", "a": "Base setup and training are free on all plans. Custom configuration is available on request." },
@@ -1017,7 +1041,7 @@
   },
   "finalCta": {
     "title": "Run your store the modern way",
-    "subtitle": "Set up Savdo in 15 minutes. 14 days free, no card, with support in your language.",
+    "subtitle": "Set up Refresh in 15 minutes. 7 days free, no card, with support in your language.",
     "ctaPrimary": "Create account",
     "ctaSecondary": "Book a demo",
     "note": "Onboarding and training included"
@@ -1027,8 +1051,9 @@
     "contact": "Contact us",
     "rights": "All rights reserved.",
     "cols": {
+      "product": "Product",
       "solutions": "Solutions",
-      "why": "Why Savdo",
+      "why": "Why Refresh",
       "resources": "Resources",
       "partners": "Partners",
       "company": "Company"

@@ -1,0 +1,2 @@
+- [No Claude co-author on commits](feedback_no_claude_coauthor.md) — never add the Co-Authored-By trailer when committing in this repo
+- [Brand is Refresh, not Savdo](project_brand_is_refresh.md) — product renamed to Refresh; folder/repo still named Savdo

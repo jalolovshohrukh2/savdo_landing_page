@@ -50,7 +50,7 @@ export function organizationJsonLd() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.svg`,
+    logo: `${siteConfig.url}/refresh-logo.svg`,
     telephone: siteConfig.phone,
     sameAs: Object.values(siteConfig.social),
   };

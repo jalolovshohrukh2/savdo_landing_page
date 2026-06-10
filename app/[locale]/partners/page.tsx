@@ -1,8 +1,6 @@
 import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { PartnersPage } from '@/components/partners/PartnersPage';
 import { siteConfig, locales, type Locale } from '@/i18n.config';
 
 export function generateStaticParams() {
@@ -33,15 +31,9 @@ export async function generateMetadata({
   };
 }
 
+// Temporarily disabled — the Partners page is hidden from the site for now
+// (no nav/footer links). The component is kept; remove this notFound() to restore.
 export default function Page({ params: { locale } }: { params: { locale: Locale } }) {
   unstable_setRequestLocale(locale);
-  return (
-    <>
-      <Header />
-      <main>
-        <PartnersPage />
-      </main>
-      <Footer />
-    </>
-  );
+  notFound();
 }

@@ -1,23 +1,17 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Inter, Manrope } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { locales, type Locale } from '@/i18n.config';
 import { buildMetadata, organizationJsonLd, softwareJsonLd } from '@/lib/seo';
-import { TopBar } from '@/components/TopBar';
+import { ScrollTopButton } from '@/components/landing/ScrollTopButton';
 import '../globals.css';
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700', '800'],
   variable: '--font-inter',
   display: 'swap',
-});
-
-const manrope = Manrope({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-display',
-  display: 'swap',
-  weight: ['700', '800'],
 });
 
 export function generateStaticParams() {
@@ -47,8 +41,8 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale });
 
   return (
-    <html lang={locale} className={`${inter.variable} ${manrope.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang={locale} className={inter.variable}>
+      <body className="refresh font-sans antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <script
             type="application/ld+json"
@@ -60,8 +54,8 @@ export default async function LocaleLayout({
               __html: JSON.stringify(softwareJsonLd(t as unknown as (key: string) => string)),
             }}
           />
-          <TopBar />
           {children}
+          <ScrollTopButton />
         </NextIntlClientProvider>
       </body>
     </html>

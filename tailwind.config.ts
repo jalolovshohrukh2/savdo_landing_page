@@ -1,49 +1,35 @@
 import type { Config } from 'tailwindcss';
 
+/**
+ * Refresh tokens are exposed as CSS variables (RGB triplets) so:
+ * 1. Tailwind opacity modifiers work — bg-refresh-sage/20, hover:bg-refresh-surface/50
+ * 2. Theme switching works — .refresh-light overrides the variables; consumer
+ *    utilities pick up the new values without rebuilding any classes.
+ */
 const config: Config = {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-  ],
+  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        savdo: {
-          DEFAULT: 'rgb(57, 173, 168)',
-          50: '#effaf9',
-          100: '#d6f2f0',
-          200: '#b0e4e0',
-          300: '#7fcec8',
-          400: '#4fb5ae',
-          500: 'rgb(57, 173, 168)',
-          600: '#2d8a86',
-          700: '#256f6c',
-          800: '#205958',
-          900: '#1d4a49',
-          950: '#0d2a2a',
+        refresh: {
+          bg: 'rgb(var(--refresh-bg) / <alpha-value>)',
+          surface: 'rgb(var(--refresh-surface) / <alpha-value>)',
+          'surface-2': 'rgb(var(--refresh-surface-2) / <alpha-value>)',
+          'surface-3': 'rgb(var(--refresh-surface-3) / <alpha-value>)',
+          line: 'rgb(var(--refresh-line) / <alpha-value>)',
+          text: 'rgb(var(--refresh-text) / <alpha-value>)',
+          muted: 'rgb(var(--refresh-muted) / <alpha-value>)',
+          'muted-2': 'rgb(var(--refresh-muted-2) / <alpha-value>)',
+          sage: 'rgb(var(--refresh-sage) / <alpha-value>)',
+          lavender: 'rgb(var(--refresh-lavender) / <alpha-value>)',
+          blue: 'rgb(var(--refresh-blue) / <alpha-value>)',
+          pink: 'rgb(var(--refresh-pink) / <alpha-value>)',
+          periwinkle: 'rgb(var(--refresh-periwinkle) / <alpha-value>)',
+          'on-pastel': 'rgb(var(--refresh-on-pastel) / <alpha-value>)',
         },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
-      },
-      boxShadow: {
-        soft: '0 10px 40px -10px rgba(57, 173, 168, 0.25)',
-        card: '0 4px 24px -6px rgba(15, 23, 42, 0.08)',
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.6s ease-out forwards',
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0', transform: 'translateY(12px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-12px)' },
-        },
       },
     },
   },
