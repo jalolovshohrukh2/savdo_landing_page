@@ -16,10 +16,21 @@
   "demo": {
     "accent": "Leave a request",
     "rest": "and our managers will get in touch with you",
-    "name": { "label": "Full name", "placeholder": "Enter your full name" },
-    "phone": { "label": "Phone number" },
-    "store": { "label": "Store name", "placeholder": "Enter store name" },
-    "type": { "label": "Store type", "placeholder": "Select a type" },
+    "name": {
+      "label": "Full name",
+      "placeholder": "Enter your full name"
+    },
+    "phone": {
+      "label": "Phone number"
+    },
+    "store": {
+      "label": "Store name",
+      "placeholder": "Enter store name"
+    },
+    "type": {
+      "label": "Store type",
+      "placeholder": "Select a type"
+    },
     "types": {
       "clothing": "Clothing",
       "shoes": "Shoes",
@@ -30,7 +41,9 @@
       "other": "Other"
     },
     "submit": "Submit request",
-    "errors": { "required": "This field is required" },
+    "errors": {
+      "required": "This field is required"
+    },
     "success": {
       "title": "Thank you! Your request was sent",
       "body": "Our manager will reach out to you shortly."
@@ -66,9 +79,18 @@
       "finalSubtitle": "Try Refresh free for 7 days. Setup in 15 minutes, support in your language.",
       "finalContact": "Talk to partnerships",
       "stats": {
-        "stat1": { "value": "−40%", "label": "Time on inventory" },
-        "stat2": { "value": "+30%", "label": "Repeat sales" },
-        "stat3": { "value": "0%", "label": "Loss to shrinkage" }
+        "stat1": {
+          "value": "−40%",
+          "label": "Time on inventory"
+        },
+        "stat2": {
+          "value": "+30%",
+          "label": "Repeat sales"
+        },
+        "stat3": {
+          "value": "0%",
+          "label": "Loss to shrinkage"
+        }
       },
       "platform": {
         "f1": "Inventory with color / size / attribute tracking",
@@ -90,9 +112,18 @@
         "seoDescription": "Retail platform for fashion boutiques and clothing chains. Track sizes and colors, run loyalty, grow sales.",
         "benefitsTitle": "Made for the way you sell clothes",
         "benefits": {
-          "b1": { "title": "Size × color matrix", "body": "Track every SKU by size and color. One-click variants, photos per item." },
-          "b2": { "title": "Seasonal collections", "body": "Plan drops by season, tag items with collection labels, archive old lines fast." },
-          "b3": { "title": "Smart discounts", "body": "Automatic end-of-season markdowns, coupon codes, bundled outfits." }
+          "b1": {
+            "title": "Size × color matrix",
+            "body": "Track every SKU by size and color. One-click variants, photos per item."
+          },
+          "b2": {
+            "title": "Seasonal collections",
+            "body": "Plan drops by season, tag items with collection labels, archive old lines fast."
+          },
+          "b3": {
+            "title": "Smart discounts",
+            "body": "Automatic end-of-season markdowns, coupon codes, bundled outfits."
+          }
         }
       },
       "shoes": {
@@ -103,9 +134,18 @@
         "seoDescription": "Built for sneaker shops and footwear chains. Track size grids, manage paired stock, scale across stores.",
         "benefitsTitle": "Built for footwear retail",
         "benefits": {
-          "b1": { "title": "Size grids per model", "body": "Manage sizes 35–48 per model and color. See exactly what's low." },
-          "b2": { "title": "Paired storage logic", "body": "Both shoes count as one item; mispairs and returns tracked automatically." },
-          "b3": { "title": "Lookbook photos", "body": "Attach multiple photos to each model — staff and customers see what they're buying." }
+          "b1": {
+            "title": "Size grids per model",
+            "body": "Manage sizes 35–48 per model and color. See exactly what's low."
+          },
+          "b2": {
+            "title": "Paired storage logic",
+            "body": "Both shoes count as one item; mispairs and returns tracked automatically."
+          },
+          "b3": {
+            "title": "Lookbook photos",
+            "body": "Attach multiple photos to each model — staff and customers see what they're buying."
+          }
         }
       },
       "grocery": {
@@ -116,9 +156,18 @@
         "seoDescription": "POS for supermarkets and convenience stores. Weighing scales, expiry alerts, fast checkout, shrinkage control.",
         "benefitsTitle": "Speed and shrinkage control for grocery",
         "benefits": {
-          "b1": { "title": "Scales & weighed items", "body": "Native support for weighing scales, price-per-kilo items, and sticker barcodes." },
-          "b2": { "title": "Expiry tracking", "body": "Shelf-life alerts before products expire. Zero write-offs you didn't expect." },
-          "b3": { "title": "Blazing fast POS", "body": "Sub-3-second checkout with barcode scan and keypad shortcuts for top SKUs." }
+          "b1": {
+            "title": "Scales & weighed items",
+            "body": "Native support for weighing scales, price-per-kilo items, and sticker barcodes."
+          },
+          "b2": {
+            "title": "Expiry tracking",
+            "body": "Shelf-life alerts before products expire. Zero write-offs you didn't expect."
+          },
+          "b3": {
+            "title": "Blazing fast POS",
+            "body": "Sub-3-second checkout with barcode scan and keypad shortcuts for top SKUs."
+          }
         }
       },
       "hardware": {
@@ -129,9 +178,18 @@
         "seoDescription": "Retail software for construction and hardware shops. Bulk upload, inter-warehouse transfers, price revaluation by FX.",
         "benefitsTitle": "Made for hardware and construction retail",
         "benefits": {
-          "b1": { "title": "Bulk import from Excel", "body": "Thousands of SKUs? Upload a spreadsheet. Update prices in batch." },
-          "b2": { "title": "Multi-warehouse transfers", "body": "Move stock between storefront and backroom. Consolidated view across all locations." },
-          "b3": { "title": "FX-based revaluation", "body": "Imported goods? Revalue the whole catalog when exchange rates shift." }
+          "b1": {
+            "title": "Bulk import from Excel",
+            "body": "Thousands of SKUs? Upload a spreadsheet. Update prices in batch."
+          },
+          "b2": {
+            "title": "Multi-warehouse transfers",
+            "body": "Move stock between storefront and backroom. Consolidated view across all locations."
+          },
+          "b3": {
+            "title": "FX-based revaluation",
+            "body": "Imported goods? Revalue the whole catalog when exchange rates shift."
+          }
         }
       },
       "cosmetics": {
@@ -142,9 +200,18 @@
         "seoDescription": "Beauty retail platform with batch tracking, expiry alerts, sample management, and loyalty for repeat buyers.",
         "benefitsTitle": "Built for beauty retail",
         "benefits": {
-          "b1": { "title": "Batch & expiry tracking", "body": "Every bottle tracked by batch. FIFO rotation, alerts before expiry." },
-          "b2": { "title": "Tester & sample stock", "body": "Split consumable testers from sellable stock. No more fake shrinkage." },
-          "b3": { "title": "VIP loyalty", "body": "Reward repeat customers with tiered discounts and birthday offers." }
+          "b1": {
+            "title": "Batch & expiry tracking",
+            "body": "Every bottle tracked by batch. FIFO rotation, alerts before expiry."
+          },
+          "b2": {
+            "title": "Tester & sample stock",
+            "body": "Split consumable testers from sellable stock. No more fake shrinkage."
+          },
+          "b3": {
+            "title": "VIP loyalty",
+            "body": "Reward repeat customers with tiered discounts and birthday offers."
+          }
         }
       },
       "accessories": {
@@ -155,9 +222,18 @@
         "seoDescription": "For bag, watch, and jewelry retailers. Per-item photos, certificate tracking, anti-theft audit trail.",
         "benefitsTitle": "For bags, watches and jewelry",
         "benefits": {
-          "b1": { "title": "Per-item photos & codes", "body": "High-value items get unique IDs, photos and certificates attached." },
-          "b2": { "title": "Anti-theft audit trail", "body": "Every view, move and sale logged. Know exactly who touched what." },
-          "b3": { "title": "Custom engraving & orders", "body": "Handle made-to-order, engraving, and reservations without spreadsheets." }
+          "b1": {
+            "title": "Per-item photos & codes",
+            "body": "High-value items get unique IDs, photos and certificates attached."
+          },
+          "b2": {
+            "title": "Anti-theft audit trail",
+            "body": "Every view, move and sale logged. Know exactly who touched what."
+          },
+          "b3": {
+            "title": "Custom engraving & orders",
+            "body": "Handle made-to-order, engraving, and reservations without spreadsheets."
+          }
         }
       },
       "electronics": {
@@ -168,9 +244,18 @@
         "seoDescription": "For phone shops and electronics retailers. IMEI/serial tracking, warranty claims, after-sales service history.",
         "benefitsTitle": "Built for electronics retail",
         "benefits": {
-          "b1": { "title": "IMEI & serial tracking", "body": "Every device scanned and linked to the buyer. Instant lookup in returns or warranty." },
-          "b2": { "title": "Warranty & service", "body": "Track warranty period per item, log repairs, attach invoices." },
-          "b3": { "title": "Online catalog", "body": "Sync your stock to your website and marketplaces in one click." }
+          "b1": {
+            "title": "IMEI & serial tracking",
+            "body": "Every device scanned and linked to the buyer. Instant lookup in returns or warranty."
+          },
+          "b2": {
+            "title": "Warranty & service",
+            "body": "Track warranty period per item, log repairs, attach invoices."
+          },
+          "b3": {
+            "title": "Online catalog",
+            "body": "Sync your stock to your website and marketplaces in one click."
+          }
         }
       },
       "home-goods": {
@@ -181,599 +266,19 @@
         "seoDescription": "For furniture and home decor chains. Showroom stock, special orders, delivery scheduling, multi-location transfers.",
         "benefitsTitle": "Built for furniture and home decor",
         "benefits": {
-          "b1": { "title": "Showroom vs. warehouse", "body": "Separate display items from sellable stock. Order fulfillment from any warehouse." },
-          "b2": { "title": "Special orders & deposits", "body": "Take partial payments, schedule deliveries, keep the customer in the loop." },
-          "b3": { "title": "Inter-store transfers", "body": "Move heavy items between stores with full tracking and cost allocation." }
+          "b1": {
+            "title": "Showroom vs. warehouse",
+            "body": "Separate display items from sellable stock. Order fulfillment from any warehouse."
+          },
+          "b2": {
+            "title": "Special orders & deposits",
+            "body": "Take partial payments, schedule deliveries, keep the customer in the loop."
+          },
+          "b3": {
+            "title": "Inter-store transfers",
+            "body": "Move heavy items between stores with full tracking and cost allocation."
+          }
         }
-      }
-    }
-  },
-  "partners": {
-    "seo": {
-      "title": "Earn up to $10,000 with Refresh — Partner program",
-      "description": "Start your business in IT by selling one of the best retail automation platforms in Central Asia. Earn $1,000–$10,000/month. Payback from month 2."
-    },
-    "hero": {
-      "eyebrow": "Partner program",
-      "title": "Earn up to $10,000 with Refresh",
-      "subtitle": "Start your business in IT by selling one of the best retail automation platforms in Central Asia.",
-      "cards": {
-        "investment": "Investment",
-        "earnings": "Earnings per month",
-        "payback": "Payback",
-        "paybackValue": "From month 2",
-        "training": "Full process training",
-        "trainingValue": "Included"
-      },
-      "cta": "Request a consultation"
-    },
-    "market": {
-      "eyebrow": "Market potential",
-      "title": "Automation is a fast-growing segment in Central Asia",
-      "subtitle": "Over 70% of retailers still use paper notebooks, Excel, or legacy software — and are actively switching to modern automation.",
-      "annual": "Annual market",
-      "countries": {
-        "uz": "Uzbekistan",
-        "kz": "Kazakhstan",
-        "kg": "Kyrgyzstan",
-        "tj": "Tajikistan"
-      },
-      "cta": "Request a consultation"
-    },
-    "why": {
-      "eyebrow": "Why Refresh",
-      "title": "One of the fastest-growing retail-tech platforms in Central Asia",
-      "subtitle": "Built for modern retail: cloud-first, multi-currency, offline-ready, four languages out of the box.",
-      "stats": {
-        "w1": { "value": "4", "label": "Languages supported on day one (TJ · RU · UZ · EN)" },
-        "w2": { "value": "4", "label": "Active markets (UZ · KZ · KG · TJ)" },
-        "w3": { "value": "2.4M+", "label": "Addressable SMBs across launch markets" },
-        "w4": { "value": "$87B+", "label": "Total Central Asia retail turnover in 2024" },
-        "w5": { "value": "18.2%", "label": "Global cloud-POS growth through 2030" },
-        "w6": { "value": "100%", "label": "Cloud-native — works from any device" }
-      },
-      "cta": "Request a consultation"
-    },
-    "product": {
-      "eyebrow": "The product",
-      "title": "One of the easiest retail platforms to learn and sell",
-      "subtitle": "Everything a shop needs to run professionally, in a single system.",
-      "items": {
-        "f1": "Inventory & stock tracking",
-        "f2": "Customer database & CRM",
-        "f3": "POS and cash register",
-        "f4": "Staff and shift management",
-        "f5": "Finance and cash flow",
-        "f6": "Reports and analytics",
-        "f7": "Marketing tools (SMS & Telegram)"
-      },
-      "cta": "Request a consultation"
-    },
-    "demand": {
-      "title": "retailers request a demo every single day",
-      "body": "Store owners across Central Asia are actively looking for modern software. Partners tap into this inbound demand — you don't have to cold-call."
-    },
-    "benefits": {
-      "eyebrow": "Benefits",
-      "title": "Why partner with Refresh",
-      "items": {
-        "b1": "One of the best retail-automation products on the market",
-        "b2": "Full launch and process setup — we train you end-to-end",
-        "b3": "Help with customer acquisition and ongoing support",
-        "b4": "Hiring and team-scaling assistance as you grow",
-        "b5": "Launch with just $500 and 10 hours per month",
-        "b6": "Profitable from month 2 — fast payback"
-      },
-      "cta": "Apply now"
-    },
-    "types": {
-      "eyebrow": "Two partnership tracks",
-      "title": "Pick the track that fits your time and capital",
-      "subtitle": "Both tracks earn from onboarding, data entry and hardware. Only the Sales Partner gets a subscription revenue share.",
-      "popular": "Most popular",
-      "apply": "Apply for this track",
-      "revenue": "Revenue streams",
-      "labels": {
-        "investment": "Investment",
-        "time": "Time / month",
-        "clients": "Clients / month"
-      },
-      "time": {
-        "service": "20–30 hours",
-        "sales": "100 hours"
-      },
-      "tracks": {
-        "service": {
-          "tag": "Service Partner",
-          "name": "Service Partner",
-          "description": "You handle onboarding, training and client support. Low investment, flexible hours, steady side income."
-        },
-        "sales": {
-          "tag": "Sales Partner",
-          "name": "Sales Partner",
-          "description": "You sell, onboard and support clients. Higher investment and hours — but you earn 50% of subscription revenue in year one."
-        }
-      },
-      "revenueItems": {
-        "r1": "Turnkey onboarding & training",
-        "r2": "Building the product catalog",
-        "r3": "Hardware sales (POS / scanner / printer)",
-        "r4": "Portfolio income (100+ clients)",
-        "r5": "Subscription revenue share (year 1)"
-      }
-    },
-    "calculator": {
-      "eyebrow": "Earnings calculator",
-      "title": "Model your year-one earnings",
-      "subtitle": "As a Sales Partner, you earn 50% of subscription revenue in year one. Adjust the slider to model your goal.",
-      "country": "Choose your country",
-      "stores": "Stores you'll sign up in year one",
-      "monthlyEarnings": "Monthly commission (steady state)",
-      "yearOne": "Year-one total earnings",
-      "arpuNote": "Calculation: stores × {value} avg ARPU × 50% commission (Sales Partner, year 1).",
-      "disclaimer": "Estimates based on Refresh Pro plan ARPU. Actual results vary by upsell, churn and hardware/onboarding add-ons.",
-      "countries": {
-        "us": "🇺🇸 USD",
-        "tj": "🇹🇯 TJ",
-        "uz": "🇺🇿 UZ",
-        "kz": "🇰🇿 KZ",
-        "kg": "🇰🇬 KG"
-      }
-    },
-    "faq": {
-      "eyebrow": "FAQ",
-      "title": "Common questions",
-      "items": {
-        "q1": {
-          "q": "Do I need a registered company?",
-          "a": "For the Sales Partner track we require a legal entity (IP / OOO / TOO). For the Service Partner track a personal contract is fine."
-        },
-        "q2": {
-          "q": "When does commission start?",
-          "a": "Commission becomes payable once the client has actively used Refresh for 7 days. From then on, subscription revenue is split with you monthly for the first 12 months."
-        },
-        "q3": {
-          "q": "How and when am I paid?",
-          "a": "Commissions are calculated on the 1st of each month and paid by the 10th. We pay via bank transfer, Payme, Click, Alif or Korti Milli."
-        },
-        "q4": {
-          "q": "What if a shop cancels after I sign them up?",
-          "a": "You earn commission only on months the shop actually pays. No clawback — if the shop cancels later, you keep everything already earned."
-        },
-        "q5": {
-          "q": "Do I have to install hardware?",
-          "a": "No — Refresh runs on the shop's tablet, laptop or phone. But selling hardware (scanners, printers, receipt paper) is one of your additional income streams."
-        },
-        "q6": {
-          "q": "Can I charge the shop for onboarding?",
-          "a": "Yes — partners typically charge $50–100 per turnkey setup, plus $20/day for data entry. You keep 100% of those fees."
-        }
-      }
-    },
-    "apply": {
-      "eyebrow": "Apply",
-      "title": "Apply for the partnership program",
-      "subtitle": "Fill in the form and our partnership team will run a free consultation within 48 hours.",
-      "form": {
-        "name": "Full name",
-        "namePh": "First and last name",
-        "phone": "Phone number",
-        "motivation": "Why do you want to become a partner?",
-        "motivationPh": "Tell us about your goals",
-        "hasBusiness": "Do you already run a business?",
-        "yes": "Yes",
-        "no": "No",
-        "experience": "What is your retail or sales experience?",
-        "experiencePh": "Describe what you've done before",
-        "investment": "How much can you invest (USD)?",
-        "hours": "Hours per week you can commit",
-        "city": "Which city are you in?",
-        "cityPh": "e.g. Dushanbe, Tashkent, Almaty",
-        "submit": "Send application",
-        "or": "or contact us on Telegram"
-      }
-    }
-  },
-  "investors": {
-    "seo": {
-      "title": "Investors — Refresh",
-      "description": "Refresh is building the operating system for 2.4M+ small retailers across Central Asia — a $87B retail market riding 18% cloud-POS growth."
-    },
-    "hero": {
-      "eyebrow": "Investor deck · 2026",
-      "title": "Arming 2.4 million small retailers to compete with the giants.",
-      "subtitle": "Refresh is the operating system for Central Asian retail — POS, inventory, CRM, finance, marketing in one cloud platform. We give a family boutique in Khujand the same toolkit as a supermarket chain.",
-      "ctaPrimary": "Get in touch",
-      "ctaSecondary": "Download deck",
-      "stats": {
-        "retail": "Central Asia retail turnover (2024)",
-        "smbs": "SMBs in our four launch markets",
-        "cagr": "Global cloud-POS CAGR through 2030",
-        "markets": "live markets (UZ · KZ · KG · TJ)"
-      }
-    },
-    "mission": {
-      "eyebrow": "Mission",
-      "title": "Small businesses deserve enterprise-grade tools.",
-      "body": "Large retail chains run on billion-dollar software stacks. The family store next door still counts stock on paper and loses customers to the chain down the street. Refresh closes that gap — one cloud platform that turns a solo shop into a data-driven operation in 15 minutes."
-    },
-    "opportunity": {
-      "eyebrow": "Market",
-      "title": "A $87B retail market, under-served and digitizing fast.",
-      "subtitle": "Central Asia is the last large unautomated retail region — and the fastest-digitizing one.",
-      "tam": {
-        "tag": "TAM",
-        "value": "$87B+",
-        "title": "Total retail turnover",
-        "description": "Combined 2024 retail turnover across Uzbekistan, Kazakhstan, Kyrgyzstan and Tajikistan."
-      },
-      "sam": {
-        "tag": "SAM",
-        "value": "2.4M+",
-        "title": "Small & medium retailers",
-        "description": "Registered SMBs in our launch markets — the core audience underserved by legacy 1C and enterprise POS."
-      },
-      "som": {
-        "tag": "SOM (5 yr)",
-        "value": "40K",
-        "title": "Target stores by 2030",
-        "description": "~1.7% market share at blended ARPU of $50/mo — our explicit 2030 target."
-      },
-      "table": {
-        "country": "Country",
-        "smbs": "SMBs / small enterprises",
-        "retail": "Retail turnover 2024",
-        "internet": "Internet penetration"
-      },
-      "countries": {
-        "uz": "🇺🇿 Uzbekistan",
-        "kz": "🇰🇿 Kazakhstan",
-        "kg": "🇰🇬 Kyrgyzstan",
-        "tj": "🇹🇯 Tajikistan"
-      },
-      "sources": "Sources: Stat Agency of Uzbekistan (2025), Bureau of National Statistics Kazakhstan (2024), NSC Kyrgyzstan (2025), Trend.az / EBRD Tajikistan (2024–25), DataReportal Digital 2024."
-    },
-    "problem": {
-      "eyebrow": "Problem",
-      "title": "Small retailers are losing to scale — and don't know why.",
-      "body": "A Dushanbe boutique has no way to know what's selling, what's dead stock, or which customer hasn't come back. Big chains do. That information gap is the single biggest driver of SMB closure in the region.",
-      "pains": {
-        "p1": {
-          "title": "Inventory blindness",
-          "body": "Most SMBs track stock in a paper ledger or a single Excel file — updated weekly at best, impossible to reconcile across locations."
-        },
-        "p2": {
-          "title": "No customer memory",
-          "body": "Repeat buyers are anonymous. No loyalty, no segmentation, no way to reactivate a lapsed customer."
-        },
-        "p3": {
-          "title": "Cash-flow by feel",
-          "body": "Owners know revenue but not margin. 40% of SMB closures cite cash-flow mismanagement."
-        },
-        "p4": {
-          "title": "Legacy software is wrong-sized",
-          "body": "1C requires an IT contractor and desktop licenses. Global SaaS (Shopify POS, Lightspeed) is English-only and cards-first — a bad fit for cash-heavy CA markets."
-        }
-      },
-      "quote": {
-        "label": "From the field",
-        "text": "I was losing around 15% of stock a year to shrinkage and didn't even know it until I saw the first Refresh report.",
-        "author": "Shop owner interview, Dushanbe 2025"
-      }
-    },
-    "solution": {
-      "eyebrow": "Solution",
-      "title": "One platform, built for how Central Asia actually shops.",
-      "subtitle": "Four things we do that global SaaS won't.",
-      "items": {
-        "s1": {
-          "title": "Four languages, day one",
-          "body": "Tajik, Russian, Uzbek, English — per-employee. No other cloud POS covers this stack natively."
-        },
-        "s2": {
-          "title": "Offline-first POS",
-          "body": "Internet in TJ is still 42% — our register keeps selling when the connection drops and syncs on return."
-        },
-        "s3": {
-          "title": "Local payments & tax",
-          "body": "Integrated with Humo, Alif, Korti Milli, Payme, Click — and compliant with local fiscalization out of the box."
-        },
-        "s4": {
-          "title": "Built for cash-heavy retail",
-          "body": "Cash handling, supplier debts, informal wholesale — modeled natively instead of bolted on."
-        }
-      }
-    },
-    "whynow": {
-      "eyebrow": "Why now",
-      "title": "The window just opened.",
-      "items": {
-        "w1": {
-          "stat": "18.2%",
-          "label": "Global cloud-POS CAGR · 2025–2030",
-          "body": "Cloud POS is replacing desktop legacy globally. Asia Pacific is leading at 19.6% — and CA is under-penetrated vs. regional peers."
-        },
-        "w2": {
-          "stat": "96% / 83%",
-          "label": "Internet penetration · KZ / UZ (2024)",
-          "body": "Digital rails are in place — our core markets now have the connectivity for cloud SaaS to actually work."
-        },
-        "w3": {
-          "stat": "Billz → TBC",
-          "label": "Proof of exit · June 2025",
-          "body": "Our closest comp, Billz (4,000+ stores), was acquired by TBC Bank Group in mid-2025 — validating the thesis and pricing the category."
-        }
-      }
-    },
-    "traction": {
-      "eyebrow": "Traction & plan",
-      "title": "A clear path from 500 to 40,000 stores.",
-      "subtitle": "Our 5-year plan mirrors Billz's trajectory — with a wider regional footprint and a stronger local-language product.",
-      "kpis": {
-        "kpi1": { "label": "Active stores", "value": "120", "delta": "+28% MoM" },
-        "kpi2": { "label": "Net revenue retention", "value": "118%", "delta": "via upsell to Pro/Business" },
-        "kpi3": { "label": "Blended CAC payback", "value": "5 mo", "delta": "at $50 blended ARPU" }
-      },
-      "chart": {
-        "title": "Stores on Refresh",
-        "subtitle": "Plan · paying customers, year-end",
-        "tag": "Projection",
-        "calloutLabel": "By 2030:",
-        "callout": "40,000 stores ≈ 1.7% share of a 2.4M SMB market — conservative vs. Billz's 4,000-store exit in a narrower footprint."
-      }
-    },
-    "roadmap": {
-      "eyebrow": "Roadmap",
-      "title": "One market per year — and each one funds the next.",
-      "items": {
-        "r1": {
-          "when": "2026 · Year 1",
-          "title": "🇹🇯 Tajikistan — dominate the home market",
-          "body": "Concentrated launch in Dushanbe, Khujand and Bokhtar. Alif · DC · Humo · Korti Milli live. Target 500 paying stores and 100 Growth Partnerships. No new market opens until unit economics are proven."
-        },
-        "r2": {
-          "when": "2027 · Year 2",
-          "title": "🇺🇿 Uzbekistan — replicate the playbook",
-          "body": "Tashkent office. UZS multi-currency · Payme · Click · Uzum · LakLak integrations. Tajikistan hits 1,500 stores; Uzbekistan hits 1,000. Series A raised on proven 2-market expansion."
-        },
-        "r3": {
-          "when": "2028 · Year 3",
-          "title": "🇰🇿 Kazakhstan — funded by cash flow",
-          "body": "Almaty + Astana entry. KZT pricing · Kaspi / Halyk integrations · B2B supplier marketplace launches. Total 8,000 stores. Third-market expansion funded by UZ+TJ revenue, not venture capital."
-        },
-        "r4": {
-          "when": "2029+ · Year 4 & beyond",
-          "title": "🇰🇬 Kyrgyzstan + embedded finance",
-          "body": "Bishkek launch. Working-capital loans to Growth Partnership merchants using their Refresh transaction history. This is where we monetize the Billz→TBC playbook on our own terms."
-        }
-      }
-    },
-    "team": {
-      "eyebrow": "Team",
-      "title": "Jockeys, not just horses.",
-      "body": "Two operators with direct accountability for every dollar of this raise. Shohrukh Jalolov (CEO) previously shipped [specific company × role × outcome — TO FILL]. [Co-founder name] (CTO) previously led [specific product × users × outcome — TO FILL]. Engineering leadership for mobile, web, and backend hired before month 3."
-    },
-    "unitEconomics": {
-      "eyebrow": "Unit economics",
-      "title": "The numbers are proven before the raise closes.",
-      "subtitle": "We don't want your money on hope. Here's what we'll have demonstrated in Tajikistan before you wire a dollar — and the exact triggers that tell us to pivot if any metric breaks.",
-      "pilotLabel": "Pre-close commitment",
-      "pilotTitle": "What we'll have proven before the round closes",
-      "pilot": {
-        "p1": {
-          "value": "10+",
-          "label": "Paying pilot merchants",
-          "detail": "Tajikistan · full subscription · 30+ days active"
-        },
-        "p2": {
-          "value": "2",
-          "label": "Growth Partnership contracts signed",
-          "detail": "Real revenue-share agreements, not LOIs"
-        },
-        "p3": {
-          "value": "$5K",
-          "label": "Pre-raise marketing test",
-          "detail": "30-day paid acquisition run · real CAC data"
-        }
-      },
-      "unit": {
-        "u1": {
-          "label": "Target CAC (Tajikistan)",
-          "value": "$35–50",
-          "detail": "Validated in pre-raise pilot · capped at $75"
-        },
-        "u2": {
-          "label": "ARPU (Pro plan)",
-          "value": "$35/mo",
-          "detail": "Pre-partnership · blended across Start/Pro/Business"
-        },
-        "u3": {
-          "label": "LTV (36 months)",
-          "value": "$1,260+",
-          "detail": "Subscription only · partnership adds 2–3× upside"
-        },
-        "u4": {
-          "label": "Payback period",
-          "value": "< 6 mo",
-          "detail": "CAC:LTV > 1:20 · well above SaaS benchmarks"
-        }
-      },
-      "killLabel": "Kill switches",
-      "killTitle": "What makes us pivot — not burn your capital",
-      "killSubtitle": "We've pre-committed to specific metric thresholds. If any one breaks for two consecutive months, we cut that line and redirect capital.",
-      "kill": {
-        "k1": {
-          "trigger": "If blended CAC > $150 by month 12",
-          "action": "freeze paid acquisition · pivot to pure partner-sales channel"
-        },
-        "k2": {
-          "trigger": "If Growth Partnership conversion < 20% of qualified merchants",
-          "action": "restructure revenue-share terms or sunset the program"
-        },
-        "k3": {
-          "trigger": "If Tajikistan store count < 300 by month 18",
-          "action": "delay Uzbekistan entry by 12 months · fix the playbook first"
-        }
-      },
-      "fundLabel": "Partnership fund mechanics",
-      "fundTitle": "How the $960K returns — explicit math for fintech-literate investors",
-      "fund": {
-        "f1": { "label": "Total deployment (24 months)", "value": "$960K" },
-        "f2": { "label": "Average deployment per merchant", "value": "$4,800" },
-        "f3": { "label": "Merchants funded (year 1–2)", "value": "~200" },
-        "f4": { "label": "Avg. revenue share recovery per merchant", "value": "$12,000 / 24 mo" },
-        "f5": { "label": "Gross fund return (year 5)", "value": "$2.4M" }
-      },
-      "fundIrrLabel": "Gross fund IRR (3-year)",
-      "fundIrrValue": "~35%"
-    },
-    "risks": {
-      "eyebrow": "Risks & mitigants",
-      "title": "What could kill this company — and what we do about it.",
-      "subtitle": "Every risk below is priced in. We're not pretending they don't exist — we're showing how we respond when they materialize.",
-      "mitigantLabel": "Mitigant",
-      "items": {
-        "r1": {
-          "label": "Risk 1",
-          "title": "Geopolitical & currency volatility",
-          "risk": "Tajikistan borders Afghanistan. Uzbekistan decontrolled currency in 2016, wiping out foreign capital overnight. Kazakhstan had civil unrest in 2022. Kyrgyzstan's government has changed 3 times in 20 years.",
-          "mitigant": "Revenue invoiced in local currency, banked in USD-pegged accounts where possible. 6-month cash buffer in USD. Legal entity per country with local counsel. Pilot validates one market before capital deploys to next."
-        },
-        "r2": {
-          "label": "Risk 2",
-          "title": "Growth Partnership adverse selection",
-          "risk": "Merchants who sign up for revenue-share might be the desperate ones, not the good ones. Strong merchants prefer to keep 100% of their upside.",
-          "mitigant": "Partnership is gated — we qualify merchants on 90 days of subscription use first, proving basic competency. Revenue-share is only on incremental growth above a 3-month trailing baseline, aligning with strong operators who want marketing capital."
-        },
-        "r3": {
-          "label": "Risk 3",
-          "title": "Kaspi / TBC-backed competitor enters with free software",
-          "risk": "Kaspi.kz offers free POS bundled with payments in Kazakhstan. TBC Bank (owner of Billz) could replicate the Growth Partnership model with banking muscle. Shopify / Square could finally localize.",
-          "mitigant": "Tajikistan has no Kaspi equivalent. We get 2-year head start before KZ entry. Growth Partnership contracts are 24-month — switching cost compounds. Shopify still can't offer halal-compliant or offline-first for under $5M engineering investment."
-        },
-        "r4": {
-          "label": "Risk 4",
-          "title": "Founder capacity — building + selling + managing a fintech fund",
-          "risk": "Buffett's real objection: two founders managing product + sales + partnership fund + 4-country expansion + 5 engineers = too many jobs. Burnout risk.",
-          "mitigant": "Clear role split: CEO owns sales + partnerships + fundraising. CTO owns product + engineering. Head of Operations hired by month 4 (funded from the 14% Ops line). No geographic expansion handled personally by founders — each new market gets a dedicated country lead before entry."
-        }
-      }
-    },
-    "growthModel": {
-      "eyebrow": "The differentiator",
-      "title": "We don't just sell software. We invest in our customers.",
-      "subtitle": "Most retail platforms charge a flat fee and leave merchants to figure out growth on their own. We do the opposite — we put capital into our merchants, help them scale, and share only in the growth we helped create.",
-      "featured": "Core model",
-      "weProvide": "What we provide",
-      "weEarn": "What we earn",
-      "takeaway": "32% of investor dollars flow directly INTO Tajikistan merchants in year one — making each dollar go 2–3× further than a spread-out multi-country expansion. Subscription is the floor; partnership revenue is the upside.",
-      "pillars": {
-        "p1": {
-          "title": "We share growth, not revenue",
-          "body": "Merchants keep 100% of their existing revenue. We share only the incremental growth we helped create, for a fixed 24-month window."
-        },
-        "p2": {
-          "title": "We invest first, they pay after",
-          "body": "Refresh funds the merchant's first marketing campaigns. If it doesn't work, they owe nothing. If it does, we share in the result."
-        },
-        "p3": {
-          "title": "Aligned to the last dollar",
-          "body": "Our revenue scales with theirs. No hidden fees, no churn games, no upsell pressure — just one shared P&L direction."
-        }
-      },
-      "tiers": {
-        "t1": {
-          "tag": "Tier 1 · Self-serve",
-          "name": "Standard plans",
-          "who": "Any shop — from a single storefront to a small chain — ready to modernize but not to commit to a long-term partnership.",
-          "provide": "Software (Start · Advanced · Pro). Full feature access, 4 languages, 4 currencies, 24/7 support.",
-          "earn": "Monthly subscription"
-        },
-        "t2": {
-          "tag": "Tier 2 · The growth engine",
-          "name": "Growth Partnership",
-          "who": "Ambitious merchants with proven unit economics but under-capitalized for paid marketing. Where our investor dollars flow.",
-          "provide": "Discounted software + marketing co-investment from our fund + weekly growth playbook support.",
-          "earn": "Reduced subscription + 15–25% share of incremental revenue, 24 months"
-        },
-        "t3": {
-          "tag": "Tier 3 · Enterprise",
-          "name": "Top Partner Program",
-          "who": "Established chains (10+ locations) wanting deeper integration, dedicated roadmap influence, and joint market expansion.",
-          "provide": "Co-branded campaigns · dedicated success team · priority features · exclusive market access.",
-          "earn": "Custom revenue share + optional equity warrants"
-        }
-      }
-    },
-    "useOfFunds": {
-      "eyebrow": "Use of funds",
-      "title": "Where every dollar goes",
-      "subtitle": "64% of this raise flows directly to growth — and 32% goes straight into merchant capital, not our ads. We dominate one country before opening the next.",
-      "totalLabel": "Total raise",
-      "callout1": "Direct growth spend — partnership capital, acquisition, field sales",
-      "callout2": "24-month runway · full Tajikistan dominance · Series A-ready",
-      "rows": {
-        "r2": {
-          "label": "Growth Partnership fund",
-          "detail": "Capital deployed INTO merchants — the largest line, because this is the moat"
-        },
-        "r1": {
-          "label": "Customer acquisition (paid)",
-          "detail": "Concentrated on Tajikistan Y1 → Uzbekistan Y2 → Kazakhstan Y3 → Kyrgyzstan Y4"
-        },
-        "r6": {
-          "label": "Operations, legal, buffer",
-          "detail": "Partnership contracts · 6-month cash cushion · cross-border legal in 4 jurisdictions"
-        },
-        "r3": {
-          "label": "Engineering team",
-          "detail": "2 mobile + 2 web + 1 backend · 24 months · infrastructure & tooling"
-        },
-        "r4": {
-          "label": "Sales & customer success",
-          "detail": "4 field reps in Tajikistan Y1, scaling with each new market"
-        },
-        "r5": {
-          "label": "Hardware & onboarding kits",
-          "detail": "Scanners, printers, receipt paper stocked for partnership merchants"
-        }
-      }
-    },
-    "capTable": {
-      "eyebrow": "Cap table trajectory",
-      "title": "How ownership evolves — base case AND bear case",
-      "subtitle": "Showing both scenarios. Base case = plan hits Series A at $28M. Bear case = Series A at $20M with heavier ESOP top-ups. Even the bear case keeps founders at 25%+ at exit — long-term alignment holds.",
-      "stage": "Stage",
-      "raise": "Raise",
-      "post": "Post-money",
-      "investor": "Investors",
-      "founderBase": "Founders (base)",
-      "founderBear": "Founders (bear)",
-      "footnote": "Base case assumes Series A at 10–13× ARR (standard for emerging-markets SaaS with strong unit economics). Bear case assumes 7× ARR and 15% ESOP top-up each round. We showed both so you can underwrite the downside before the upside.",
-      "rounds": {
-        "seed": { "name": "Seed (this round)", "when": "Now · SAFE · $12M cap" },
-        "seriesA": { "name": "Series A", "when": "Month 18–24 · 2,500+ stores, $1.5M+ ARR" },
-        "seriesB": { "name": "Series B", "when": "Month 36–42 · 10,000+ stores, $6M+ ARR" },
-        "exit": { "name": "Exit / IPO", "when": "Month 60+ · $120M+ valuation" }
-      }
-    },
-    "ask": {
-      "eyebrow": "The ask",
-      "title": "We're raising our seed round.",
-      "body": "Looking for partners who understand frontier-market SaaS and are ready to back a category leader from day one.",
-      "raising": { "label": "Raising", "value": "$3M" },
-      "stage": { "label": "Stage · Instrument", "value": "Seed · SAFE" },
-      "use": { "label": "Valuation cap", "value": "$12M post-money" },
-      "runway": { "label": "Runway", "value": "24 mo" },
-      "form": {
-        "title": "Talk to the founders",
-        "subtitle": "We respond within 48 hours on business days.",
-        "name": "Your name",
-        "fund": "Firm / fund",
-        "email": "Email",
-        "message": "What would you like to discuss?",
-        "submit": "Request intro",
-        "or": "or email us directly at"
       }
     }
   },
@@ -1031,12 +536,30 @@
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": {
-      "q1": { "q": "Do I need to install anything?", "a": "No. Refresh runs in the browser and mobile apps. Just sign up." },
-      "q2": { "q": "Does POS work offline?", "a": "Yes. The register keeps working offline and syncs when you're back online." },
-      "q3": { "q": "How do I migrate from 1C or Excel?", "a": "Import items, stock and customers via spreadsheets or API. We assist for free during onboarding." },
-      "q4": { "q": "How much is onboarding?", "a": "Base setup and training are free on all plans. Custom configuration is available on request." },
-      "q5": { "q": "Is there a mobile app?", "a": "Yes — apps for owners and cashiers on iOS and Android." },
-      "q6": { "q": "Which languages are supported?", "a": "Russian, Tajik, Uzbek and English. Each employee can pick their own." }
+      "q1": {
+        "q": "Do I need to install anything?",
+        "a": "No. Refresh runs in the browser and mobile apps. Just sign up."
+      },
+      "q2": {
+        "q": "Does POS work offline?",
+        "a": "Yes. The register keeps working offline and syncs when you're back online."
+      },
+      "q3": {
+        "q": "How do I migrate from 1C or Excel?",
+        "a": "Import items, stock and customers via spreadsheets or API. We assist for free during onboarding."
+      },
+      "q4": {
+        "q": "How much is onboarding?",
+        "a": "Base setup and training are free on all plans. Custom configuration is available on request."
+      },
+      "q5": {
+        "q": "Is there a mobile app?",
+        "a": "Yes — apps for owners and cashiers on iOS and Android."
+      },
+      "q6": {
+        "q": "Which languages are supported?",
+        "a": "Russian, Tajik, Uzbek and English. Each employee can pick their own."
+      }
     }
   },
   "finalCta": {
