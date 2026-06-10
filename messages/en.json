@@ -290,6 +290,9 @@
     "ctaSecondary": "Plans",
     "ctaNote": "7 days free · No credit card · Setup in 15 minutes",
     "integrations": "Integrations",
+    "integrationsBanks": "Accept payments via banks of Tajikistan:",
+    "integrationsMarketplaces": "We'll help you connect local marketplaces:",
+    "integrationsMore": "and more",
     "chips": {
       "offline": "Works offline",
       "currencies": "TJS · UZS · KZT · KGS",

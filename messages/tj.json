@@ -290,6 +290,9 @@
     "ctaSecondary": "Тарифҳо",
     "ctaNote": "7 рӯз ройгон · Бе корт · Танзим дар 15 дақиқа",
     "integrations": "Интегратсияҳо",
+    "integrationsBanks": "Қабули пардохт тавассути бонкҳои Тоҷикистон:",
+    "integrationsMarketplaces": "Дар пайвасткунии маркетплейсҳои маҳаллӣ кӯмак мекунем:",
+    "integrationsMore": "ва дигарон",
     "chips": {
       "offline": "Офлайн кор мекунад",
       "currencies": "TJS · UZS · KZT · KGS",

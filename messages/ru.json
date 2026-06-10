@@ -290,6 +290,9 @@
     "ctaSecondary": "Тарифы",
     "ctaNote": "7 дней бесплатно · Без привязки карты · Настройка за 15 минут",
     "integrations": "Интеграции",
+    "integrationsBanks": "Приём платежей через банки Таджикистана:",
+    "integrationsMarketplaces": "Поможем подключить локальные маркетплейсы:",
+    "integrationsMore": "и другие",
     "chips": {
       "offline": "Работает офлайн",
       "currencies": "TJS · UZS · KZT · KGS",

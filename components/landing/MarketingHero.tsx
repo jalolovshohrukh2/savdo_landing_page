@@ -50,18 +50,23 @@ export function MarketingHero() {
           <p className="mt-4 text-xs text-refresh-muted-2">{t('ctaNote')}</p>
 
           {/* Integrations — fills the left column on desktop */}
-          <div className="mt-10 hidden w-full lg:block">
+          <div className="mt-10 hidden w-full max-w-xl lg:block">
             <p className="text-[11px] font-semibold uppercase tracking-wider text-refresh-muted-2">
               {t('integrations')}
             </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {['Humo', 'Alif', 'Payme', 'Click', '1С'].map((name) => (
-                <span
-                  key={name}
-                  className="rounded-lg border border-refresh-line bg-refresh-surface-2 px-3.5 py-2 text-sm font-medium text-refresh-muted"
-                >
-                  {name}
-                </span>
+
+            <p className="mt-3 text-sm leading-relaxed text-refresh-muted">{t('integrationsBanks')}</p>
+            <div className="mt-2.5 flex flex-wrap gap-2">
+              {['Alif Bank', 'Dushanbe City Bank', 'Humo', 'Eskhata'].map((name) => (
+                <IntegrationBadge key={name}>{name}</IntegrationBadge>
+              ))}
+              <span className="px-1.5 py-1.5 text-sm text-refresh-muted-2">{t('integrationsMore')}</span>
+            </div>
+
+            <p className="mt-4 text-sm leading-relaxed text-refresh-muted">{t('integrationsMarketplaces')}</p>
+            <div className="mt-2.5 flex flex-wrap gap-2">
+              {['LakLak', 'Webmarket'].map((name) => (
+                <IntegrationBadge key={name}>{name}</IntegrationBadge>
               ))}
             </div>
           </div>
@@ -72,5 +77,13 @@ export function MarketingHero() {
         </div>
       </div>
     </section>
+  );
+}
+
+function IntegrationBadge({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="rounded-lg border border-refresh-line bg-refresh-surface-2 px-3 py-1.5 text-sm font-medium text-refresh-muted">
+      {children}
+    </span>
   );
 }

@@ -290,6 +290,9 @@
     "ctaSecondary": "Tariflar",
     "ctaNote": "7 kun bepul · Kartasiz · 15 daqiqada sozlash",
     "integrations": "Integratsiyalar",
+    "integrationsBanks": "Tojikiston banklari orqali toʻlovlarni qabul qilish:",
+    "integrationsMarketplaces": "Mahalliy marketplace’larni ulashga yordam beramiz:",
+    "integrationsMore": "va boshqalar",
     "chips": {
       "offline": "Oflayn ishlaydi",
       "currencies": "TJS · UZS · KZT · KGS",
